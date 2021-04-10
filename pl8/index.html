@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>PL-8 Security and Privacy Architectures - NIST 800-53 For Dummies</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "PL-8 Security and Privacy Architectures", url: "#_top", children: [
+              {title: "Control", url: "#control" },
+              {title: "Discussion", url: "#discussion" },
+              {title: "Related Controls", url: "#related-controls" },
+              {title: "Enhancements", url: "#enhancements" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../pl9/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../pl9/" class="btn btn-xs btn-link">
+        PL-9 Central Management
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../pl7/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../pl7/" class="btn btn-xs btn-link">
+        PL-7 Concept of Operations
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="pl-8-security-and-privacy-architectures">PL-8 Security and Privacy Architectures</h1>
+<h2 id="control">Control</h2>
+<p>a. Develop security and privacy architectures for the system that:</p>
+<ol>
+<li>Describe the requirements and approach to be taken for protecting the confidentiality, integrity, and availability of organizational information;</li>
+<li>Describe the requirements and approach to be taken for processing personally identifiable information to minimize privacy risk to individuals;</li>
+<li>Describe how the architectures are integrated into and support the enterprise architecture; and</li>
+<li>Describe any assumptions about, and dependencies on, external systems and services;</li>
+</ol>
+<p>b. Review and update the architectures [Assignment: organization-defined frequency] to reflect changes in the enterprise architecture; and</p>
+<p>c. Reflect planned architecture changes in security and privacy plans, Concept of Operations (CONOPS), criticality analysis, organizational procedures, and procurements and acquisitions."</p>
+<h2 id="discussion">Discussion</h2>
+<p>The security and privacy architectures at the system level are consistent with the organization-wide security and privacy architectures described in <a href="../pm7/">PM-7</a>, which are integral to and developed as part of the enterprise architecture. The architectures include an architectural description, the allocation of security and privacy functionality (including controls), security- and privacy-related information for external interfaces, information being exchanged across the interfaces, and the protection mechanisms associated with each interface. The architectures can also include other information, such as user roles and the access privileges assigned to each role; security and privacy requirements; types of information processed, stored, and transmitted by the system; supply chain risk management requirements; restoration priorities of information and system services; and other protection needs.</p>
+<p>SP 800-160-1 provides guidance on the use of security architectures as part of the system development life cycle process. OMB M-19-03 requires the use of the systems security engineering concepts described in SP 800-160-1 for high value assets. Security and privacy architectures are reviewed and updated throughout the system development life cycle, from analysis of alternatives through review of the proposed architecture in the RFP responses to the design reviews before and during implementation (e.g., during preliminary design reviews and critical design reviews).</p>
+<p>In today’s modern computing architectures, it is becoming less common for organizations to control all information resources. There may be key dependencies on external information services and service providers. Describing such dependencies in the security and privacy architectures is necessary for developing a comprehensive mission and business protection strategy. Establishing, developing, documenting, and maintaining under configuration control a baseline configuration for organizational systems is critical to implementing and maintaining effective architectures. The development of the architectures is coordinated with the senior agency information security officer and the senior agency official for privacy to ensure that the controls needed to support security and privacy requirements are identified and effectively implemented. In many circumstances, there may be no distinction between the security and privacy architecture for a system. In other circumstances, security objectives may be adequately satisfied, but privacy objectives may only be partially satisfied by the security requirements. In these cases, consideration of the privacy requirements needed to achieve satisfaction will result in a distinct privacy architecture. The documentation, however, may simply reflect the combined architectures.</p>
+<p><a href="./">PL-8</a> is primarily directed at organizations to ensure that architectures are developed for the system and, moreover, that the architectures are integrated with or tightly coupled to the enterprise architecture. In contrast, <a href="../sa17/">SA-17</a> is primarily directed at the external information technology product and system developers and integrators. <a href="../sa17/">SA-17</a>, which is complementary to <a href="./">PL-8</a>., is selected when organizations outsource the development of systems or components to external entities and when there is a need to demonstrate consistency with the organization’s enterprise architecture and security and privacy architectures.</p>
+<h2 id="related-controls">Related Controls</h2>
+<p><a href="../cm2/">CM-2</a>, <a href="../cm6/">CM-6</a>, <a href="../pl2/">PL-2</a>, <a href="../pl7/">PL-7</a>, <a href="../pl9/">PL-9</a>, <a href="../pm5/">PM-5</a>, <a href="../pm7/">PM-7</a>, <a href="../ra9/">RA-9</a>, <a href="../sa3/">SA-3</a>, <a href="../sa5/">SA-5</a>, <a href="../sa8/">SA-8</a>, <a href="../sa17/">SA-17</a>, <a href="../sc7/">SC-7</a>.</p>
+<h2 id="enhancements">Enhancements</h2>
+<h3 id="1">1</h3>
+<h3 id="security-and-privacy-architectures-defense-in-depth">Security and Privacy Architectures | Defense in Depth</h3>
+<p>Design the security and privacy architectures for the system using a defense-in-depth approach that:</p>
+<p>(a) Allocates [Assignment: organization-defined controls] to [Assignment: organization-defined locations and architectural layers]; and</p>
+<p>(b) Ensures that the allocated controls operate in a coordinated and mutually reinforcing manner.</p>
+<p>Organizations strategically allocate security and privacy controls in the security and privacy architectures so that adversaries must overcome multiple controls to achieve their objective. Requiring adversaries to defeat multiple controls makes it more difficult to attack information resources by increasing the work factor of the adversary; it also increases the likelihood of detection. The coordination of allocated controls is essential to ensure that an attack that involves one control does not create adverse, unintended consequences by interfering with other controls. Unintended consequences can include system lockout and cascading alarms. The placement of controls in systems and organizations is an important activity that requires thoughtful analysis. The value of organizational assets is an important consideration in providing additional layering. Defense-in-depth architectural approaches include modularity and layering (see SA-8(3)), separation of system and user functionality (see SC-2), and security function isolation (see SC-3).</p>
+<p>Related: <a href="../sc2/">SC-2</a>, <a href="../sc3/">SC-3</a>, <a href="../sc29/">SC-29</a>, <a href="../sc36/">SC-36</a>.</p>
+<h3 id="2">2</h3>
+<h3 id="security-and-privacy-architectures-supplier-diversity">Security and Privacy Architectures | Supplier Diversity</h3>
+<p>Require that [Assignment: organization-defined controls] allocated to [Assignment: organization-defined locations and architectural layers] are obtained from different suppliers.</p>
+<p>Information technology products have different strengths and weaknesses. Providing a broad spectrum of products complements the individual offerings. For example, vendors offering malicious code protection typically update their products at different times, often developing solutions for known viruses, Trojans, or worms based on their priorities and development schedules. By deploying different products at different locations, there is an increased likelihood that at least one of the products will detect the malicious code. With respect to privacy, vendors may offer products that track personally identifiable information in systems. Products may use different tracking methods. Using multiple products may result in more assurance that personally identifiable information is inventoried.</p>
+<p>Related: <a href="../sc29/">SC-29</a>, <a href="../sr3/">SR-3</a>.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../pl9/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../pl9/" class="btn btn-xs btn-link">
+        PL-9 Central Management
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../pl7/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../pl7/" class="btn btn-xs btn-link">
+        PL-7 Concept of Operations
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>
