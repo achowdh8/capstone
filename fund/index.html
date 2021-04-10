@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Fundamentals - NIST 800-53 For Dummies</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Fundamentals", url: "#_top", children: [
+              {title: "2.1 Requirements and Controls", url: "#21-requirements-and-controls" },
+              {title: "2.2 Control Structure and Organization", url: "#22-control-structure-and-organization" },
+              {title: "2.3 Control Implementation Approaches", url: "#23-control-implementation-approaches" },
+              {title: "2.4 Security and Privacy Controls", url: "#24-security-and-privacy-controls" },
+              {title: "2.5 Trustworthiness and Assurance", url: "#25-trustworthiness-and-assurance" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../ac1/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../ac1/" class="btn btn-xs btn-link">
+        AC-1 Policy and Procedures
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../intro/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../intro/" class="btn btn-xs btn-link">
+        Introduction
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="fundamentals">Fundamentals</h1>
+<p>This chapter presents the fundamental concepts associated with security and privacy controls, including the relationship between requirements and controls, the structure of controls, how controls are organized in the consolidated control catalog, the different control implementation approaches for information systems and organizations, the relationship between security and privacy controls, the importance of the concepts of trustworthiness and assurance for security and privacy controls, and the effects of the controls on achieving trustworthy, secure, and resilient systems. </p>
+<h2 id="21-requirements-and-controls">2.1 Requirements and Controls</h2>
+<p>It is important to understand the relationship between requirements and controls. For federal information security and privacy policies, the term requirement is generally used to refer to information security and privacy obligations imposed on organizations. For example, [OMB A-130] imposes information security and privacy requirements with which federal agencies must comply when managing information resources. The term requirement can also be used in a broader sense to refer to an expression of stakeholder protection needs for a particular system or organization. Stakeholder protection needs and the corresponding security and privacy requirements may be derived from many sources (e.g., laws, executive orders, directives, regulations, policies, standards, mission and business needs, or risk assessments). The term requirement, as used in this guideline, includes both legal and policy requirements, as well as an expression of the broader set of stakeholder protection needs that may be derived from other sources. All of these requirements, when applied to a system, help determine the necessarycharacteristics of the system—encompassing security, privacy, and assurance.</p>
+<p>Organizations may divide security and privacy requirements into more granular categories, depending on where the requirements are employed in the system development life cycle (SDLC) and for what purpose. Organizations may use the term capability requirement to describe a capability that the system or organization must provide to satisfy a stakeholder protection need. In addition, organizations may refer to system requirements that pertain to particular hardware, software, and firmware components of a system as specification requirements—that is, capabilities that implement all or part of a control and that may be assessed (i.e., as part of the verification, validation, testing, and evaluation processes). Finally, organizations may use the term statement of work requirements to refer to actions that must be performed operationally or during system development.</p>
+<p>Controls can be viewed as descriptions of the safeguards and protection capabilities appropriate for achieving the particular security and privacy objectives of the organization and reflecting the protection needs of organizational stakeholders. Controls are selected and implemented by the organization in order to satisfy the system requirements. Controls can include administrative, technical, and physical aspects. In some cases, the selection and implementation of a control may necessitate additional specification by the organization in the form of derived requirementsor instantiated control parameter values. The derived requirements and control parameter values may be necessary to provide the appropriate level of implementation detail for particular controls within the SDLC.</p>
+<h2 id="22-control-structure-and-organization">2.2 Control Structure and Organization</h2>
+<p>Security and privacy controls described in this publication have a well-defined organization and structure. For ease of use in the security and privacy control selection and specification process,controls are organized into 20 families. Each family contains controls that are related to the specific topic of the family. A two-character identifier uniquely identifies each control family(e.g., PS for Personnel Security). Security and privacy controls may involve aspects of policy, oversight, supervision, manual processes,  and automated mechanisms that are implemented by systems or actions by individuals.</p>
+<p>Families of controls contain base controls and control enhancements, which are directly related to their base controls. Control enhancements either add functionality or specificity to a base control or increase the strength of a base control. Control enhancements are used in systems and environments of operation that require greater protection than the protection provided by the base control. The need for organizations to select and implement control enhancements is due to the potential adverse organizational or individual impacts or when organizations require additions to the base control functionality or assurance based on assessments of risk. The selection and implementation of control enhancements always requires the selection and implementation of the base control.</p>
+<p>The families are arranged in alphabetical order, while the controls and control enhancements within each family are in numerical order. The order of the families, controls, and control enhancements does not imply any logical progression, level of prioritization or importance, or order in which the controls or control enhancements are to be implemented. Rather, it reflects the order in which they were included in the catalog. Control designations are not re-used when a control is withdrawn.</p>
+<p>Security and privacy controls have the following structure:  a base control section, a discussion section, a related controls section and a control enhancements section.</p>
+<p>The control section prescribes a security or privacy capability to be implemented. Security and privacy capabilities are achieved by the activities or actions, automated or nonautomated, carried out by information systems and organizations. Organizations designate the responsibility for control development, implementation, assessment, and monitoring. Organizations have the flexibility to implement the controls selected in whatever manner that satisfies organizational mission or business needs consistent with law, regulation, and policy.</p>
+<p>The discussion section provides additional information about a control. Organizations can use the information as needed when developing, tailoring, implementing, assessing, or monitoring controls. The information provides important considerations for implementing controls based on mission or business requirements, operational environments, or assessments of risk. The additional information can also explain the purpose of controls and often includes examples. Control enhancements may also include a separate discussion sectionwhen the discussion information is applicable only to a specific control enhancement.</p>
+<p>The related controls section provides a list of controls from the control catalog that impact or support the implementation of a particular control or control enhancement, address a related security or privacy capability, or are referenced in the discussion section. Control enhancements are inherently related to their base control. Thus, related controls that are referenced in the base control are not repeated in the control enhancements. However, there may be related controls identified for control enhancements that are not referenced in the base control (i.e., the related control is only associated with the specific control enhancement). Controls may also be related to enhancements of other base controls. When a control is designated as a related control, a corresponding designation is made on that control in its source location in the catalog to illustrate the two-way relationship. Additionally, each control in a given family is inherently related to the -1 control (Policy and Procedures) in the same family. Therefore, the relationship between the -1 control and the other controls in the same family is not specified in the related controls section for each control.</p>
+<p>The control enhancements section provides statements of security and privacy capability that augment a base control. The control enhancements are numbered sequentially within each control so that the enhancements can be easily identified when selected to supplement the base control. Each control enhancement has a short subtitle to indicate the intended function or capability provided by the enhancement. In the <a href="../au4/">AU-4</a> example, if the control enhancement is selected, the control designation becomes <a href="../au4/#1">AU-4(1)</a>. The numerical designation of a control enhancement is used only to identify that enhancement within the control. The designation is not indicative of the strength of the control enhancement, level of protection, priority, degree of importance, or any hierarchical relationship among the enhancements. Control enhancements are not intended to be selected independently. That is, if a control enhancement is selected, then the corresponding base control is also selected and implemented.</p>
+<p>For some controls, additional flexibility is provided by allowing organizations to define specific values for designated parameters associated with the controls. Flexibility is achieved as part of a tailoring process using assignment and selection operations embedded within the controls and enclosed by brackets. The assignment and selection operations give organizations the capability to customize controls based on organizational security and privacy requirements. In contrast to assignment operations which allow complete flexibility in the designation of parameter values, selection operations narrow the range of potential values by providing a specific list of items from which organizations choose.</p>
+<p>Determination of the organization-defined parameters can evolve from many sources, including laws, executive orders, directives, regulations, policies, standards, guidance, and mission or business needs. Organizational risk assessments and risk tolerance are also important factors in determining the values for control parameters. Once specified by the organization, the values for the assignment and selection operations become a part of the control. Organization-defined control parameters used in the base controls also apply to the control enhancements associated with those controls. The implementation of the control is assessed for effectiveness against the completed control statement.</p>
+<p>In addition to assignment and selection operations embedded in a control, additional flexibility is achieved through iterationand refinement actions.Iteration allows organizations to use a control multiple times with different assignment and selection values, perhaps being applied in different situations or when implementing multiple policies. For example, an organization may have multiple systems implementing a control but with different parameters established toaddress different risks for each system and environment of operation. Refinement is the process of providing additional implementation detail to a control. Refinement can also be used to narrow the scope of a control in conjunction with iteration to cover all applicable scopes (e.g., applying different authentication mechanisms to different system interfaces). The combination of assignment and selection operations and iteration and refinement actions when applied to controls provides the needed flexibility to allow organizations to satisfy a broad base of security and privacy requirements at the organization, mission and business process, and system levels of implementation.</p>
+<h2 id="23-control-implementation-approaches">2.3 Control Implementation Approaches</h2>
+<p>There are three approaches to implementing the controls in Chapter Three:  (1) acommon(inheritable) control implementation approach, (2) asystem-specificcontrol implementation approach, and (3) ahybrid control implementation approach. The control implementation approaches define the scope of applicability for the control, the shared nature or inheritability of the control, and the responsibility for control development, implementation, assessment, and authorization. Each control implementation approach has a specific objective and focus thathelps organizations select the appropriate controls, implement the controls in an effective manner, and satisfy security and privacy requirements. A specific control implementation approach may achieve cost benefits by leveraging security and privacy capabilities across multiple systems and environments of operation.</p>
+<p>Common controls are controls whose implementation results in a capability that is inheritableby multiple systems or programs. A control is deemed inheritable when the system or program receives protection from the implemented control, but the control is developed, implemented, assessed, authorized, and monitored by an internal or external entity other than the entityresponsible for the system or program. The security and privacy capabilities provided by common controls can be inherited from many sources, including mission or business lines, organizations,  enclaves, environments of operation, sites, or other systems or programs.  Implementing controls as common controls can introduce the risk of a single point of failure.</p>
+<p>Many of the controls needed to protect organizational information systems—including many physical and environmental protection controls, personnel security controls, and incident response controls—are inheritable and, therefore, are good candidates for common control status. Common controls can also include technology-based controls, such as identification and authentication controls, boundary protection controls, audit and accountability controls, and access controls. The cost of development, implementation, assessment, authorization, and monitoring can be amortized across multiple systems, organizational elements, and programsusing the common control implementation approach.</p>
+<p>Controls not implemented as common controls are implemented assystem-specific or hybridcontrols. System-specific controls are the primary responsibility of the system owner and the authorizing official for a given system. Implementing system-specific controls can introduce risk if the control implementations are not interoperable with common controls. Organizations can implement a control ashybridif one part of the control is common (inheritable) and the otherpart is system-specific. For example, an organization may implement control <a href="../cp2/">CP-2</a> using a predefined template for the contingency plan for all organizational information systems with individual system owners tailoring the plan for system-specific uses, where appropriate. The division of a hybrid control into its common (inheritable) and system-specific parts may vary by organization, depending on the types of information technologies employed, the approach used by the organization to manage its controls, and assignment of responsibilities. When a control is implemented as a hybrid control, the common control provider is responsible for ensuring the   implementation, assessment, and monitoring of the common part of the hybrid control, and the system owner is responsible for ensuring the implementation,  assessment, and monitoring of the system-specific part of the hybrid control. Implementing controls as hybrid controls can introduce risk if the responsibility for the implementation and ongoing management of the common and system-specific parts of the controls is unclear.</p>
+<p>The determination as to the appropriate control implementation approach (i.e., common, hybrid, or system-specific) is context-dependent. The control implementation approach cannot be determined to be common, hybrid, or system-specific simply based on the language of the control. Identifying the control implementation approach can result in significant savings to organizations in implementation and assessment costs and a more consistent application of the controls organization-wide. Typically, the identification of the control implementation approach is straightforward. However,  the implementation takes significant planning and coordination.</p>
+<p>Planning for the implementation approach of a control (i.e., common, hybrid, or system-specific)is best carried out early in the system development life cycle and coordinated with the entities providing the control [SP 800-37]. Similarly, if a control is to be inheritable, coordination is required with the inheriting entity to ensure that the control meets its needs. This is especially important given the nature of control parameters. An inheriting entity cannot assume that controls are the same and mitigate the appropriate risk to the system just because the control identifiers (e.g., <a href="../ac1/">AC-1</a>) are the same. It is essential to examine the control parameters (e.g., assignment or selection operations) when determining if a common control is adequate to mitigate system-specific risks.</p>
+<h2 id="24-security-and-privacy-controls">2.4 Security and Privacy Controls</h2>
+<p>The selection and implementation of security and privacy controls reflect the objectives of information security and privacy programs and how those programs manage their respective risks. Depending on the circumstances, these objectives and risks can be independent or overlapping. Federal information security programs are responsible for protecting information and information systems from unauthorized access, use, disclosure, disruption, modification, or destruction (i.e., unauthorized activity or system behavior) to provide confidentiality, integrity, and availability. Those programs are also responsible for managing security risk and for ensuring compliance with applicable security requirements.  Federal privacy programs are responsible for managing risks to individuals associated with the creation, collection, use, processing, storage, maintenance, dissemination, disclosure, or disposal (collectively referred to as “processing”) of PII and for ensuring compliance with applicable privacy requirements. When a system processes PII, the information security program and the privacy program have a shared responsibility for managing the security risks for the PII in the system. Due to this overlap in responsibilities, the controls that organizations select to manage these security risks will generally be the same regardless of their designation as security or privacy controls in control baselines or program or system plans.</p>
+<p>There also may be circumstances in which the selection and/or implementation of the control or control enhancement affects the ability of a program to achieve its objectives and manage its respective risks. The control discussion section may highlight specific security and/or privacy considerations so that organizations can take these considerations into account as they determine the most effective method to implement the control. However, these considerations are not exhaustive. </p>
+<p>For example, an organization might select <a href="../au3/">AU-3</a> (Content of Audit Records) to support monitoring for unauthorized access to an information asset that does not include PII. Since the potential loss of confidentiality of the information asset does not affect privacy, security objectives are the primary driver for the selection of the control. However, the implementation of the control with respect to monitoring for unauthorized access could involve the processing of PII which may result in privacy risks and affect privacy program objectives. The discussion section in <a href="../au3/">AU-3</a> includes privacy risk considerations so that organizations can take those considerations into account as they determine the best way to implement the control. Additionally, the control enhancement <a href="../au3/#3">AU-3(3)</a> (Limit Personally Identifiable Information Elements) could be selected to support managing these privacy risks</p>
+<p>Due to permutations in the relationship between information security and privacy program objectives and risk management, there is a need for close collaboration between programs to select and implement the appropriate controls for information systems processing PII. Organizations consider how to promote and institutionalize collaboration between the two programs to ensure that the objectives of both disciplines are met and risks are appropriately managed.</p>
+<h2 id="25-trustworthiness-and-assurance">2.5 Trustworthiness and Assurance</h2>
+<p>The trustworthiness of systems, system components, and system services is an important part of the risk management strategies developed by organizations. Trustworthiness, in this context, means worthy of being trusted to fulfill whatever requirements may be needed for a component, subsystem, system, network, application, mission, business function, enterprise, or other entity. Trustworthiness requirements can include attributes of reliability, dependability, performance, resilience, safety, security, privacy, and survivability under a range of potential adversity in the form of disruptions, hazards, threats, and privacy risks. Effective measures of trustworthiness are meaningful only to the extent that the requirements are complete, well-defined, and can be accurately assessed.</p>
+<p>Two fundamental concepts that affect the trustworthiness of systems are functionality and assurance. Functionality is defined in terms of the security and privacy features, functions, mechanisms, services, procedures, and architectures implemented within organizational systems and programs and the environments in which those systems and programs operate. Assurance is the measure of confidence that the system functionality is implemented correctly, operating as intended, and producing the desired outcome with respect to meeting the security and privacy requirements for the system—thus possessing the capability to accurately mediate and enforce established security and privacy policies.</p>
+<p>In general, the task of providing meaningful assurance that a system is likely to do what is expected of it can be enhanced by techniques that simplify or narrow the analysis by,  for example, increasing the discipline applied to the system architecture, software design, specifications, code style, and configuration management. Security and privacy controls address functionality and assurance. Certain controls focus primarily on functionality while other controls focus primarily on assurance. Some controls can support functionality and assurance.</p>
+<p>Organizations can select assurance-related controls to define system development activities,generate evidence about the functionality and behavior of the system, and trace the evidence to the system elements that provide such functionality or exhibit such behavior. The evidence is used to obtain a degree of confidence that the system satisfies the stated security and privacy requirements while supporting the organization’s mission and business functions.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../ac1/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../ac1/" class="btn btn-xs btn-link">
+        AC-1 Policy and Procedures
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../intro/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../intro/" class="btn btn-xs btn-link">
+        Introduction
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

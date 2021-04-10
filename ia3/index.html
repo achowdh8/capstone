@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>IA-3 Device Identification and Authentication - NIST 800-53 For Dummies</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "IA-3 Device Identification and Authentication", url: "#_top", children: [
+              {title: "Control", url: "#control" },
+              {title: "Discussion", url: "#discussion" },
+              {title: "Related Controls", url: "#related-controls" },
+              {title: "Enhancements", url: "#enhancements" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../ia4/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../ia4/" class="btn btn-xs btn-link">
+        IA-4 Identifier Management
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../ia2/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../ia2/" class="btn btn-xs btn-link">
+        IA-2 Identification and Authentication (organizational Users)
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="ia-3-device-identification-and-authentication">IA-3 Device Identification and Authentication</h1>
+<h2 id="control">Control</h2>
+<p>Uniquely identify and authenticate [Assignment: organization-defined devices and/or types of devices] before establishing a [Selection (one or more): local; remote; network] connection.</p>
+<h2 id="discussion">Discussion</h2>
+<p>Devices that require unique device-to-device identification and authentication are defined by type, device, or a combination of type and device. Organization-defined device types include devices that are not owned by the organization. Systems use shared known information (e.g., Media Access Control [MAC], Transmission Control Protocol/Internet Protocol [TCP/IP] addresses) for device identification or organizational authentication solutions (e.g., Institute of Electrical and Electronics Engineers (IEEE) 802.1x and Extensible Authentication Protocol [EAP], RADIUS server with EAP-Transport Layer Security [TLS] authentication, Kerberos) to identify and authenticate devices on local and wide area networks. Organizations determine the required strength of authentication mechanisms based on the security categories of systems and mission or business requirements. Because of the challenges of implementing device authentication on a large scale, organizations can restrict the application of the control to a limited number/type of devices based on mission or business needs.</p>
+<h2 id="related-controls">Related Controls</h2>
+<p><a href="../ac17/">AC-17</a>, <a href="../ac18/">AC-18</a>, <a href="../ac19/">AC-19</a>, <a href="../au6/">AU-6</a>, <a href="../ca3/">CA-3</a>, <a href="../ca9/">CA-9</a>, <a href="../ia4/">IA-4</a>, <a href="../ia5/">IA-5</a>, <a href="../ia9/">IA-9</a>, <a href="../ia11/">IA-11</a>, <a href="../si4/">SI-4</a>.</p>
+<h2 id="enhancements">Enhancements</h2>
+<h3 id="1">1</h3>
+<h3 id="device-identification-and-authentication-cryptographic-bidirectional-authentication">Device Identification and Authentication | Cryptographic Bidirectional Authentication</h3>
+<p>Authenticate [Assignment: organization-defined devices and/or types of devices] before establishing [Selection (one or more): local; remote; network] connection using bidirectional authentication that is cryptographically based.</p>
+<p>A local connection is a connection with a device that communicates without the use of a network. A network connection is a connection with a device that communicates through a network. A remote connection is a connection with a device that communicates through an external network. Bidirectional authentication provides stronger protection to validate the identity of other devices for connections that are of greater risk.</p>
+<p>Related: <a href="../sc8/">SC-8</a>, <a href="../sc12/">SC-12</a>, <a href="../sc13/">SC-13</a>.</p>
+<h3 id="2">2</h3>
+<h3 id="device-identification-and-authentication-cryptographic-bidirectional-network-authentication">Device Identification and Authentication | Cryptographic Bidirectional Network Authentication</h3>
+<p>Withdrawn: Incorporated into <a href="./#1">IA-3(1)</a>.</p>
+<h3 id="3">3</h3>
+<h3 id="device-identification-and-authentication-dynamic-address-allocation">Device Identification and Authentication | Dynamic Address Allocation</h3>
+<p>(a) Where addresses are allocated dynamically, standardize dynamic address allocation lease information and the lease duration assigned to devices in accordance with [Assignment: organization-defined lease information and lease duration]; and</p>
+<p>(b) Audit lease information when assigned to a device.</p>
+<p>The Dynamic Host Configuration Protocol (DHCP) is an example of a means by which clients can dynamically receive network address assignments.</p>
+<p>Related: <a href="../au2/">AU-2</a>.</p>
+<h3 id="4">4</h3>
+<h3 id="device-identification-and-authentication-device-attestation">Device Identification and Authentication | Device Attestation</h3>
+<p>Handle device identification and authentication based on attestation by [Assignment: organization-defined configuration management process].</p>
+<p>Device attestation refers to the identification and authentication of a device based on its configuration and known operating state. Device attestation can be determined via a cryptographic hash of the device. If device attestation is the means of identification and authentication, then it is important that patches and updates to the device are handled via a configuration management process such that the patches and updates are done securely and do not disrupt identification and authentication to other devices.</p>
+<p>Related: <a href="../cm2/">CM-2</a>, <a href="../cm3/">CM-3</a>, <a href="../cm6/">CM-6</a>.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../ia4/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../ia4/" class="btn btn-xs btn-link">
+        IA-4 Identifier Management
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../ia2/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../ia2/" class="btn btn-xs btn-link">
+        IA-2 Identification and Authentication (organizational Users)
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

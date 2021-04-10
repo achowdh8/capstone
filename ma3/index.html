@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>MA-3 Maintenance Tools - NIST 800-53 For Dummies</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "MA-3 Maintenance Tools", url: "#_top", children: [
+              {title: "Control", url: "#control" },
+              {title: "Discussion", url: "#discussion" },
+              {title: "Related Controls", url: "#related-controls" },
+              {title: "Enhancements", url: "#enhancements" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../ma4/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../ma4/" class="btn btn-xs btn-link">
+        MA-4 Nonlocal Maintenance
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../ma2/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../ma2/" class="btn btn-xs btn-link">
+        MA-2 Controlled Maintenance
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="ma-3-maintenance-tools">MA-3 Maintenance Tools</h1>
+<h2 id="control">Control</h2>
+<p>a. Approve, control, and monitor the use of system maintenance tools; and</p>
+<p>b. Review previously approved system maintenance tools [Assignment: organization-defined frequency].</p>
+<h2 id="discussion">Discussion</h2>
+<p>Approving, controlling, monitoring, and reviewing maintenance tools address security-related issues associated with maintenance tools that are not within system authorization boundaries and are used specifically for diagnostic and repair actions on organizational systems. Organizations have flexibility in determining roles for the approval of maintenance tools and how that approval is documented. A periodic review of maintenance tools facilitates the withdrawal of approval for outdated, unsupported, irrelevant, or no-longer-used tools. Maintenance tools can include hardware, software, and firmware items and may be pre-installed, brought in with maintenance personnel on media, cloud-based, or downloaded from a website. Such tools can be vehicles for transporting malicious code, either intentionally or unintentionally, into a facility and subsequently into systems. Maintenance tools can include hardware and software diagnostic test equipment and packet sniffers. The hardware and software components that support maintenance and are a part of the system (including the software implementing utilities such as ping, ls, ipconfig, or the hardware and software implementing the monitoring port of an Ethernet switch) are not addressed by maintenance tools.</p>
+<h2 id="related-controls">Related Controls</h2>
+<p><a href="../ma2/">MA-2</a>, <a href="../pe16/">PE-16</a>.</p>
+<h2 id="enhancements">Enhancements</h2>
+<h3 id="1">1</h3>
+<h3 id="maintenance-tools-inspect-tools">Maintenance Tools | Inspect Tools</h3>
+<p>Inspect the maintenance tools used by maintenance personnel for improper or unauthorized modifications.</p>
+<p>Maintenance tools can be directly brought into a facility by maintenance personnel or downloaded from a vendor’s website. If, upon inspection of the maintenance tools, organizations determine that the tools have been modified in an improper manner or the tools contain malicious code, the incident is handled consistent with organizational policies and procedures for incident handling.</p>
+<p>Related: <a href="../si7/">SI-7</a>.</p>
+<h3 id="2">2</h3>
+<h3 id="maintenance-tools-inspect-media">Maintenance Tools | Inspect Media</h3>
+<p>Check media containing diagnostic and test programs for malicious code before the media are used in the system.</p>
+<p>If, upon inspection of media containing maintenance, diagnostic, and test programs, organizations determine that the media contains malicious code, the incident is handled consistent with organizational incident handling policies and procedures.</p>
+<p>Related: <a href="../si3/">SI-3</a>.</p>
+<h3 id="3">3</h3>
+<h3 id="maintenance-tools-prevent-unauthorized-removal">Maintenance Tools | Prevent Unauthorized Removal</h3>
+<p>Prevent the removal of maintenance equipment containing organizational information by:</p>
+<p>(a) Verifying that there is no organizational information contained on the equipment;</p>
+<p>(b) Sanitizing or destroying the equipment;</p>
+<p>(c) Retaining the equipment within the facility; or</p>
+<p>(d) Obtaining an exemption from [Assignment: organization-defined personnel or roles] explicitly authorizing removal of the equipment from the facility.</p>
+<p>Organizational information includes all information owned by organizations and any information provided to organizations for which the organizations serve as information stewards.</p>
+<p>Related: <a href="../mp6/">MP-6</a>.</p>
+<h3 id="4">4</h3>
+<h3 id="maintenance-tools-restricted-tool-use">Maintenance Tools | Restricted Tool Use</h3>
+<p>Restrict the use of maintenance tools to authorized personnel only.</p>
+<p>Restricting the use of maintenance tools to only authorized personnel applies to systems that are used to carry out maintenance functions.</p>
+<p>Related: <a href="../ac3/">AC-3</a>, <a href="../ac5/">AC-5</a>, <a href="../ac6/">AC-6</a>.</p>
+<h3 id="5">5</h3>
+<h3 id="maintenance-tools-execution-with-privilege">Maintenance Tools | Execution with Privilege</h3>
+<p>Monitor the use of maintenance tools that execute with increased privilege.</p>
+<p>Maintenance tools that execute with increased system privilege can result in unauthorized access to organizational information and assets that would otherwise be inaccessible.</p>
+<p>Related: <a href="../ac3/">AC-3</a>, <a href="../ac6/">AC-6</a>.</p>
+<h3 id="6">6</h3>
+<h3 id="maintenance-tools-software-updates-and-patches">Maintenance Tools | Software Updates and Patches</h3>
+<p>Inspect maintenance tools to ensure the latest software updates and patches are installed.</p>
+<p>Maintenance tools using outdated and/or unpatched software can provide a threat vector for adversaries and result in a significant vulnerability for organizations.</p>
+<p>Related: <a href="../ac3/">AC-3</a>, <a href="../ac6/">AC-6</a>.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../ma4/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../ma4/" class="btn btn-xs btn-link">
+        MA-4 Nonlocal Maintenance
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../ma2/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../ma2/" class="btn btn-xs btn-link">
+        MA-2 Controlled Maintenance
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

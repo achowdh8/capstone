@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>MA-4 Nonlocal Maintenance - NIST 800-53 For Dummies</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "MA-4 Nonlocal Maintenance", url: "#_top", children: [
+              {title: "Control", url: "#control" },
+              {title: "Discussion", url: "#discussion" },
+              {title: "Related Controls", url: "#related-controls" },
+              {title: "Enhancements", url: "#enhancements" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../ma5/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../ma5/" class="btn btn-xs btn-link">
+        MA-5 Maintenance Personnel
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../ma3/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../ma3/" class="btn btn-xs btn-link">
+        MA-3 Maintenance Tools
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="ma-4-nonlocal-maintenance">MA-4 Nonlocal Maintenance</h1>
+<h2 id="control">Control</h2>
+<p>a. Approve and monitor nonlocal maintenance and diagnostic activities;</p>
+<p>b. Allow the use of nonlocal maintenance and diagnostic tools only as consistent with organizational policy and documented in the security plan for the system;</p>
+<p>c. Employ strong authentication in the establishment of nonlocal maintenance and diagnostic sessions;</p>
+<p>d. Maintain records for nonlocal maintenance and diagnostic activities; and</p>
+<p>e. Terminate session and network connections when nonlocal maintenance is completed.</p>
+<h2 id="discussion">Discussion</h2>
+<p>Nonlocal maintenance and diagnostic activities are conducted by individuals who communicate through either an external or internal network. Local maintenance and diagnostic activities are carried out by individuals who are physically present at the system location and not communicating across a network connection. Authentication techniques used to establish nonlocal maintenance and diagnostic sessions reflect the network access requirements in IA-2. Strong authentication requires authenticators that are resistant to replay attacks and employ multi-factor authentication. Strong authenticators include PKI where certificates are stored on a token protected by a password, passphrase, or biometric. Enforcing requirements in MA-4 is accomplished, in part, by other controls. SP 800-63B provides additional guidance on strong authentication and authenticators.</p>
+<h2 id="related-controls">Related Controls</h2>
+<p><a href="../ac2/">AC-2</a>, <a href="../ac3/">AC-3</a>, <a href="../ac6/">AC-6</a>, <a href="../ac17/">AC-17</a>, <a href="../au2/">AU-2</a>, <a href="../au3/">AU-3</a>, <a href="../ia2/">IA-2</a>, <a href="../ia4/">IA-4</a>, <a href="../ia5/">IA-5</a>, <a href="../ia8/">IA-8</a>, <a href="../ma2/">MA-2</a>, <a href="../ma5/">MA-5</a>, <a href="../pl2/">PL-2</a>, <a href="../sc7/">SC-7</a>, <a href="../sc10/">SC-10</a>.</p>
+<h2 id="enhancements">Enhancements</h2>
+<h3 id="1">1</h3>
+<h3 id="nonlocal-maintenance-logging-and-review">Nonlocal Maintenance | Logging and Review</h3>
+<p>(a) Log [Assignment: organization-defined audit events] for nonlocal maintenance and diagnostic sessions; and</p>
+<p>(b) Review the audit records of the maintenance and diagnostic sessions to detect anomalous behavior.</p>
+<p>Audit logging for nonlocal maintenance is enforced by AU-2. Audit events are defined in AU-2a.</p>
+<p>Related: <a href="../au6/">AU-6</a>, <a href="../au12/">AU-12</a>.</p>
+<h3 id="2">2</h3>
+<h3 id="nonlocal-maintenance-document-nonlocal-maintenance">Nonlocal Maintenance | Document Nonlocal Maintenance</h3>
+<p>Withdrawn: Incorporated into <a href="../ma1/">MA-1</a> and <a href="./">MA-4</a>.</p>
+<h3 id="3">3</h3>
+<h3 id="nonlocal-maintenance-comparable-security-and-sanitization">Nonlocal Maintenance | Comparable Security and Sanitization</h3>
+<p>(a) Require that nonlocal maintenance and diagnostic services be performed from a system that implements a security capability comparable to the capability implemented on the system being serviced; or</p>
+<p>(b) Remove the component to be serviced from the system prior to nonlocal maintenance or diagnostic services; sanitize the component (for organizational information); and after the service is performed, inspect and sanitize the component (for potentially malicious software) before reconnecting the component to the system.</p>
+<p>Comparable security capability on systems, diagnostic tools, and equipment providing maintenance services implies that the implemented controls on those systems, tools, and equipment are at least as comprehensive as the controls on the system being serviced.</p>
+<p>Related: <a href="../mp6/">MP-6</a>, <a href="../si3/">SI-3</a>, <a href="../si7/">SI-7</a>.</p>
+<h3 id="4">4</h3>
+<h3 id="nonlocal-maintenance-authentication-and-separation-of-maintenance-sessions">Nonlocal Maintenance | Authentication and Separation of Maintenance Sessions</h3>
+<p>Protect nonlocal maintenance sessions by:</p>
+<p>(a) Employing [Assignment: organization-defined authenticators that are replay resistant]; and</p>
+<p>(b) Separating the maintenance sessions from other network sessions with the system by either:</p>
+<p>(1) Physically separated communications paths; or</p>
+<p>(2) Logically separated communications paths.</p>
+<p>Communications paths can be logically separated using encryption.</p>
+<h3 id="5">5</h3>
+<h3 id="nonlocal-maintenance-approvals-and-notifications">Nonlocal Maintenance | Approvals and Notifications</h3>
+<p>(a) Require the approval of each nonlocal maintenance session by [Assignment: organization-defined personnel or roles]; and</p>
+<p>(b) Notify the following personnel or roles of the date and time of planned nonlocal maintenance: [Assignment: organization-defined personnel or roles].</p>
+<p>Notification may be performed by maintenance personnel. Approval of nonlocal maintenance is accomplished by personnel with sufficient information security and system knowledge to determine the appropriateness of the proposed maintenance.</p>
+<h3 id="6">6</h3>
+<h3 id="nonlocal-maintenance-cryptographic-protection">Nonlocal Maintenance | Cryptographic Protection</h3>
+<p>Implement the following cryptographic mechanisms to protect the integrity and confidentiality of nonlocal maintenance and diagnostic communications: [Assignment: organization-defined cryptographic mechanisms].</p>
+<p>Failure to protect nonlocal maintenance and diagnostic communications can result in unauthorized individuals gaining access to organizational information. Unauthorized access during remote maintenance sessions can result in a variety of hostile actions, including malicious code insertion, unauthorized changes to system parameters, and exfiltration of organizational information. Such actions can result in the loss or degradation of mission or business capabilities.</p>
+<p>Related: <a href="../sc8/">SC-8</a>, <a href="../sc12/">SC-12</a>, <a href="../sc13/">SC-13</a>.</p>
+<h3 id="7">7</h3>
+<h3 id="nonlocal-maintenance-disconnect-verification">Nonlocal Maintenance | Disconnect Verification</h3>
+<p>Verify session and network connection termination after the completion of nonlocal maintenance and diagnostic sessions.</p>
+<p>Verifying the termination of a connection once maintenance is completed ensures that connections established during nonlocal maintenance and diagnostic sessions have been terminated and are no longer available for use.</p>
+<p>Related: <a href="../ac12/">AC-12</a>.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../ma5/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../ma5/" class="btn btn-xs btn-link">
+        MA-5 Maintenance Personnel
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../ma3/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../ma3/" class="btn btn-xs btn-link">
+        MA-3 Maintenance Tools
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

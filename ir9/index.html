@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>IR-9 Information Spillage Response - NIST 800-53 For Dummies</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "IR-9 Information Spillage Response", url: "#_top", children: [
+              {title: "Control", url: "#control" },
+              {title: "Discussion", url: "#discussion" },
+              {title: "Related Controls", url: "#related-controls" },
+              {title: "Enhancements", url: "#enhancements" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../ir10/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../ir10/" class="btn btn-xs btn-link">
+        IR-10 Integrated Information Security Analysis Team
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../ir8/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../ir8/" class="btn btn-xs btn-link">
+        IR-8 Incident Response Plan
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="ir-9-information-spillage-response">IR-9 Information Spillage Response</h1>
+<h2 id="control">Control</h2>
+<p>Respond to information spills by:</p>
+<p>a. Assigning [Assignment: organization-defined personnel or roles] with responsibility for responding to information spills;</p>
+<p>b. Identifying the specific information involved in the system contamination;</p>
+<p>c. Alerting [Assignment: organization-defined personnel or roles] of the information spill using a method of communication not associated with the spill;</p>
+<p>d. Isolating the contaminated system or system component;</p>
+<p>e. Eradicating the information from the contaminated system or component;</p>
+<p>f. Identifying other systems or system components that may have been subsequently contaminated; and</p>
+<p>g. Performing the following additional actions: [Assignment: organization-defined actions].</p>
+<h2 id="discussion">Discussion</h2>
+<p>Information spillage refers to instances where information is placed on systems that are not authorized to process such information. Information spills occur when information that is thought to be a certain classification or impact level is transmitted to a system and subsequently is determined to be of a higher classification or impact level. At that point, corrective action is required. The nature of the response is based on the classification or impact level of the spilled information, the security capabilities of the system, the specific nature of the contaminated storage media, and the access authorizations of individuals with authorized access to the contaminated system. The methods used to communicate information about the spill after the fact do not involve methods directly associated with the actual spill to minimize the risk of further spreading the contamination before such contamination is isolated and eradicated.</p>
+<h2 id="related-controls">Related Controls</h2>
+<p><a href="../cp2/">CP-2</a>, <a href="../ir6/">IR-6</a>, <a href="../pm26/">PM-26</a>, <a href="../pm27/">PM-27</a>, <a href="../pt2/">PT-2</a>, <a href="../pt3/">PT-3</a>, <a href="../pt7/">PT-7</a>, <a href="../ra7/">RA-7</a>.</p>
+<h2 id="enhancements">Enhancements</h2>
+<h3 id="1">1</h3>
+<h3 id="information-spillage-response-responsible-personnel">Information Spillage Response | Responsible Personnel</h3>
+<p>Withdrawn: Incorporated into <a href="./">IR-9</a>.</p>
+<h3 id="2">2</h3>
+<h3 id="information-spillage-response-training">Information Spillage Response | Training</h3>
+<p>Provide information spillage response training [Assignment: organization-defined frequency].</p>
+<p>Organizations establish requirements for responding to information spillage incidents in incident response plans. Incident response training on a regular basis helps to ensure that organizational personnel understand their individual responsibilities and what specific actions to take when spillage incidents occur.</p>
+<p>Related: <a href="../at2/">AT-2</a>, <a href="../at3/">AT-3</a>, <a href="../cp3/">CP-3</a>, <a href="../ir2/">IR-2</a>.</p>
+<h3 id="3">3</h3>
+<h3 id="information-spillage-response-post-spill-operations">Information Spillage Response | Post-spill Operations</h3>
+<p>Implement the following procedures to ensure that organizational personnel impacted by information spills can continue to carry out assigned tasks while contaminated systems are undergoing corrective actions: [Assignment: organization-defined procedures].</p>
+<p>Corrective actions for systems contaminated due to information spillages may be time-consuming. Personnel may not have access to the contaminated systems while corrective actions are being taken, which may potentially affect their ability to conduct organizational business.</p>
+<h3 id="4">4</h3>
+<h3 id="information-spillage-response-exposure-to-unauthorized-personnel">Information Spillage Response | Exposure to Unauthorized Personnel</h3>
+<p>Employ the following controls for personnel exposed to information not within assigned access authorizations: [Assignment: organization-defined controls].</p>
+<p>Controls include ensuring that personnel who are exposed to spilled information are made aware of the laws, executive orders, directives, regulations, policies, standards, and guidelines regarding the information and the restrictions imposed based on exposure to such information.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../ir10/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../ir10/" class="btn btn-xs btn-link">
+        IR-10 Integrated Information Security Analysis Team
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../ir8/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../ir8/" class="btn btn-xs btn-link">
+        IR-8 Incident Response Plan
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

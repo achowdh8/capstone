@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>IR-4 Incident Handling - NIST 800-53 For Dummies</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "IR-4 Incident Handling", url: "#_top", children: [
+              {title: "Control", url: "#control" },
+              {title: "Discussion", url: "#discussion" },
+              {title: "Related Controls", url: "#related-controls" },
+              {title: "Enhancements", url: "#enhancements" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../ir5/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../ir5/" class="btn btn-xs btn-link">
+        IR-5 Incident Monitoring
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../ir3/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../ir3/" class="btn btn-xs btn-link">
+        IR-3 Incident Response Testing
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="ir-4-incident-handling">IR-4 Incident Handling</h1>
+<h2 id="control">Control</h2>
+<p>a. Implement an incident handling capability for incidents that is consistent with the incident response plan and includes preparation, detection and analysis, containment, eradication, and recovery;</p>
+<p>b. Coordinate incident handling activities with contingency planning activities;</p>
+<p>c. Incorporate lessons learned from ongoing incident handling activities into incident response procedures, training, and testing, and implement the resulting changes accordingly; and</p>
+<p>d. Ensure the rigor, intensity, scope, and results of incident handling activities are comparable and predictable across the organization.</p>
+<h2 id="discussion">Discussion</h2>
+<p>Organizations recognize that incident response capabilities are dependent on the capabilities of organizational systems and the mission and business processes being supported by those systems. Organizations consider incident response as part of the definition, design, and development of mission and business processes and systems. Incident-related information can be obtained from a variety of sources, including audit monitoring, physical access monitoring, and network monitoring; user or administrator reports; and reported supply chain events. An effective incident handling capability includes coordination among many organizational entities (e.g., mission or business owners, system owners, authorizing officials, human resources offices, physical security offices, personnel security offices, legal departments, risk executive [function], operations personnel, procurement offices). Suspected security incidents include the receipt of suspicious email communications that can contain malicious code. Suspected supply chain incidents include the insertion of counterfeit hardware or malicious code into organizational systems or system components. For federal agencies, an incident that involves personally identifiable information is considered a breach. A breach results in unauthorized disclosure, the loss of control, unauthorized acquisition, compromise, or a similar occurrence where a person other than an authorized user accesses or potentially accesses personally identifiable information or an authorized user accesses or potentially accesses such information for other than authorized purposes.</p>
+<h2 id="related-controls">Related Controls</h2>
+<p><a href="../ac19/">AC-19</a>, <a href="../au6/">AU-6</a>, <a href="../au7/">AU-7</a>, <a href="../cm6/">CM-6</a>, <a href="../cp2/">CP-2</a>, <a href="../cp3/">CP-3</a>, <a href="../cp4/">CP-4</a>, <a href="../ir2/">IR-2</a>, <a href="../ir3/">IR-3</a>, <a href="../ir5/">IR-5</a>, <a href="../ir6/">IR-6</a>, <a href="../ir8/">IR-8</a>, <a href="../pe6/">PE-6</a>, <a href="../pl2/">PL-2</a>, <a href="../pm12/">PM-12</a>, <a href="../sa8/">SA-8</a>, <a href="../sc5/">SC-5</a>, <a href="../sc7/">SC-7</a>, <a href="../si3/">SI-3</a>, <a href="../si4/">SI-4</a>, <a href="../si7/">SI-7</a>.</p>
+<h2 id="enhancements">Enhancements</h2>
+<h3 id="1">1</h3>
+<h3 id="incident-handling-automated-incident-handling-processes">Incident Handling | Automated Incident Handling Processes</h3>
+<p>Support the incident handling process using [Assignment: organization-defined automated mechanisms].</p>
+<p>Automated mechanisms that support incident handling processes include online incident management systems and tools that support the collection of live response data, full network packet capture, and forensic analysis.</p>
+<h3 id="2">2</h3>
+<h3 id="incident-handling-dynamic-reconfiguration">Incident Handling | Dynamic Reconfiguration</h3>
+<p>Include the following types of dynamic reconfiguration for [Assignment: organization-defined system components] as part of the incident response capability: [Assignment: organization-defined types of dynamic reconfiguration].</p>
+<p>Dynamic reconfiguration includes changes to router rules, access control lists, intrusion detection or prevention system parameters, and filter rules for guards or firewalls. Organizations may perform dynamic reconfiguration of systems to stop attacks, misdirect attackers, and isolate components of systems, thus limiting the extent of the damage from breaches or compromises. Organizations include specific time frames for achieving the reconfiguration of systems in the definition of the reconfiguration capability, considering the potential need for rapid response to effectively address cyber threats.</p>
+<p>Related: <a href="../ac2/">AC-2</a>, <a href="../ac4/">AC-4</a>, <a href="../cm2/">CM-2</a>.</p>
+<h3 id="3">3</h3>
+<h3 id="incident-handling-continuity-of-operations">Incident Handling | Continuity of Operations</h3>
+<p>Identify [Assignment: organization-defined classes of incidents] and take the following actions in response to those incidents to ensure continuation of organizational mission and business functions: [Assignment: organization-defined actions to take in response to classes of incidents].</p>
+<p>Classes of incidents include malfunctions due to design or implementation errors and omissions, targeted malicious attacks, and untargeted malicious attacks. Incident response actions include orderly system degradation, system shutdown, fall back to manual mode or activation of alternative technology whereby the system operates differently, employing deceptive measures, alternate information flows, or operating in a mode that is reserved for when systems are under attack. Organizations consider whether continuity of operations requirements during an incident conflict with the capability to automatically disable the system as specified as part of IR-4(5).</p>
+<h3 id="4">4</h3>
+<h3 id="incident-handling-information-correlation">Incident Handling | Information Correlation</h3>
+<p>Correlate incident information and individual incident responses to achieve an organization-wide perspective on incident awareness and response.</p>
+<p>Sometimes, a threat event, such as a hostile cyber-attack, can only be observed by bringing together information from different sources, including various reports and reporting procedures established by organizations.</p>
+<h3 id="5">5</h3>
+<h3 id="incident-handling-automatic-disabling-of-system">Incident Handling | Automatic Disabling of System</h3>
+<p>Implement a configurable capability to automatically disable the system if [Assignment: organization-defined security violations] are detected.</p>
+<p>Organizations consider whether the capability to automatically disable the system conflicts with continuity of operations requirements specified as part of CP-2 or IR-4(3). Security violations include cyber-attacks that have compromised the integrity of the system or exfiltrated organizational information and serious errors in software programs that could adversely impact organizational missions or functions or jeopardize the safety of individuals.</p>
+<h3 id="6">6</h3>
+<h3 id="incident-handling-insider-threats">Incident Handling | Insider Threats</h3>
+<p>Implement an incident handling capability for incidents involving insider threats.</p>
+<p>Explicit focus on handling incidents involving insider threats provides additional emphasis on this type of threat and the need for specific incident handling capabilities to provide appropriate and timely responses.</p>
+<h3 id="7">7</h3>
+<h3 id="incident-handling-insider-threats-intra-organization-coordination">Incident Handling | Insider Threats — Intra-organization Coordination</h3>
+<p>Coordinate an incident handling capability for insider threats that includes the following organizational entities [Assignment: organization-defined entities].</p>
+<p>Incident handling for insider threat incidents (e.g., preparation, detection and analysis, containment, eradication, and recovery) requires coordination among many organizational entities, including mission or business owners, system owners, human resources offices, procurement offices, personnel offices, physical security offices, senior agency information security officer, operations personnel, risk executive (function), senior agency official for privacy, and legal counsel. In addition, organizations may require external support from federal, state, and local law enforcement agencies.</p>
+<h3 id="8">8</h3>
+<h3 id="incident-handling-correlation-with-external-organizations">Incident Handling | Correlation with External Organizations</h3>
+<p>Coordinate with [Assignment: organization-defined external organizations] to correlate and share [Assignment: organization-defined incident information] to achieve a cross-organization perspective on incident awareness and more effective incident responses.</p>
+<p>The coordination of incident information with external organizations—including mission or business partners, military or coalition partners, customers, and developers—can provide significant benefits. Cross-organizational coordination can serve as an important risk management capability. This capability allows organizations to leverage information from a variety of sources to effectively respond to incidents and breaches that could potentially affect the organization’s operations, assets, and individuals.</p>
+<p>Related: <a href="../au16/">AU-16</a>, <a href="../pm16/">PM-16</a>.</p>
+<h3 id="9">9</h3>
+<h3 id="incident-handling-dynamic-response-capability">Incident Handling | Dynamic Response Capability</h3>
+<p>Employ [Assignment: organization-defined dynamic response capabilities] to respond to incidents.</p>
+<p>The dynamic response capability addresses the timely deployment of new or replacement organizational capabilities in response to incidents. This includes capabilities implemented at the mission and business process level and at the system level.</p>
+<h3 id="10">10</h3>
+<h3 id="incident-handling-supply-chain-coordination">Incident Handling | Supply Chain Coordination</h3>
+<p>Coordinate incident handling activities involving supply chain events with other organizations involved in the supply chain.</p>
+<p>Organizations involved in supply chain activities include product developers, system integrators, manufacturers, packagers, assemblers, distributors, vendors, and resellers. Supply chain incidents can occur anywhere through or to the supply chain and include compromises or breaches that involve primary or sub-tier providers, information technology products, system components, development processes or personnel, and distribution processes or warehousing facilities. Organizations consider including processes for protecting and sharing incident information in information exchange agreements and their obligations for reporting incidents to government oversight bodies (e.g., Federal Acquisition Security Council).</p>
+<p>Related: <a href="../ca3/">CA-3</a>, <a href="../ma2/">MA-2</a>, <a href="../sa9/">SA-9</a>, <a href="../sr8/">SR-8</a>.</p>
+<h3 id="11">11</h3>
+<h3 id="incident-handling-integrated-incident-response-team">Incident Handling | Integrated Incident Response Team</h3>
+<p>Establish and maintain an integrated incident response team that can be deployed to any location identified by the organization in [Assignment: organization-defined time period].</p>
+<p>An integrated incident response team is a team of experts that assesses, documents, and responds to incidents so that organizational systems and networks can recover quickly and implement the necessary controls to avoid future incidents. Incident response team personnel include forensic and malicious code analysts, tool developers, systems security and privacy engineers, and real-time operations personnel. The incident handling capability includes performing rapid forensic preservation of evidence and analysis of and response to intrusions. For some organizations, the incident response team can be a cross-organizational entity.</p>
+<p>An integrated incident response team facilitates information sharing and allows organizational personnel (e.g., developers, implementers, and operators) to leverage team knowledge of the threat and implement defensive measures that enable organizations to deter intrusions more effectively. Moreover, integrated teams promote the rapid detection of intrusions, the development of appropriate mitigations, and the deployment of effective defensive measures. For example, when an intrusion is detected, the integrated team can rapidly develop an appropriate response for operators to implement, correlate the new incident with information on past intrusions, and augment ongoing cyber intelligence development. Integrated incident response teams are better able to identify adversary tactics, techniques, and procedures that are linked to the operations tempo or specific mission and business functions and to define responsive actions in a way that does not disrupt those mission and business functions. Incident response teams can be distributed within organizations to make the capability resilient.</p>
+<p>Related: <a href="../at3/">AT-3</a>.</p>
+<h3 id="12">12</h3>
+<h3 id="incident-handling-malicious-code-and-forensic-analysis">Incident Handling | Malicious Code and Forensic Analysis</h3>
+<p>Analyze malicious code and/or other residual artifacts remaining in the system after the incident.</p>
+<p>When conducted carefully in an isolated environment, analysis of malicious code and other residual artifacts of a security incident or breach can give the organization insight into adversary tactics, techniques, and procedures. It can also indicate the identity or some defining characteristics of the adversary. In addition, malicious code analysis can help the organization develop responses to future incidents.</p>
+<h3 id="13">13</h3>
+<h3 id="incident-handling-behavior-analysis">Incident Handling | Behavior Analysis</h3>
+<p>Analyze anomalous or suspected adversarial behavior in or related to [Assignment: organization-defined environments or resources].</p>
+<p>If the organization maintains a deception environment, an analysis of behaviors in that environment, including resources targeted by the adversary and timing of the incident or event, can provide insight into adversarial tactics, techniques, and procedures. External to a deception environment, the analysis of anomalous adversarial behavior (e.g., changes in system performance or usage patterns) or suspected behavior (e.g., changes in searches for the location of specific resources) can give the organization such insight.</p>
+<h3 id="14">14</h3>
+<h3 id="incident-handling-security-operations-center">Incident Handling | Security Operations Center</h3>
+<p>Establish and maintain a security operations center.</p>
+<p>A security operations center (SOC) is the focal point for security operations and computer network defense for an organization. The purpose of the SOC is to defend and monitor an organization’s systems and networks (i.e., cyber infrastructure) on an ongoing basis. The SOC is also responsible for detecting, analyzing, and responding to cybersecurity incidents in a timely manner. The organization staffs the SOC with skilled technical and operational personnel (e.g., security analysts, incident response personnel, systems security engineers) and implements a combination of technical, management, and operational controls (including monitoring, scanning, and forensics tools) to monitor, fuse, correlate, analyze, and respond to threat and security-relevant event data from multiple sources. These sources include perimeter defenses, network devices (e.g., routers, switches), and endpoint agent data feeds. The SOC provides a holistic situational awareness capability to help organizations determine the security posture of the system and organization. A SOC capability can be obtained in a variety of ways. Larger organizations may implement a dedicated SOC while smaller organizations may employ third-party organizations to provide such a capability.</p>
+<h3 id="15">15</h3>
+<h3 id="incident-handling-public-relations-and-reputation-repair">Incident Handling | Public Relations and Reputation Repair</h3>
+<p>(a) Manage public relations associated with an incident; and</p>
+<p>(b) Employ measures to repair the reputation of the organization.</p>
+<p>It is important for an organization to have a strategy in place for addressing incidents that have been brought to the attention of the general public, have cast the organization in a negative light, or have affected the organization’s constituents (e.g., partners, customers). Such publicity can be extremely harmful to the organization and affect its ability to carry out its mission and business functions. Taking proactive steps to repair the organization’s reputation is an essential aspect of reestablishing the trust and confidence of its constituents.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../ir5/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../ir5/" class="btn btn-xs btn-link">
+        IR-5 Incident Monitoring
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../ir3/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../ir3/" class="btn btn-xs btn-link">
+        IR-3 Incident Response Testing
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>IA-2 Identification and Authentication (organizational Users) - NIST 800-53 For Dummies</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "IA-2 Identification and Authentication (organizational Users)", url: "#_top", children: [
+              {title: "Control", url: "#control" },
+              {title: "Discussion", url: "#discussion" },
+              {title: "Related Controls", url: "#related-controls" },
+              {title: "Enhancements", url: "#enhancements" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../ia3/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../ia3/" class="btn btn-xs btn-link">
+        IA-3 Device Identification and Authentication
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../ia1/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../ia1/" class="btn btn-xs btn-link">
+        IA-1 Policy and Procedures
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="ia-2-identification-and-authentication-organizational-users">IA-2 Identification and Authentication (organizational Users)</h1>
+<h2 id="control">Control</h2>
+<p>Uniquely identify and authenticate organizational users and associate that unique identification with processes acting on behalf of those users.</p>
+<h2 id="discussion">Discussion</h2>
+<p>Organizations can satisfy the identification and authentication requirements by complying with the requirements in HSPD 12. Organizational users include employees or individuals who organizations consider to have an equivalent status to employees (e.g., contractors and guest researchers). Unique identification and authentication of users applies to all accesses other than those that are explicitly identified in AC-14 and that occur through the authorized use of group authenticators without individual authentication. Since processes execute on behalf of groups and roles, organizations may require unique identification of individuals in group accounts or for detailed accountability of individual activity.</p>
+<p>Organizations employ passwords, physical authenticators, or biometrics to authenticate user identities or, in the case of multi-factor authentication, some combination thereof. Access to organizational systems is defined as either local access or network access. Local access is any access to organizational systems by users or processes acting on behalf of users, where access is obtained through direct connections without the use of networks. Network access is access to organizational systems by users (or processes acting on behalf of users) where access is obtained through network connections (i.e., nonlocal accesses). Remote access is a type of network access that involves communication through external networks. Internal networks include local area networks and wide area networks.</p>
+<p>The use of encrypted virtual private networks for network connections between organization-controlled endpoints and non-organization-controlled endpoints may be treated as internal networks with respect to protecting the confidentiality and integrity of information traversing the network. Identification and authentication requirements for non-organizational users are described in IA-8.</p>
+<h2 id="related-controls">Related Controls</h2>
+<p><a href="../ac2/">AC-2</a>, <a href="../ac3/">AC-3</a>, <a href="../ac4/">AC-4</a>, <a href="../ac14/">AC-14</a>, <a href="../ac17/">AC-17</a>, <a href="../ac18/">AC-18</a>, <a href="../au1/">AU-1</a>, <a href="../au6/">AU-6</a>, <a href="../ia4/">IA-4</a>, <a href="../ia5/">IA-5</a>, <a href="../ia8/">IA-8</a>, <a href="../ma4/">MA-4</a>, <a href="../ma5/">MA-5</a>, <a href="../pe2/">PE-2</a>, <a href="../pl4/">PL-4</a>, <a href="../sa4/">SA-4</a>, <a href="../sa8/">SA-8</a>.</p>
+<h2 id="enhancements">Enhancements</h2>
+<h3 id="1">1</h3>
+<h3 id="identification-and-authentication-organizational-users-multi-factor-authentication-to-privileged-accounts">Identification and Authentication (organizational Users) | Multi-factor Authentication to Privileged Accounts</h3>
+<p>Implement multi-factor authentication for access to privileged accounts.</p>
+<p>Multi-factor authentication requires the use of two or more different factors to achieve authentication. The authentication factors are defined as follows: something you know (e.g., a personal identification number [PIN]), something you have (e.g., a physical authenticator such as a cryptographic private key), or something you are (e.g., a biometric). Multi-factor authentication solutions that feature physical authenticators include hardware authenticators that provide time-based or challenge-response outputs and smart cards such as the U.S. Government Personal Identity Verification (PIV) card or the Department of Defense (DoD) Common Access Card (CAC). In addition to authenticating users at the system level (i.e., at logon), organizations may employ authentication mechanisms at the application level, at their discretion, to provide increased security. Regardless of the type of access (i.e., local, network, remote), privileged accounts are authenticated using multi-factor options appropriate for the level of risk. Organizations can add additional security measures, such as additional or more rigorous authentication mechanisms, for specific types of access.</p>
+<p>Related: <a href="../ac5/">AC-5</a>, <a href="../ac6/">AC-6</a>.</p>
+<h3 id="2">2</h3>
+<h3 id="identification-and-authentication-organizational-users-multi-factor-authentication-to-non-privileged-accounts">Identification and Authentication (organizational Users) | Multi-factor Authentication to Non-privileged Accounts</h3>
+<p>Implement multi-factor authentication for access to non-privileged accounts.</p>
+<p>Multi-factor authentication requires the use of two or more different factors to achieve authentication. The authentication factors are defined as follows: something you know (e.g., a personal identification number [PIN]), something you have (e.g., a physical authenticator such as a cryptographic private key), or something you are (e.g., a biometric). Multi-factor authentication solutions that feature physical authenticators include hardware authenticators that provide time-based or challenge-response outputs and smart cards such as the U.S. Government Personal Identity Verification card or the DoD Common Access Card. In addition to authenticating users at the system level, organizations may also employ authentication mechanisms at the application level, at their discretion, to provide increased information security. Regardless of the type of access (i.e., local, network, remote), non-privileged accounts are authenticated using multi-factor options appropriate for the level of risk. Organizations can provide additional security measures, such as additional or more rigorous authentication mechanisms, for specific types of access.</p>
+<p>Related: <a href="../ac5/">AC-5</a>.</p>
+<h3 id="3">3</h3>
+<h3 id="identification-and-authentication-organizational-users-local-access-to-privileged-accounts">Identification and Authentication (organizational Users) | Local Access to Privileged Accounts</h3>
+<p>Withdrawn: Incorporated into <a href="./#1">IA-2(1)</a>.</p>
+<h3 id="4">4</h3>
+<h3 id="identification-and-authentication-organizational-users-local-access-to-non-privileged-accounts">Identification and Authentication (organizational Users) | Local Access to Non-privileged Accounts</h3>
+<p>Withdrawn: Incorporated into <a href="./#2">IA-2(2)</a>.</p>
+<h3 id="5">5</h3>
+<h3 id="identification-and-authentication-organizational-users-individual-authentication-with-group-authentication">Identification and Authentication (organizational Users) | Individual Authentication with Group Authentication</h3>
+<p>When shared accounts or authenticators are employed, require users to be individually authenticated before granting access to the shared accounts or resources.</p>
+<p>Individual authentication prior to shared group authentication mitigates the risk of using group accounts or authenticators.</p>
+<h3 id="6">6</h3>
+<h3 id="identification-and-authentication-organizational-users-access-to-accounts-separate-device">Identification and Authentication (organizational Users) | Access to Accounts —separate Device</h3>
+<p>Implement multi-factor authentication for [Selection (one or more): local; network; remote] access to [Selection (one or more): privileged accounts; non-privileged accounts] such that:</p>
+<p>(a) One of the factors is provided by a device separate from the system gaining access; and</p>
+<p>(b) The device meets [Assignment: organization-defined strength of mechanism requirements].</p>
+<p>The purpose of requiring a device that is separate from the system to which the user is attempting to gain access for one of the factors during multi-factor authentication is to reduce the likelihood of compromising authenticators or credentials stored on the system. Adversaries may be able to compromise such authenticators or credentials and subsequently impersonate authorized users. Implementing one of the factors on a separate device (e.g., a hardware token), provides a greater strength of mechanism and an increased level of assurance in the authentication process.</p>
+<p>Related: <a href="../ac6/">AC-6</a>.</p>
+<h3 id="7">7</h3>
+<h3 id="identification-and-authentication-organizational-users-network-access-to-non-privileged-accounts-separate-device">Identification and Authentication (organizational Users) | Network Access to Non-privileged Accounts — Separate Device</h3>
+<p>Withdrawn: Incorporated into <a href="./#6">IA-2(6)</a>.</p>
+<h3 id="8">8</h3>
+<h3 id="identification-and-authentication-organizational-users-access-to-accounts-replay-resistant">Identification and Authentication (organizational Users) | Access to Accounts — Replay Resistant</h3>
+<p>Implement replay-resistant authentication mechanisms for access to [Selection (one or more): privileged accounts; non-privileged accounts].</p>
+<p>Authentication processes resist replay attacks if it is impractical to achieve successful authentications by replaying previous authentication messages. Replay-resistant techniques include protocols that use nonces or challenges such as time synchronous or cryptographic authenticators.</p>
+<h3 id="9">9</h3>
+<h3 id="identification-and-authentication-organizational-users-network-access-to-non-privileged-accounts-replay-resistant">Identification and Authentication (organizational Users) | Network Access to Non-privileged Accounts — Replay Resistant</h3>
+<p>Withdrawn: Incorporated into <a href="./#8">IA-2(8)</a>.</p>
+<h3 id="10">10</h3>
+<h3 id="identification-and-authentication-organizational-users-single-sign-on">Identification and Authentication (organizational Users) | Single Sign-on</h3>
+<p>Provide a single sign-on capability for [Assignment: organization-defined system accounts and services].</p>
+<p>Single sign-on enables users to log in once and gain access to multiple system resources. Organizations consider the operational efficiencies provided by single sign-on capabilities with the risk introduced by allowing access to multiple systems via a single authentication event. Single sign-on can present opportunities to improve system security, for example by providing the ability to add multi-factor authentication for applications and systems (existing and new) that may not be able to natively support multi-factor authentication.</p>
+<h3 id="11">11</h3>
+<h3 id="identification-and-authentication-organizational-users-remote-access-separate-device">Identification and Authentication (organizational Users) | Remote Access — Separate Device</h3>
+<p>Withdrawn: Incorporated into <a href="./#6">IA-2(6)</a>.</p>
+<h3 id="12">12</h3>
+<h3 id="identification-and-authentication-organizational-users-acceptance-of-piv-credentials">Identification and Authentication (organizational Users) | Acceptance of PIV Credentials</h3>
+<p>Accept and electronically verify Personal Identity Verification-compliant credentials.</p>
+<p>Acceptance of Personal Identity Verification (PIV)-compliant credentials applies to organizations implementing logical access control and physical access control systems. PIV-compliant credentials are those credentials issued by federal agencies that conform to FIPS Publication 201 and supporting guidance documents. The adequacy and reliability of PIV card issuers are authorized using SP 800-79-2. Acceptance of PIV-compliant credentials includes derived PIV credentials, the use of which is addressed in SP 800-166. The DOD Common Access Card (CAC) is an example of a PIV credential.</p>
+<h3 id="13">13</h3>
+<h3 id="identification-and-authentication-organizational-users-out-of-band-authentication">Identification and Authentication (organizational Users) | Out-of-band Authentication</h3>
+<p>Implement the following out-of-band authentication mechanisms under [Assignment: organization-defined conditions]: [Assignment: organization-defined out-of-band authentication].</p>
+<p>Out-of-band authentication refers to the use of two separate communication paths to identify and authenticate users or devices to an information system. The first path (i.e., the in-band path) is used to identify and authenticate users or devices and is generally the path through which information flows. The second path (i.e., the out-of-band path) is used to independently verify the authentication and/or requested action. For example, a user authenticates via a notebook computer to a remote server to which the user desires access and requests some action of the server via that communication path. Subsequently, the server contacts the user via the user’s cell phone to verify that the requested action originated from the user. The user may confirm the intended action to an individual on the telephone or provide an authentication code via the telephone. Out-of-band authentication can be used to mitigate actual or suspected man-in the-middle attacks. The conditions or criteria for activation include suspicious activities, new threat indicators, elevated threat levels, or the impact or classification level of information in requested transactions.</p>
+<p>Related: <a href="../ia10/">IA-10</a>, <a href="../ia11/">IA-11</a>, <a href="../sc37/">SC-37</a>.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../ia3/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../ia3/" class="btn btn-xs btn-link">
+        IA-3 Device Identification and Authentication
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../ia1/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../ia1/" class="btn btn-xs btn-link">
+        IA-1 Policy and Procedures
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

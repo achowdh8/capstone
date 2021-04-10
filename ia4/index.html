@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>IA-4 Identifier Management - NIST 800-53 For Dummies</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "IA-4 Identifier Management", url: "#_top", children: [
+              {title: "Control", url: "#control" },
+              {title: "Discussion", url: "#discussion" },
+              {title: "Related Controls", url: "#related-controls" },
+              {title: "Enhancements", url: "#enhancements" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../ia5/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../ia5/" class="btn btn-xs btn-link">
+        IA-5 Authenticator Management
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../ia3/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../ia3/" class="btn btn-xs btn-link">
+        IA-3 Device Identification and Authentication
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="ia-4-identifier-management">IA-4 Identifier Management</h1>
+<h2 id="control">Control</h2>
+<p>Manage system identifiers by:</p>
+<p>a. Receiving authorization from [Assignment: organization-defined personnel or roles] to assign an individual, group, role, service, or device identifier;</p>
+<p>b. Selecting an identifier that identifies an individual, group, role, service, or device;</p>
+<p>c. Assigning the identifier to the intended individual, group, role, service, or device; and</p>
+<p>d. Preventing reuse of identifiers for [Assignment: organization-defined time period].</p>
+<h2 id="discussion">Discussion</h2>
+<p>Common device identifiers include Media Access Control (MAC) addresses, Internet Protocol (IP) addresses, or device-unique token identifiers. The management of individual identifiers is not applicable to shared system accounts. Typically, individual identifiers are the usernames of the system accounts assigned to those individuals. In such instances, the account management activities of AC-2 use account names provided by IA-4. Identifier management also addresses individual identifiers not necessarily associated with system accounts. Preventing the reuse of identifiers implies preventing the assignment of previously used individual, group, role, service, or device identifiers to different individuals, groups, roles, services, or devices.</p>
+<h2 id="related-controls">Related Controls</h2>
+<p><a href="../ac5/">AC-5</a>, <a href="../ia2/">IA-2</a>, <a href="../ia3/">IA-3</a>, <a href="../ia5/">IA-5</a>, <a href="../ia8/">IA-8</a>, <a href="../ia9/">IA-9</a>, <a href="../ia12/">IA-12</a>, <a href="../ma4/">MA-4</a>, <a href="../pe2/">PE-2</a>, <a href="../pe3/">PE-3</a>, <a href="../pe4/">PE-4</a>, <a href="../pl4/">PL-4</a>, <a href="../pm12/">PM-12</a>, <a href="../ps3/">PS-3</a>, <a href="../ps4/">PS-4</a>, <a href="../ps5/">PS-5</a>, <a href="../sc37/">SC-37</a>.</p>
+<h2 id="enhancements">Enhancements</h2>
+<h3 id="1">1</h3>
+<h3 id="identifier-management-prohibit-account-identifiers-as-public-identifiers">Identifier Management | Prohibit Account Identifiers as Public Identifiers</h3>
+<p>Prohibit the use of system account identifiers that are the same as public identifiers for individual accounts.</p>
+<p>Prohibiting account identifiers as public identifiers applies to any publicly disclosed account identifier used for communication such as, electronic mail and instant messaging. Prohibiting the use of systems account identifiers that are the same as some public identifier, such as the individual identifier section of an electronic mail address, makes it more difficult for adversaries to guess user identifiers. Prohibiting account identifiers as public identifiers without the implementation of other supporting controls only complicates guessing of identifiers. Additional protections are required for authenticators and credentials to protect the account.</p>
+<p>Related: <a href="../at2/">AT-2</a>, <a href="../pt7/">PT-7</a>.</p>
+<h3 id="2">2</h3>
+<h3 id="identifier-management-supervisor-authorization">Identifier Management | Supervisor Authorization</h3>
+<p>Withdrawn: Incorporated into <a href="../ia12/#1">IA-12(1)</a>.</p>
+<h3 id="3">3</h3>
+<h3 id="identifier-management-multiple-forms-of-certification">Identifier Management | Multiple Forms of Certification</h3>
+<p>Withdrawn: Incorporated into <a href="../ia12/#2">IA-12(2)</a>.</p>
+<h3 id="4">4</h3>
+<h3 id="identifier-management-identify-user-status">Identifier Management | Identify User Status</h3>
+<p>Manage individual identifiers by uniquely identifying each individual as [Assignment: organization-defined characteristic identifying individual status].</p>
+<p>Characteristics that identify the status of individuals include contractors, foreign nationals, and non-organizational users. Identifying the status of individuals by these characteristics provides additional information about the people with whom organizational personnel are communicating. For example, it might be useful for a government employee to know that one of the individuals on an email message is a contractor.</p>
+<h3 id="5">5</h3>
+<h3 id="identifier-management-dynamic-management">Identifier Management | Dynamic Management</h3>
+<p>Manage individual identifiers dynamically in accordance with [Assignment: organization-defined dynamic identifier policy].</p>
+<p>In contrast to conventional approaches to identification that presume static accounts for preregistered users, many distributed systems establish identifiers at runtime for entities that were previously unknown. When identifiers are established at runtime for previously unknown entities, organizations can anticipate and provision for the dynamic establishment of identifiers. Pre-established trust relationships and mechanisms with appropriate authorities to validate credentials and related identifiers are essential.</p>
+<p>Related: <a href="../ac16/">AC-16</a>.</p>
+<h3 id="6">6</h3>
+<h3 id="identifier-management-cross-organization-management">Identifier Management | Cross-organization Management</h3>
+<p>Coordinate with the following external organizations for cross-organization management of identifiers: [Assignment: organization-defined external organizations].</p>
+<p>Cross-organization identifier management provides the capability to identify individuals, groups, roles, or devices when conducting cross-organization activities involving the processing, storage, or transmission of information.</p>
+<p>Related: <a href="../au16/">AU-16</a>, <a href="../ia2/">IA-2</a>, <a href="../ia5/">IA-5</a>.</p>
+<h3 id="7">7</h3>
+<h3 id="identifier-management-in-person-registration">Identifier Management | In-person Registration</h3>
+<p>Withdrawn: Incorporated into <a href="../ia12/#4">IA-12(4)</a>.</p>
+<h3 id="8">8</h3>
+<h3 id="identifier-management-pairwise-pseudonymous-identifiers">Identifier Management | Pairwise Pseudonymous Identifiers</h3>
+<p>Generate pairwise pseudonymous identifiers.</p>
+<p>A pairwise pseudonymous identifier is an opaque unguessable subscriber identifier generated by an identity provider for use at a specific individual relying party. Generating distinct pairwise pseudonymous identifiers with no identifying information about a subscriber discourages subscriber activity tracking and profiling beyond the operational requirements established by an organization. The pairwise pseudonymous identifiers are unique to each relying party except in situations where relying parties can show a demonstrable relationship justifying an operational need for correlation, or all parties consent to being correlated in such a manner.</p>
+<p>Related: <a href="../ia5/">IA-5</a>.</p>
+<h3 id="9">9</h3>
+<h3 id="identifier-management-attribute-maintenance-and-protection">Identifier Management | Attribute Maintenance and Protection</h3>
+<p>Maintain the attributes for each uniquely identified individual, device, or service in [Assignment: organization-defined protected central storage].</p>
+<p>For each of the entities covered in IA-2, IA-3, IA-8, and IA-9, it is important to maintain the attributes for each authenticated entity on an ongoing basis in a central (protected) store.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../ia5/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../ia5/" class="btn btn-xs btn-link">
+        IA-5 Authenticator Management
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../ia3/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../ia3/" class="btn btn-xs btn-link">
+        IA-3 Device Identification and Authentication
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>IA-5 Authenticator Management - NIST 800-53 For Dummies</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "IA-5 Authenticator Management", url: "#_top", children: [
+              {title: "Control", url: "#control" },
+              {title: "Discussion", url: "#discussion" },
+              {title: "Related Controls", url: "#related-controls" },
+              {title: "Enhancements", url: "#enhancements" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../ia6/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../ia6/" class="btn btn-xs btn-link">
+        IA-6 Authentication Feedback
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../ia4/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../ia4/" class="btn btn-xs btn-link">
+        IA-4 Identifier Management
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="ia-5-authenticator-management">IA-5 Authenticator Management</h1>
+<h2 id="control">Control</h2>
+<p>Manage system authenticators by:</p>
+<p>a. Verifying, as part of the initial authenticator distribution, the identity of the individual, group, role, service, or device receiving the authenticator;</p>
+<p>b. Establishing initial authenticator content for any authenticators issued by the organization;</p>
+<p>c. Ensuring that authenticators have sufficient strength of mechanism for their intended use;</p>
+<p>d. Establishing and implementing administrative procedures for initial authenticator distribution, for lost or compromised or damaged authenticators, and for revoking authenticators;</p>
+<p>e. Changing default authenticators prior to first use;</p>
+<p>f. Changing or refreshing authenticators [Assignment: organization-defined time period by authenticator type] or when [Assignment: organization-defined events] occur;</p>
+<p>g. Protecting authenticator content from unauthorized disclosure and modification;</p>
+<p>h. Requiring individuals to take, and having devices implement, specific controls to protect authenticators; and</p>
+<p>i. Changing authenticators for group or role accounts when membership to those accounts changes.</p>
+<h2 id="discussion">Discussion</h2>
+<p>Authenticators include passwords, cryptographic devices, biometrics, certificates, one-time password devices, and ID badges. Device authenticators include certificates and passwords. Initial authenticator content is the actual content of the authenticator (e.g., the initial password). In contrast, the requirements for authenticator content contain specific criteria or characteristics (e.g., minimum password length). Developers may deliver system components with factory default authentication credentials (i.e., passwords) to allow for initial installation and configuration. Default authentication credentials are often well known, easily discoverable, and present a significant risk. The requirement to protect individual authenticators may be implemented via control PL-4 or PS-6 for authenticators in the possession of individuals and by controls AC-3, AC-6, and SC-28 for authenticators stored in organizational systems, including passwords stored in hashed or encrypted formats or files containing encrypted or hashed passwords accessible with administrator privileges.</p>
+<p>Systems support authenticator management by organization-defined settings and restrictions for various authenticator characteristics (e.g., minimum password length, validation time window for time synchronous one-time tokens, and number of allowed rejections during the verification stage of biometric authentication). Actions can be taken to safeguard individual authenticators, including maintaining possession of authenticators, not sharing authenticators with others, and immediately reporting lost, stolen, or compromised authenticators. Authenticator management includes issuing and revoking authenticators for temporary access when no longer needed.</p>
+<h2 id="related-controls">Related Controls</h2>
+<p><a href="../ac3/">AC-3</a>, <a href="../ac6/">AC-6</a>, <a href="../cm6/">CM-6</a>, <a href="../ia2/">IA-2</a>, <a href="../ia4/">IA-4</a>, <a href="../ia7/">IA-7</a>, <a href="../ia8/">IA-8</a>, <a href="../ia9/">IA-9</a>, <a href="../ma4/">MA-4</a>, <a href="../pe2/">PE-2</a>, <a href="../pl4/">PL-4</a>, <a href="../sc12/">SC-12</a>, <a href="../sc13/">SC-13</a>.</p>
+<h2 id="enhancements">Enhancements</h2>
+<h3 id="1">1</h3>
+<h3 id="authenticator-management-password-based-authentication">Authenticator Management | Password-based Authentication</h3>
+<p>For password-based authentication:</p>
+<p>(a) Maintain a list of commonly-used, expected, or compromised passwords and update the list [Assignment: organization-defined frequency] and when organizational passwords are suspected to have been compromised directly or indirectly;</p>
+<p>(b) Verify, when users create or update passwords, that the passwords are not found on the list of commonly-used, expected, or compromised passwords in IA-5(1)(a);</p>
+<p>(c) Transmit passwords only over cryptographically-protected channels;</p>
+<p>(d) Store passwords using an approved salted key derivation function, preferably using a keyed hash;</p>
+<p>(e) Require immediate selection of a new password upon account recovery;</p>
+<p>(f) Allow user selection of long passwords and passphrases, including spaces and all printable characters;</p>
+<p>(g) Employ automated tools to assist the user in selecting strong password authenticators; and</p>
+<p>(h) Enforce the following composition and complexity rules: [Assignment: organization-defined composition and complexity rules].</p>
+<p>Password-based authentication applies to passwords regardless of whether they are used in single-factor or multi-factor authentication. Long passwords or passphrases are preferable over shorter passwords. Enforced composition rules provide marginal security benefits while decreasing usability. However, organizations may choose to establish certain rules for password generation (e.g., minimum character length for long passwords) under certain circumstances and can enforce this requirement in IA-5(1)(h). Account recovery can occur, for example, in situations when a password is forgotten. Cryptographically protected passwords include salted one-way cryptographic hashes of passwords. The list of commonly used, compromised, or expected passwords includes passwords obtained from previous breach corpuses, dictionary words, and repetitive or sequential characters. The list includes context-specific words, such as the name of the service, username, and derivatives thereof.</p>
+<p>Related: <a href="../ia6/">IA-6</a>.</p>
+<h3 id="2">2</h3>
+<h3 id="authenticator-management-public-key-based-authentication">Authenticator Management | Public Key-based Authentication</h3>
+<p>(a) For public key-based authentication:</p>
+<p>(1) Enforce authorized access to the corresponding private key; and</p>
+<p>(2) Map the authenticated identity to the account of the individual or group; and</p>
+<p>(b) When public key infrastructure (PKI) is used:</p>
+<p>(1) Validate certificates by constructing and verifying a certification path to an accepted trust anchor, including checking certificate status information; and</p>
+<p>(2) Implement a local cache of revocation data to support path discovery and validation.</p>
+<p>Public key cryptography is a valid authentication mechanism for individuals, machines, and devices. For PKI solutions, status information for certification paths includes certificate revocation lists or certificate status protocol responses. For PIV cards, certificate validation involves the construction and verification of a certification path to the Common Policy Root trust anchor, which includes certificate policy processing. Implementing a local cache of revocation data to support path discovery and validation also supports system availability in situations where organizations are unable to access revocation information via the network.</p>
+<p>Related: <a href="../ia3/">IA-3</a>, <a href="../sc17/">SC-17</a>.</p>
+<h3 id="3">3</h3>
+<h3 id="authenticator-management-in-person-or-trusted-external-party-registration">Authenticator Management | In-person or Trusted External Party Registration</h3>
+<p>Withdrawn: Incorporated into <a href="../ia12/#4">IA-12(4)</a>.</p>
+<h3 id="4">4</h3>
+<h3 id="authenticator-management-automated-support-for-password-strength-determination">Authenticator Management | Automated Support for Password Strength Determination</h3>
+<p>Withdrawn: Incorporated into <a href="./#1">IA-5(1)</a>.</p>
+<h3 id="5">5</h3>
+<h3 id="authenticator-management-change-authenticators-prior-to-delivery">Authenticator Management | Change Authenticators Prior to Delivery</h3>
+<p>Require developers and installers of system components to provide unique authenticators or change default authenticators prior to delivery and installation.</p>
+<p>Changing authenticators prior to the delivery and installation of system components extends the requirement for organizations to change default authenticators upon system installation by requiring developers and/or installers to provide unique authenticators or change default authenticators for system components prior to delivery and/or installation. However, it typically does not apply to developers of commercial off-the-shelf information technology products. Requirements for unique authenticators can be included in acquisition documents prepared by organizations when procuring systems or system components.</p>
+<h3 id="6">6</h3>
+<h3 id="authenticator-management-protection-of-authenticators">Authenticator Management | Protection of Authenticators</h3>
+<p>Protect authenticators commensurate with the security category of the information to which use of the authenticator permits access.</p>
+<p>For systems that contain multiple security categories of information without reliable physical or logical separation between categories, authenticators used to grant access to the systems are protected commensurate with the highest security category of information on the systems. Security categories of information are determined as part of the security categorization process.</p>
+<p>Related: <a href="../ra2/">RA-2</a>.</p>
+<h3 id="7">7</h3>
+<h3 id="authenticator-management-no-embedded-unencrypted-static-authenticators">Authenticator Management | No Embedded Unencrypted Static Authenticators</h3>
+<p>Ensure that unencrypted static authenticators are not embedded in applications or other forms of static storage.</p>
+<p>In addition to applications, other forms of static storage include access scripts and function keys. Organizations exercise caution when determining whether embedded or stored authenticators are in encrypted or unencrypted form. If authenticators are used in the manner stored, then those representations are considered unencrypted authenticators.</p>
+<h3 id="8">8</h3>
+<h3 id="authenticator-management-multiple-system-accounts">Authenticator Management | Multiple System Accounts</h3>
+<p>Implement [Assignment: organization-defined security controls] to manage the risk of compromise due to individuals having accounts on multiple systems.</p>
+<p>When individuals have accounts on multiple systems and use the same authenticators such as passwords, there is the risk that a compromise of one account may lead to the compromise of other accounts. Alternative approaches include having different authenticators (passwords) on all systems, employing a single sign-on or federation mechanism, or using some form of one-time passwords on all systems. Organizations can also use rules of behavior (see PL-4) and access agreements (see PS-6) to mitigate the risk of multiple system accounts.</p>
+<p>Related: <a href="../ps6/">PS-6</a>.</p>
+<h3 id="9">9</h3>
+<h3 id="authenticator-management-federated-credential-management">Authenticator Management | Federated Credential Management</h3>
+<p>Use the following external organizations to federate credentials: [Assignment: organization-defined external organizations].</p>
+<p>Federation provides organizations with the capability to authenticate individuals and devices when conducting cross-organization activities involving the processing, storage, or transmission of information. Using a specific list of approved external organizations for authentication helps to ensure that those organizations are vetted and trusted.</p>
+<p>Related: <a href="../au7/">AU-7</a>, <a href="../au16/">AU-16</a>.</p>
+<h3 id="10">10</h3>
+<h3 id="authenticator-management-dynamic-credential-binding">Authenticator Management | Dynamic Credential Binding</h3>
+<p>Bind identities and authenticators dynamically using the following rules: [Assignment: organization-defined binding rules].</p>
+<p>Authentication requires some form of binding between an identity and the authenticator that is used to confirm the identity. In conventional approaches, binding is established by pre-provisioning both the identity and the authenticator to the system. For example, the binding between a username (i.e., identity) and a password (i.e., authenticator) is accomplished by provisioning the identity and authenticator as a pair in the system. New authentication techniques allow the binding between the identity and the authenticator to be implemented external to a system. For example, with smartcard credentials, the identity and authenticator are bound together on the smartcard. Using these credentials, systems can authenticate identities that have not been pre-provisioned, dynamically provisioning the identity after authentication. In these situations, organizations can anticipate the dynamic provisioning of identities. Pre-established trust relationships and mechanisms with appropriate authorities to validate identities and related credentials are essential.</p>
+<p>Related: <a href="../au16/">AU-16</a>, <a href="./">IA-5</a>.</p>
+<h3 id="11">11</h3>
+<h3 id="authenticator-management-hardware-token-based-authentication">Authenticator Management | Hardware Token-based Authentication</h3>
+<p>Withdrawn: Incorporated into <a href="../ia2/#1">IA-2(1)</a> and <a href="../ia2/#2">IA-2(2)</a>.</p>
+<h3 id="12">12</h3>
+<h3 id="authenticator-management-biometric-authentication-performance">Authenticator Management | Biometric Authentication Performance</h3>
+<p>For biometric-based authentication, employ mechanisms that satisfy the following biometric quality requirements [Assignment: organization-defined biometric quality requirements].</p>
+<p>Unlike password-based authentication, which provides exact matches of user-input passwords to stored passwords, biometric authentication does not provide exact matches. Depending on the type of biometric and the type of collection mechanism, there is likely to be some divergence from the presented biometric and the stored biometric that serves as the basis for comparison. Matching performance is the rate at which a biometric algorithm correctly results in a match for a genuine user and rejects other users. Biometric performance requirements include the match rate, which reflects the accuracy of the biometric matching algorithm used by a system.</p>
+<p>Related: <a href="../ac7/">AC-7</a>.</p>
+<h3 id="13">13</h3>
+<h3 id="authenticator-management-expiration-of-cached-authenticators">Authenticator Management | Expiration of Cached Authenticators</h3>
+<p>Prohibit the use of cached authenticators after [Assignment: organization-defined time period].</p>
+<p>Cached authenticators are used to authenticate to the local machine when the network is not available. If cached authentication information is out of date, the validity of the authentication information may be questionable.</p>
+<h3 id="14">14</h3>
+<h3 id="authenticator-management-managing-content-of-pki-trust-stores">Authenticator Management | Managing Content of PKI Trust Stores</h3>
+<p>For PKI-based authentication, employ an organization-wide methodology for managing the content of PKI trust stores installed across all platforms, including networks, operating systems, browsers, and applications.</p>
+<p>An organization-wide methodology for managing the content of PKI trust stores helps improve the accuracy and currency of PKI-based authentication credentials across the organization.</p>
+<h3 id="15">15</h3>
+<h3 id="authenticator-management-gsa-approved-products-and-services">Authenticator Management | GSA-approved Products and Services</h3>
+<p>Use only General Services Administration-approved products and services for identity, credential, and access management.</p>
+<p>General Services Administration (GSA)-approved products and services are products and services that have been approved through the GSA conformance program, where applicable, and posted to the GSA Approved Products List. GSA provides guidance for teams to design and build functional and secure systems that comply with Federal Identity, Credential, and Access Management (FICAM) policies, technologies, and implementation patterns.</p>
+<h3 id="16">16</h3>
+<h3 id="authenticator-management-in-person-or-trusted-external-party-authenticator-issuance">Authenticator Management | In-person or Trusted External Party Authenticator Issuance</h3>
+<p>Require that the issuance of [Assignment: organization-defined types of and/or specific authenticators] be conducted [Selection: in person; by a trusted external party] before [Assignment: organization-defined registration authority] with authorization by [Assignment: organization-defined personnel or roles].</p>
+<p>Issuing authenticators in person or by a trusted external party enhances and reinforces the trustworthiness of the identity proofing process.</p>
+<p>Related: <a href="../ia12/">IA-12</a>.</p>
+<h3 id="17">17</h3>
+<h3 id="authenticator-management-presentation-attack-detection-for-biometric-authenticators">Authenticator Management | Presentation Attack Detection for Biometric Authenticators</h3>
+<p>Employ presentation attack detection mechanisms for biometric-based authentication.</p>
+<p>Biometric characteristics do not constitute secrets. Such characteristics can be obtained by online web accesses, taking a picture of someone with a camera phone to obtain facial images with or without their knowledge, lifting from objects that someone has touched (e.g., a latent fingerprint), or capturing a high-resolution image (e.g., an iris pattern). Presentation attack detection technologies including liveness detection, can mitigate the risk of these types of attacks by making it difficult to produce artifacts intended to defeat the biometric sensor.</p>
+<p>Related: <a href="../ac7/">AC-7</a>.</p>
+<h3 id="18">18</h3>
+<h3 id="authenticator-management-password-managers">Authenticator Management | Password Managers</h3>
+<p>(a) Employ [Assignment: organization-defined password managers] to generate and manage passwords; and</p>
+<p>(b) Protect the passwords using [Assignment: organization-defined controls].</p>
+<p>For systems where static passwords are employed, it is often a challenge to ensure that the passwords are suitably complex and that the same passwords are not employed on multiple systems. A password manager is a solution to this problem as it automatically generates and stores strong and different passwords for various accounts. A potential risk of using password managers is that adversaries can target the collection of passwords generated by the password manager. Therefore, the collection of passwords requires protection including encrypting the passwords (see IA-5(1)(d)) and storing the collection offline in a token.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../ia6/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../ia6/" class="btn btn-xs btn-link">
+        IA-6 Authentication Feedback
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../ia4/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../ia4/" class="btn btn-xs btn-link">
+        IA-4 Identifier Management
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>
