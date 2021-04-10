@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>SI-7 Software, Firmware, and Information Integrity - NIST 800-53 For Dummies</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "SI-7 Software, Firmware, and Information Integrity", url: "#_top", children: [
+              {title: "Control", url: "#control" },
+              {title: "Discussion", url: "#discussion" },
+              {title: "Related Controls", url: "#related-controls" },
+              {title: "Enhancements", url: "#enhancements" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../si8/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../si8/" class="btn btn-xs btn-link">
+        SI-8 Spam Protection
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../si6/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../si6/" class="btn btn-xs btn-link">
+        SI-6 Security and Privacy Function Verification
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="si-7-software-firmware-and-information-integrity">SI-7 Software, Firmware, and Information Integrity</h1>
+<h2 id="control">Control</h2>
+<p>a. Employ integrity verification tools to detect unauthorized changes to the following software, firmware, and information: [Assignment: organization-defined software, firmware, and information]; and</p>
+<p>b. Take the following actions when unauthorized changes to the software, firmware, and information are detected: [Assignment: organization-defined actions].</p>
+<h2 id="discussion">Discussion</h2>
+<p>Unauthorized changes to software, firmware, and information can occur due to errors or malicious activity. Software includes operating systems (with key internal components, such as kernels or drivers), middleware, and applications. Firmware interfaces include Unified Extensible Firmware Interface (UEFI) and Basic Input/Output System (BIOS). Information includes personally identifiable information and metadata that contains security and privacy attributes associated with information. Integrity-checking mechanisms—including parity checks, cyclical redundancy checks, cryptographic hashes, and associated tools—can automatically monitor the integrity of systems and hosted applications.</p>
+<h2 id="related-controls">Related Controls</h2>
+<p><a href="../ac4/">AC-4</a>, <a href="../cm3/">CM-3</a>, <a href="../cm7/">CM-7</a>, <a href="../cm8/">CM-8</a>, <a href="../ma3/">MA-3</a>, <a href="../ma4/">MA-4</a>, <a href="../ra5/">RA-5</a>, <a href="../sa8/">SA-8</a>, <a href="../sa9/">SA-9</a>, <a href="../sa10/">SA-10</a>, <a href="../sc8/">SC-8</a>, <a href="../sc12/">SC-12</a>, <a href="../sc13/">SC-13</a>, <a href="../sc28/">SC-28</a>, <a href="../sc37/">SC-37</a>, <a href="../si3/">SI-3</a>, <a href="../sr3/">SR-3</a>, <a href="../sr4/">SR-4</a>, <a href="../sr5/">SR-5</a>, <a href="../sr6/">SR-6</a>, <a href="../sr9/">SR-9</a>, <a href="../sr10/">SR-10</a>, <a href="../sr11/">SR-11</a>.</p>
+<h2 id="enhancements">Enhancements</h2>
+<h3 id="1">1</h3>
+<h3 id="software-firmware-and-information-integrity-integrity-checks">Software, Firmware, and Information Integrity | Integrity Checks</h3>
+<p>Perform an integrity check of [Assignment: organization-defined software, firmware, and information] [Selection (one or more): at startup; at [Assignment: organization-defined transitional states or security-relevant events]; [Assignment: organization-defined frequency]].</p>
+<p>Security-relevant events include the identification of new threats to which organizational systems are susceptible and the installation of new hardware, software, or firmware. Transitional states include system startup, restart, shutdown, and abort.</p>
+<h3 id="2">2</h3>
+<h3 id="software-firmware-and-information-integrity-automated-notifications-of-integrity-violations">Software, Firmware, and Information Integrity | Automated Notifications of Integrity Violations</h3>
+<p>Employ automated tools that provide notification to [Assignment: organization-defined personnel or roles] upon discovering discrepancies during integrity verification.</p>
+<p>The employment of automated tools to report system and information integrity violations and to notify organizational personnel in a timely matter is essential to effective risk response. Personnel with an interest in system and information integrity violations include mission and business owners, system owners, senior agency information security official, senior agency official for privacy, system administrators, software developers, systems integrators, information security officers, and privacy officers.</p>
+<h3 id="3">3</h3>
+<h3 id="software-firmware-and-information-integrity-centrally-managed-integrity-tools">Software, Firmware, and Information Integrity | Centrally Managed Integrity Tools</h3>
+<p>Employ centrally managed integrity verification tools.</p>
+<p>Centrally managed integrity verification tools provides greater consistency in the application of such tools and can facilitate more comprehensive coverage of integrity verification actions.</p>
+<p>Related: <a href="../au3/">AU-3</a>, <a href="../si2/">SI-2</a>, <a href="../si8/">SI-8</a>.</p>
+<h3 id="4">4</h3>
+<h3 id="software-firmware-and-information-integrity-tamper-evident-packaging">Software, Firmware, and Information Integrity | Tamper-evident Packaging</h3>
+<p>Withdrawn: Incorporated into <a href="../sr9/">SR-9</a>.</p>
+<h3 id="5">5</h3>
+<h3 id="software-firmware-and-information-integrity-automated-response-to-integrity-violations">Software, Firmware, and Information Integrity | Automated Response to Integrity Violations</h3>
+<p>Automatically [Selection (one or more): shut the system down; restart the system; implement [Assignment: organization-defined controls]] when integrity violations are discovered.</p>
+<p>Organizations may define different integrity-checking responses by type of information, specific information, or a combination of both. Types of information include firmware, software, and user data. Specific information includes boot firmware for certain types of machines. The automatic implementation of controls within organizational systems includes reversing the changes, halting the system, or triggering audit alerts when unauthorized modifications to critical security files occur.</p>
+<h3 id="6">6</h3>
+<h3 id="software-firmware-and-information-integrity-cryptographic-protection">Software, Firmware, and Information Integrity | Cryptographic Protection</h3>
+<p>Implement cryptographic mechanisms to detect unauthorized changes to software, firmware, and information.</p>
+<p>Cryptographic mechanisms used to protect integrity include digital signatures and the computation and application of signed hashes using asymmetric cryptography, protecting the confidentiality of the key used to generate the hash, and using the public key to verify the hash information. Organizations that employ cryptographic mechanisms also consider cryptographic key management solutions.</p>
+<p>Related: <a href="../sc12/">SC-12</a>, <a href="../sc13/">SC-13</a>.</p>
+<h3 id="7">7</h3>
+<h3 id="software-firmware-and-information-integrity-integration-of-detection-and-response">Software, Firmware, and Information Integrity | Integration of Detection and Response</h3>
+<p>Incorporate the detection of the following unauthorized changes into the organizational incident response capability: [Assignment: organization-defined security-relevant changes to the system].</p>
+<p>Integrating detection and response helps to ensure that detected events are tracked, monitored, corrected, and available for historical purposes. Maintaining historical records is important for being able to identify and discern adversary actions over an extended time period and for possible legal actions. Security-relevant changes include unauthorized changes to established configuration settings or the unauthorized elevation of system privileges.</p>
+<p>Related: <a href="../au2/">AU-2</a>, <a href="../au6/">AU-6</a>, <a href="../ir4/">IR-4</a>, <a href="../ir5/">IR-5</a>, <a href="../si4/">SI-4</a>.</p>
+<h3 id="8">8</h3>
+<h3 id="software-firmware-and-information-integrity-auditing-capability-for-significant-events">Software, Firmware, and Information Integrity | Auditing Capability for Significant Events</h3>
+<p>Upon detection of a potential integrity violation, provide the capability to audit the event and initiate the following actions: [Selection (one or more): generate an audit record; alert current user; alert [Assignment: organization-defined personnel or roles]; [Assignment: organization-defined other actions]].</p>
+<p>Organizations select response actions based on types of software, specific software, or information for which there are potential integrity violations.</p>
+<p>Related: <a href="../au2/">AU-2</a>, <a href="../au6/">AU-6</a>, <a href="../au12/">AU-12</a>.</p>
+<h3 id="9">9</h3>
+<h3 id="software-firmware-and-information-integrity-verify-boot-process">Software, Firmware, and Information Integrity | Verify Boot Process</h3>
+<p>Verify the integrity of the boot process of the following system components: [Assignment: organization-defined system components].</p>
+<p>Ensuring the integrity of boot processes is critical to starting system components in known, trustworthy states. Integrity verification mechanisms provide a level of assurance that only trusted code is executed during boot processes.</p>
+<p>Related: <a href="../si6/">SI-6</a>.</p>
+<h3 id="10">10</h3>
+<h3 id="software-firmware-and-information-integrity-protection-of-boot-firmware">Software, Firmware, and Information Integrity | Protection of Boot Firmware</h3>
+<p>Implement the following mechanisms to protect the integrity of boot firmware in [Assignment: organization-defined system components]: [Assignment: organization-defined mechanisms].</p>
+<p>Unauthorized modifications to boot firmware may indicate a sophisticated, targeted attack. These types of targeted attacks can result in a permanent denial of service or a persistent malicious code presence. These situations can occur if the firmware is corrupted or if the malicious code is embedded within the firmware. System components can protect the integrity of boot firmware in organizational systems by verifying the integrity and authenticity of all updates to the firmware prior to applying changes to the system component and preventing unauthorized processes from modifying the boot firmware.</p>
+<p>Related: <a href="../si6/">SI-6</a>.</p>
+<h3 id="11">11</h3>
+<h3 id="software-firmware-and-information-integrity-confined-environments-with-limited-privileges">Software, Firmware, and Information Integrity | Confined Environments with Limited Privileges</h3>
+<p>Withdrawn: Moved to <a href="../cm7/#6">CM-7(6)</a>.</p>
+<h3 id="12">12</h3>
+<h3 id="software-firmware-and-information-integrity-integrity-verification">Software, Firmware, and Information Integrity | Integrity Verification</h3>
+<p>Require that the integrity of the following user-installed software be verified prior to execution: [Assignment: organization-defined user-installed software].</p>
+<p>Organizations verify the integrity of user-installed software prior to execution to reduce the likelihood of executing malicious code or programs that contains errors from unauthorized modifications. Organizations consider the practicality of approaches to verifying software integrity, including the availability of trustworthy checksums from software developers and vendors.</p>
+<p>Related: <a href="../cm11/">CM-11</a>.</p>
+<h3 id="13">13</h3>
+<h3 id="software-firmware-and-information-integrity-code-execution-in-protected-environments">Software, Firmware, and Information Integrity | Code Execution in Protected Environments</h3>
+<p>Withdrawn: Moved to <a href="../cm7/#7">CM-7(7)</a>.</p>
+<h3 id="14">14</h3>
+<h3 id="software-firmware-and-information-integrity-binary-or-machine-executable-code">Software, Firmware, and Information Integrity | Binary or Machine Executable Code</h3>
+<p>Withdrawn: Moved to <a href="../cm7/#8">CM-7(8)</a>.</p>
+<h3 id="15">15</h3>
+<h3 id="software-firmware-and-information-integrity-code-authentication">Software, Firmware, and Information Integrity | Code Authentication</h3>
+<p>Implement cryptographic mechanisms to authenticate the following software or firmware components prior to installation: [Assignment: organization-defined software or firmware components].</p>
+<p>Cryptographic authentication includes verifying that software or firmware components have been digitally signed using certificates recognized and approved by organizations. Code signing is an effective method to protect against malicious code. Organizations that employ cryptographic mechanisms also consider cryptographic key management solutions.</p>
+<p>Related: <a href="../cm5/">CM-5</a>, <a href="../sc12/">SC-12</a>, <a href="../sc13/">SC-13</a>.</p>
+<h3 id="16">16</h3>
+<h3 id="software-firmware-and-information-integrity-time-limit-on-process-execution-without-supervision">Software, Firmware, and Information Integrity | Time Limit on Process Execution Without Supervision</h3>
+<p>Prohibit processes from executing without supervision for more than [Assignment: organization-defined time period].</p>
+<p>Placing a time limit on process execution without supervision is intended to apply to processes for which typical or normal execution periods can be determined and situations in which organizations exceed such periods. Supervision includes timers on operating systems, automated responses, and manual oversight and response when system process anomalies occur.</p>
+<h3 id="17">17</h3>
+<h3 id="software-firmware-and-information-integrity-runtime-application-self-protection">Software, Firmware, and Information Integrity | Runtime Application Self-protection</h3>
+<p>Implement [Assignment: organization-defined controls] for application self-protection at runtime.</p>
+<p>Runtime application self-protection employs runtime instrumentation to detect and block the exploitation of software vulnerabilities by taking advantage of information from the software in execution. Runtime exploit prevention differs from traditional perimeter-based protections such as guards and firewalls which can only detect and block attacks by using network information without contextual awareness. Runtime application self-protection technology can reduce the susceptibility of software to attacks by monitoring its inputs and blocking those inputs that could allow attacks. It can also help protect the runtime environment from unwanted changes and tampering. When a threat is detected, runtime application self-protection technology can prevent exploitation and take other actions (e.g., sending a warning message to the user, terminating the user's session, terminating the application, or sending an alert to organizational personnel). Runtime application self-protection solutions can be deployed in either a monitor or protection mode.</p>
+<p>Related: <a href="../si16/">SI-16</a>.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../si8/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../si8/" class="btn btn-xs btn-link">
+        SI-8 Spam Protection
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../si6/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../si6/" class="btn btn-xs btn-link">
+        SI-6 Security and Privacy Function Verification
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

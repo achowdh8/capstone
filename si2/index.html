@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>SI-2 Flaw Remediation - NIST 800-53 For Dummies</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "SI-2 Flaw Remediation", url: "#_top", children: [
+              {title: "Control", url: "#control" },
+              {title: "Discussion", url: "#discussion" },
+              {title: "Related Controls", url: "#related-controls" },
+              {title: "Enhancements", url: "#enhancements" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../si3/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../si3/" class="btn btn-xs btn-link">
+        SI-3 Malicious Code Protection
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../si1/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../si1/" class="btn btn-xs btn-link">
+        SI-1 Policy and Procedures
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="si-2-flaw-remediation">SI-2 Flaw Remediation</h1>
+<h2 id="control">Control</h2>
+<p>a. Identify, report, and correct system flaws;</p>
+<p>b. Test software and firmware updates related to flaw remediation for effectiveness and potential side effects before installation;</p>
+<p>c. Install security-relevant software and firmware updates within [Assignment: organization-defined time period] of the release of the updates; and</p>
+<p>d. Incorporate flaw remediation into the organizational configuration management process.</p>
+<h2 id="discussion">Discussion</h2>
+<p>The need to remediate system flaws applies to all types of software and firmware. Organizations identify systems affected by software flaws, including potential vulnerabilities resulting from those flaws, and report this information to designated organizational personnel with information security and privacy responsibilities. Security-relevant updates include patches, service packs, and malicious code signatures. Organizations also address flaws discovered during assessments, continuous monitoring, incident response activities, and system error handling. By incorporating flaw remediation into configuration management processes, required remediation actions can be tracked and verified.</p>
+<p>Organization-defined time periods for updating security-relevant software and firmware may vary based on a variety of risk factors, including the security category of the system, the criticality of the update (i.e., severity of the vulnerability related to the discovered flaw), the organizational risk tolerance, the mission supported by the system, or the threat environment. Some types of flaw remediation may require more testing than other types. Organizations determine the type of testing needed for the specific type of flaw remediation activity under consideration and the types of changes that are to be configuration-managed. In some situations, organizations may determine that the testing of software or firmware updates is not necessary or practical, such as when implementing simple malicious code signature updates. In testing decisions, organizations consider whether security-relevant software or firmware updates are obtained from authorized sources with appropriate digital signatures.</p>
+<h2 id="related-controls">Related Controls</h2>
+<p><a href="../ca5/">CA-5</a>, <a href="../cm3/">CM-3</a>, <a href="../cm4/">CM-4</a>, <a href="../cm5/">CM-5</a>, <a href="../cm6/">CM-6</a>, <a href="../cm8/">CM-8</a>, <a href="../ma2/">MA-2</a>, <a href="../ra5/">RA-5</a>, <a href="../sa8/">SA-8</a>, <a href="../sa10/">SA-10</a>, <a href="../sa11/">SA-11</a>, <a href="../si3/">SI-3</a>, <a href="../si5/">SI-5</a>, <a href="../si7/">SI-7</a>, <a href="../si11/">SI-11</a>.</p>
+<h2 id="enhancements">Enhancements</h2>
+<h3 id="1">1</h3>
+<h3 id="flaw-remediation-central-management">Flaw Remediation | Central Management</h3>
+<p>Withdrawn: Incorporated into <a href="../pl9/">PL-9</a>.</p>
+<h3 id="2">2</h3>
+<h3 id="flaw-remediation-automated-flaw-remediation-status">Flaw Remediation | Automated Flaw Remediation Status</h3>
+<p>Determine if system components have applicable security-relevant software and firmware updates installed using [Assignment: organization-defined automated mechanisms] [Assignment: organization-defined frequency].</p>
+<p>Automated mechanisms can track and determine the status of known flaws for system components.</p>
+<p>Related: <a href="../ca7/">CA-7</a>, <a href="../si4/">SI-4</a>.</p>
+<h3 id="3">3</h3>
+<h3 id="flaw-remediation-time-to-remediate-flaws-and-benchmarks-for-corrective-actions">Flaw Remediation | Time to Remediate Flaws and Benchmarks for Corrective Actions</h3>
+<p>(a) Measure the time between flaw identification and flaw remediation; and</p>
+<p>(b) Establish the following benchmarks for taking corrective actions: [Assignment: organization-defined benchmarks].</p>
+<p>Organizations determine the time it takes on average to correct system flaws after such flaws have been identified and subsequently establish organizational benchmarks (i.e., time frames) for taking corrective actions. Benchmarks can be established by the type of flaw or the severity of the potential vulnerability if the flaw can be exploited.</p>
+<h3 id="4">4</h3>
+<h3 id="flaw-remediation-automated-patch-management-tools">Flaw Remediation | Automated Patch Management Tools</h3>
+<p>Employ automated patch management tools to facilitate flaw remediation to the following system components: [Assignment: organization-defined system components].</p>
+<p>Using automated tools to support patch management helps to ensure the timeliness and completeness of system patching operations.</p>
+<h3 id="5">5</h3>
+<h3 id="flaw-remediation-automatic-software-and-firmware-updates">Flaw Remediation | Automatic Software and Firmware Updates</h3>
+<p>Install [Assignment: organization-defined security-relevant software and firmware updates] automatically to [Assignment: organization-defined system components].</p>
+<p>Due to system integrity and availability concerns, organizations consider the methodology used to carry out automatic updates. Organizations balance the need to ensure that the updates are installed as soon as possible with the need to maintain configuration management and control with any mission or operational impacts that automatic updates might impose.</p>
+<h3 id="6">6</h3>
+<h3 id="flaw-remediation-removal-of-previous-versions-of-software-and-firmware">Flaw Remediation | Removal of Previous Versions of Software and Firmware</h3>
+<p>Remove previous versions of [Assignment: organization-defined software and firmware components] after updated versions have been installed.</p>
+<p>Previous versions of software or firmware components that are not removed from the system after updates have been installed may be exploited by adversaries. Some products may automatically remove previous versions of software and firmware from the system.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../si3/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../si3/" class="btn btn-xs btn-link">
+        SI-3 Malicious Code Protection
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../si1/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../si1/" class="btn btn-xs btn-link">
+        SI-1 Policy and Procedures
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>
