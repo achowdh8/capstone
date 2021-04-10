@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>AU-3 Content of Audit Records - NIST 800-53 For Dummies</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "AU-3 Content of Audit Records", url: "#_top", children: [
+              {title: "Control", url: "#control" },
+              {title: "Discussion", url: "#discussion" },
+              {title: "Related Controls", url: "#related-controls" },
+              {title: "Enhancements", url: "#enhancements" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../au4/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../au4/" class="btn btn-xs btn-link">
+        AU-4 Audit Log Storage Capacity
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../au2/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../au2/" class="btn btn-xs btn-link">
+        AU-2 Event Logging
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="au-3-content-of-audit-records">AU-3 Content of Audit Records</h1>
+<h2 id="control">Control</h2>
+<p>Ensure that audit records contain information that establishes the following:</p>
+<p>a. What type of event occurred;</p>
+<p>b. When the event occurred;</p>
+<p>c. Where the event occurred;</p>
+<p>d. Source of the event;</p>
+<p>e. Outcome of the event; and </p>
+<p>f. Identity of any individuals, subjects, or objects/entities associated with the event.</p>
+<h2 id="discussion">Discussion</h2>
+<p>Audit record content that may be necessary to support the auditing function includes event descriptions (item a), time stamps (item b), source and destination addresses (item c), user or process identifiers (items d and f), success or fail indications (item e), and filenames involved (items a, c, e, and f) . Event outcomes include indicators of event success or failure and event-specific results, such as the system security and privacy posture after the event occurred. Organizations consider how audit records can reveal information about individuals that may give rise to privacy risks and how best to mitigate such risks. For example, there is the potential to reveal personally identifiable information in the audit trail, especially if the trail records inputs or is based on patterns or time of usage.</p>
+<h2 id="related-controls">Related Controls</h2>
+<p><a href="../au2/">AU-2</a>, <a href="../au8/">AU-8</a>, <a href="../au12/">AU-12</a>, <a href="../au14/">AU-14</a>, <a href="../ma4/">MA-4</a>, <a href="../pl9/">PL-9</a>, <a href="../sa8/">SA-8</a>, <a href="../si7/">SI-7</a>, <a href="../si11/">SI-11</a></p>
+<h2 id="enhancements">Enhancements</h2>
+<h3 id="1">1</h3>
+<h3 id="content-of-audit-records-additional-audit-information">Content of Audit Records | Additional Audit Information</h3>
+<p>Generate audit records containing the following additional information: [Assignment: organization-defined additional information].</p>
+<p>The ability to add information generated in audit records is dependent on system functionality to configure the audit record content. Organizations may consider additional information in audit records including, but not limited to, access control or flow control rules invoked and individual identities of group account users. Organizations may also consider limiting additional audit record information to only information that is explicitly needed for audit requirements. This facilitates the use of audit trails and audit logs by not including information in audit records that could potentially be misleading, make it more difficult to locate information of interest, or increase the risk to individuals' privacy.</p>
+<h3 id="2">2</h3>
+<h3 id="content-of-audit-records-centralized-management-of-planned-audit-record-content">Content of Audit Records | Centralized Management of Planned Audit Record Content</h3>
+<p>Withdrawn: Incorporated into <a href="../pl9/">PL-9</a>.</p>
+<h3 id="3">3</h3>
+<h3 id="content-of-audit-records-limit-personally-identifiable-information-elements">Content of Audit Records | Limit Personally Identifiable Information Elements</h3>
+<p>Limit personally identifiable information contained in audit records to the following elements identified in the privacy risk assessment: [Assignment: organization-defined elements].</p>
+<p>Limiting personally identifiable information in audit records when such information is not needed for operational purposes helps reduce the level of privacy risk created by a system.</p>
+<p>Related: <a href="../ra3/">RA-3</a></p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../au4/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../au4/" class="btn btn-xs btn-link">
+        AU-4 Audit Log Storage Capacity
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../au2/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../au2/" class="btn btn-xs btn-link">
+        AU-2 Event Logging
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

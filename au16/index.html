@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>AU-16 Cross-organizational Audit Logging - NIST 800-53 For Dummies</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "AU-16 Cross-organizational Audit Logging", url: "#_top", children: [
+              {title: "Control", url: "#control" },
+              {title: "Discussion", url: "#discussion" },
+              {title: "Related Controls", url: "#related-controls" },
+              {title: "Enhancements", url: "#enhancements" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../ca1/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../ca1/" class="btn btn-xs btn-link">
+        CA-1 Policy and Procedures
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../au15/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../au15/" class="btn btn-xs btn-link">
+        AU-15 Alternate Audit Logging Capability
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="au-16-cross-organizational-audit-logging">AU-16 Cross-organizational Audit Logging</h1>
+<h2 id="control">Control</h2>
+<p>Employ [Assignment: organization-defined methods] for coordinating [Assignment: organization-defined audit information] among external organizations when audit information is transmitted across organizational boundaries.</p>
+<h2 id="discussion">Discussion</h2>
+<p>When organizations use systems or services of external organizations, the audit logging capability necessitates a coordinated, cross-organization approach. For example, maintaining the identity of individuals who request specific services across organizational boundaries may often be difficult, and doing so may prove to have significant performance and privacy ramifications. Therefore, it is often the case that cross-organizational audit logging simply captures the identity of individuals who issue requests at the initial system, and subsequent systems record that the requests originated from authorized individuals. Organizations consider including processes for coordinating audit information requirements and protection of audit information in information exchange agreements.</p>
+<h2 id="related-controls">Related Controls</h2>
+<p><a href="../au3/">AU-3</a>, <a href="../au6/">AU-6</a>, <a href="../au7/">AU-7</a>, <a href="../ca3/">CA-3</a>, <a href="../pt7/">PT-7</a>.</p>
+<h2 id="enhancements">Enhancements</h2>
+<h3 id="1">1</h3>
+<h3 id="cross-organizational-audit-logging-identity-preservation">Cross-organizational Audit Logging | Identity Preservation</h3>
+<p>Preserve the identity of individuals in cross-organizational audit trails.</p>
+<p>Identity preservation is applied when there is a need to be able to trace actions that are performed across organizational boundaries to a specific individual.</p>
+<p>Related: <a href="../ia2/">IA-2</a>, <a href="../ia4/">IA-4</a>, <a href="../ia5/">IA-5</a>, <a href="../ia8/">IA-8</a>.</p>
+<h3 id="2">2</h3>
+<h3 id="cross-organizational-audit-logging-sharing-of-audit-information">Cross-organizational Audit Logging | Sharing of Audit Information</h3>
+<p>Provide cross-organizational audit information to [Assignment: organization-defined organizations] based on [Assignment: organization-defined cross-organizational sharing agreements].</p>
+<p>Due to the distributed nature of the audit information, cross-organization sharing of audit information may be essential for effective analysis of the auditing being performed. For example, the audit records of one organization may not provide sufficient information to determine the appropriate or inappropriate use of organizational information resources by individuals in other organizations. In some instances, only individuals’ home organizations have the appropriate knowledge to make such determinations, thus requiring the sharing of audit information among organizations.</p>
+<p>Related: <a href="../ir4/">IR-4</a>, <a href="../si4/">SI-4</a>.</p>
+<h3 id="3">3</h3>
+<h3 id="cross-organizational-audit-logging-disassociability">Cross-organizational Audit Logging | Disassociability</h3>
+<p>Implement [Assignment: organization-defined measures] to disassociate individuals from audit information transmitted across organizational boundaries.</p>
+<p>Preserving identities in audit trails could have privacy ramifications, such as enabling the tracking and profiling of individuals, but may not be operationally necessary. These risks could be further amplified when transmitting information across organizational boundaries. Implementing privacy-enhancing cryptographic techniques can disassociate individuals from audit information and reduce privacy risk while maintaining accountability.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../ca1/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../ca1/" class="btn btn-xs btn-link">
+        CA-1 Policy and Procedures
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../au15/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../au15/" class="btn btn-xs btn-link">
+        AU-15 Alternate Audit Logging Capability
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

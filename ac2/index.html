@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>AC-2 Account Management - NIST 800-53 For Dummies</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "AC-2 Account Management", url: "#_top", children: [
+              {title: "Control", url: "#control" },
+              {title: "Discussion", url: "#discussion" },
+              {title: "Related Controls", url: "#related-controls" },
+              {title: "Enhancements", url: "#enhancements" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../ac3/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../ac3/" class="btn btn-xs btn-link">
+        AC-3 Access Enforcement
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../ac1/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../ac1/" class="btn btn-xs btn-link">
+        AC-1 Policy and Procedures
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="ac-2-account-management">AC-2 Account Management</h1>
+<h2 id="control">Control</h2>
+<p>a. Define and document the types of accounts allowed and specifically prohibited for use within the system;</p>
+<p>b. Assign account managers;</p>
+<p>c. Require [Assignment: organization-defined prerequisites and criteria] for group and role membership;</p>
+<p>d. Specify:</p>
+<ol>
+<li>Authorized users of the system;</li>
+<li>Group and role membership; and</li>
+<li>Access authorizations (i.e., privileges) and [Assignment: organization-defined attributes (as required)] for each account;</li>
+</ol>
+<p>e. Require approvals by [Assignment: organization-defined personnel or roles] for requests to create accounts;</p>
+<p>f. Create, enable, modify, disable, and remove accounts in accordance with [Assignment: organization-defined policy, procedures, prerequisites, and criteria];</p>
+<p>g. Monitor the use of accounts;</p>
+<p>h. Notify account managers and [Assignment: organization-defined personnel or roles] within:</p>
+<ol>
+<li>[Assignment: organization-defined time period] when accounts are no longer required;</li>
+<li>[Assignment: organization-defined time period] when users are terminated or transferred; and</li>
+<li>[Assignment: organization-defined time period] when system usage or need-to-know changes for an individual;</li>
+</ol>
+<p>i. Authorize access to the system based on:</p>
+<ol>
+<li>A valid access authorization;</li>
+<li>Intended system usage; and</li>
+<li>[Assignment: organization-defined attributes (as required)];</li>
+</ol>
+<p>j. Review accounts for compliance with account management requirements [Assignment: organization-defined frequency];</p>
+<p>k. Establish and implement a process for changing shared or group account authenticators (if deployed) when individuals are removed from the group; and</p>
+<p>l. Align account management processes with personnel termination and transfer processes.</p>
+<h2 id="discussion">Discussion</h2>
+<p>Examples of system account types include individual, shared, group, system, guest, anonymous, emergency, developer, temporary, and service. Identification of authorized system users and the specification of access privileges reflect the requirements in other controls in the security plan. Users requiring administrative privileges on system accounts receive additional scrutiny by organizational personnel responsible for approving such accounts and privileged access, including system owner, mission or business owner, senior agency information security officer, or senior agency official for privacy. Types of accounts that organizations may wish to prohibit due to increased risk include shared, group, emergency, anonymous, temporary, and guest accounts.
+Where access involves personally identifiable information, security programs collaborate with the senior agency official for privacy to establish the specific conditions for group and role membership; specify authorized users, group and role membership, and access authorizations for each account; and create, adjust, or remove system accounts in accordance with organizational policies. Policies can include such information as account expiration dates or other factors that trigger the disabling of accounts. Organizations may choose to define access privileges or other attributes by account, type of account, or a combination of the two. Examples of other attributes required for authorizing access include restrictions on time of day, day of week, and point of origin. In defining other system account attributes, organizations consider system-related requirements and mission/business requirements. Failure to consider these factors could affect system availability.
+Temporary and emergency accounts are intended for short-term use. Organizations establish temporary accounts as part of normal account activation procedures when there is a need for short-term accounts without the demand for immediacy in account activation. Organizations establish emergency accounts in response to crisis situations and with the need for rapid account activation. Therefore, emergency account activation may bypass normal account authorization processes. Emergency and temporary accounts are not to be confused with infrequently used accounts, including local logon accounts used for special tasks or when network resources are unavailable (may also be known as accounts of last resort). Such accounts remain available and are not subject to automatic disabling or removal dates. Conditions for disabling or deactivating accounts include when shared/group, emergency, or temporary accounts are no longer required and when individuals are transferred or terminated. Changing shared/group authenticators when members leave the group is intended to ensure that former group members do not retain access to the shared or group account. Some types of system accounts may require specialized training.</p>
+<h2 id="related-controls">Related Controls</h2>
+<p><a href="../ac3/">AC-3</a>, <a href="../ac5/">AC-5</a>, <a href="../ac6/">AC-6</a>, <a href="../ac17/">AC-17</a>, <a href="../ac18/">AC-18</a>, <a href="../ac20/">AC-20</a>, <a href="../ac24/">AC-24</a>, <a href="../au2/">AU-2</a>, <a href="../au12/">AU-12</a>, <a href="../cm5/">CM-5</a>, <a href="../ia2/">IA-2</a>, <a href="../ia4/">IA-4</a>, <a href="../ia5/">IA-5</a>, <a href="../ia8/">IA-8</a>, <a href="../ma3/">MA-3</a>, <a href="../ma5/">MA-5</a>, <a href="../pe2/">PE-2</a>, <a href="../pl4/">PL-4</a>, <a href="../ps2/">PS-2</a>, <a href="../ps4/">PS-4</a>, <a href="../ps5/">PS-5</a>, <a href="../ps7/">PS-7</a>, <a href="../pt2/">PT-2</a>, <a href="../pt3/">PT-3</a>, <a href="../sc7/">SC-7</a>, <a href="../sc12/">SC-12</a>, <a href="../sc13/">SC-13</a>, <a href="../sc37/">SC-37</a>.</p>
+<h2 id="enhancements">Enhancements</h2>
+<h3 id="1">1</h3>
+<h3 id="account-management-automated-system-account-management">Account Management | Automated System Account Management</h3>
+<p>Support the management of system accounts using [Assignment: organization-defined automated mechanisms].</p>
+<p>Automated system account management includes using automated mechanisms to create, enable, modify, disable, and remove accounts; notify account managers when an account is created, enabled, modified, disabled, or removed, or when users are terminated or transferred; monitor system account usage; and report atypical system account usage. Automated mechanisms can include internal system functions and email, telephonic, and text messaging notifications.</p>
+<h3 id="2">2</h3>
+<h3 id="account-management-automated-temporary-and-emergency-account-management">Account Management | Automated Temporary and Emergency Account Management</h3>
+<p>Automatically [Selection: remove; disable] temporary and emergency accounts after [Assignment: organization-defined time period for each type of account].</p>
+<p>Management of temporary and emergency accounts includes the removal or disabling of such accounts automatically after a predefined time period rather than at the convenience of the system administrator. Automatic removal or disabling of accounts provides a more consistent implementation.</p>
+<h3 id="3">3</h3>
+<h3 id="account-management-disable-accounts">Account Management | Disable Accounts</h3>
+<p>Disable accounts within [Assignment: organization-defined time period] when the accounts:</p>
+<p>(a) Have expired;</p>
+<p>(b) Are no longer associated with a user or individual;</p>
+<p>(c) Are in violation of organizational policy; or</p>
+<p>(d) Have been inactive for [Assignment: organization-defined time period].</p>
+<p>Disabling expired, inactive, or otherwise anomalous accounts supports the concepts of least privilege and least functionality which reduce the attack surface of the system.</p>
+<h3 id="4">4</h3>
+<h3 id="account-management-automated-audit-actions">Account Management | Automated Audit Actions</h3>
+<p>Automatically audit account creation, modification, enabling, disabling, and removal actions.</p>
+<p>Account management audit records are defined in accordance with AU-2 and reviewed, analyzed, and reported in accordance with AU-6.</p>
+<p>Related: <a href="../au2/">AU-2</a>, <a href="../au6/">AU-6</a>.</p>
+<h3 id="5">5</h3>
+<h3 id="account-management-inactivity-logout">Account Management | Inactivity Logout</h3>
+<p>Require that users log out when [Assignment: organization-defined time period of expected inactivity or description of when to log out].</p>
+<p>Inactivity logout is behavior- or policy-based and requires users to take physical action to log out when they are expecting inactivity longer than the defined period. Automatic enforcement of inactivity logout is addressed by AC-11.</p>
+<p>Related: <a href="../ac11/">AC-11</a>.</p>
+<h3 id="6">6</h3>
+<h3 id="account-management-dynamic-privilege-management">Account Management | Dynamic Privilege Management</h3>
+<p>Implement [Assignment: organization-defined dynamic privilege management capabilities].</p>
+<p>In contrast to access control approaches that employ static accounts and predefined user privileges, dynamic access control approaches rely on runtime access control decisions facilitated by dynamic privilege management, such as attribute-based access control. While user identities remain relatively constant over time, user privileges typically change more frequently based on ongoing mission or business requirements and the operational needs of organizations. An example of dynamic privilege management is the immediate revocation of privileges from users as opposed to requiring that users terminate and restart their sessions to reflect changes in privileges. Dynamic privilege management can also include mechanisms that change user privileges based on dynamic rules as opposed to editing specific user profiles. Examples include automatic adjustments of user privileges if they are operating out of their normal work times, if their job function or assignment changes, or if systems are under duress or in emergency situations. Dynamic privilege management includes the effects of privilege changes, for example, when there are changes to encryption keys used for communications.</p>
+<p>Related: <a href="../ac16/">AC-16</a>.</p>
+<h3 id="7">7</h3>
+<h3 id="account-management-privileged-user-accounts">Account Management | Privileged User Accounts</h3>
+<p>(a) Establish and administer privileged user accounts in accordance with [Selection: a role-based access scheme; an attribute-based access scheme];</p>
+<p>(b) Monitor privileged role or attribute assignments;</p>
+<p>(c) Monitor changes to roles or attributes; and</p>
+<p>(d) Revoke access when privileged role or attribute assignments are no longer appropriate.</p>
+<p>Privileged roles are organization-defined roles assigned to individuals that allow those individuals to perform certain security-relevant functions that ordinary users are not authorized to perform. Privileged roles include key management, account management, database administration, system and network administration, and web administration. A role-based access scheme organizes permitted system access and privileges into roles. In contrast, an attribute-based access scheme specifies allowed system access and privileges based on attributes.</p>
+<h3 id="8">8</h3>
+<h3 id="account-management-dynamic-account-management">Account Management | Dynamic Account Management</h3>
+<p>Create, activate, manage, and deactivate [Assignment: organization-defined system accounts] dynamically.</p>
+<p>Approaches for dynamically creating, activating, managing, and deactivating system accounts rely on automatically provisioning the accounts at runtime for entities that were previously unknown. Organizations plan for the dynamic management, creation, activation, and deactivation of system accounts by establishing trust relationships, business rules, and mechanisms with appropriate authorities to validate related authorizations and privileges.</p>
+<p>Related: <a href="../ac16/">AC-16</a>.</p>
+<h3 id="9">9</h3>
+<h3 id="account-management-restrictions-on-use-of-shared-and-group-accounts">Account Management | Restrictions on Use of Shared and Group Accounts</h3>
+<p>Only permit the use of shared and group accounts that meet [Assignment: organization-defined conditions for establishing shared and group accounts].</p>
+<p>Before permitting the use of shared or group accounts, organizations consider the increased risk due to the lack of accountability with such accounts.</p>
+<h3 id="10">10</h3>
+<h3 id="account-management-shared-and-group-account-credential-change">Account Management | Shared and Group Account Credential Change</h3>
+<p>Withdrawn. Incorporated into <a href="./">AC-2k</a>.</p>
+<h3 id="11">11</h3>
+<h3 id="account-management-usage-conditions">Account Management | Usage Conditions</h3>
+<p>Enforce [Assignment: organization-defined circumstances and/or usage conditions] for  [Assignment: organization-defined system accounts].</p>
+<p>Specifying and enforcing usage conditions helps to enforce the principle of least privilege, increase user accountability, and enable effective account monitoring. Account monitoring includes alerts generated if the account is used in violation of organizational parameters. Organizations can describe specific conditions or circumstances under which system accounts can be used, such as by restricting usage to certain days of the week, time of day, or specific durations of time.</p>
+<h3 id="12">12</h3>
+<h3 id="account-management-account-monitoring-for-atypical-usage">Account Management | Account Monitoring for Atypical Usage</h3>
+<p>(a) Monitor system accounts for [Assignment: organization-defined atypical usage]; and</p>
+<p>(b) Report atypical usage of system accounts to [Assignment: organization-defined personnel or roles].</p>
+<p>Atypical usage includes accessing systems at certain times of the day or from locations that are not consistent with the normal usage patterns of individuals. Monitoring for atypical usage may reveal rogue behavior by individuals or an attack in progress. Account monitoring may inadvertently create privacy risks since data collected to identify atypical usage may reveal previously unknown information about the behavior of individuals. Organizations assess and document privacy risks from monitoring accounts for atypical usage in their privacy impact assessment and make determinations that are in alignment with their privacy program plan.</p>
+<p>Related: <a href="../au6/">AU-6</a>, <a href="../au7/">AU-7</a>, <a href="../ca7/">CA-7</a>, <a href="../ir8/">IR-8</a>, <a href="../si4/">SI-4</a>.</p>
+<h3 id="13">13</h3>
+<h3 id="account-management-disable-accounts-for-high-risk-individuals">Account Management | Disable Accounts for High-risk Individuals</h3>
+<p>Disable accounts of individuals within [Assignment: organization-defined time period] of discovery of [Assignment: organization-defined significant risks].</p>
+<p>Users who pose a significant security and/or privacy risk include individuals for whom reliable evidence indicates either the intention to use authorized access to systems to cause harm or through whom adversaries will cause harm. Such harm includes adverse impacts to organizational operations, organizational assets, individuals, other organizations, or the Nation. Close coordination among system administrators, legal staff, human resource managers, and authorizing officials is essential when disabling system accounts for high-risk individuals.</p>
+<p>Related: <a href="../au6/">AU-6</a>, <a href="../si4/">SI-4</a>.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../ac3/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../ac3/" class="btn btn-xs btn-link">
+        AC-3 Access Enforcement
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../ac1/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../ac1/" class="btn btn-xs btn-link">
+        AC-1 Policy and Procedures
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

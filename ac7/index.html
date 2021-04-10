@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>AC-7 Unsuccessful Logon Attempts - NIST 800-53 For Dummies</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "AC-7 Unsuccessful Logon Attempts", url: "#_top", children: [
+              {title: "Control", url: "#control" },
+              {title: "Discussion", url: "#discussion" },
+              {title: "Related Controls", url: "#related-controls" },
+              {title: "Enhancements", url: "#enhancements" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../ac8/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../ac8/" class="btn btn-xs btn-link">
+        AC-8 System Use Notification
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../ac6/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../ac6/" class="btn btn-xs btn-link">
+        AC-6 Least Privilege
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="ac-7-unsuccessful-logon-attempts">AC-7 Unsuccessful Logon Attempts</h1>
+<h2 id="control">Control</h2>
+<p>a. Enforce a limit of [Assignment: organization-defined number] consecutive invalid logon attempts by a user during a [Assignment: organization-defined time period]; and</p>
+<p>b. Automatically [Selection (one or more): lock the account or node for an [Assignment: organization-defined time period]; lock the account or node until released by an administrator; delay next logon prompt per [Assignment: organization-defined delay algorithm]; notify system administrator; take other [Assignment: organization-defined action]] when the maximum number of unsuccessful attempts is exceeded."</p>
+<h2 id="discussion">Discussion</h2>
+<p>The need to limit unsuccessful logon attempts and take subsequent action when the maximum number of attempts is exceeded applies regardless of whether the logon occurs via a local or network connection. Due to the potential for denial of service, automatic lockouts initiated by systems are usually temporary and automatically release after a predetermined, organization-defined time period. If a delay algorithm is selected, organizations may employ different algorithms for different components of the system based on the capabilities of those components. Responses to unsuccessful logon attempts may be implemented at the operating system and the application levels. Organization-defined actions that may be taken when the number of allowed consecutive invalid logon attempts is exceeded include prompting the user to answer a secret question in addition to the username and password, invoking a lockdown mode with limited user capabilities (instead of full lockout), allowing users to only logon from specified Internet Protocol (IP) addresses, requiring a CAPTCHA to prevent automated attacks, or applying user profiles such as location, time of day, IP address, device, or Media Access Control (MAC) address. If automatic system lockout or execution of a delay algorithm is not implemented in support of the availability objective, organizations consider a combination of other actions to help prevent brute force attacks. In addition to the above, organizations can prompt users to respond to a secret question before the number of allowed unsuccessful logon attempts is exceeded. Automatically unlocking an account after a specified period of time is generally not permitted. However, exceptions may be required based on operational mission or need.</p>
+<h2 id="related-controls">Related Controls</h2>
+<p><a href="../ac2/">AC-2</a>, <a href="../ac9/">AC-9</a>, <a href="../au2/">AU-2</a>, <a href="../au6/">AU-6</a>, <a href="../ia5/">IA-5</a>.</p>
+<h2 id="enhancements">Enhancements</h2>
+<h3 id="1">1</h3>
+<h3 id="unsuccessful-logon-attempts-automatic-account-lock">Unsuccessful Logon Attempts | Automatic Account Lock</h3>
+<p>Withdrawn: Incorporated into <a href="./">AC-7</a>.</p>
+<h3 id="2">2</h3>
+<h3 id="unsuccessful-logon-attempts-purge-or-wipe-mobile-device">Unsuccessful Logon Attempts | Purge or Wipe Mobile Device</h3>
+<p>Purge or wipe information from [Assignment: organization-defined mobile devices] based on [Assignment: organization-defined purging or wiping requirements and techniques] after [Assignment: organization-defined number] consecutive, unsuccessful device logon attempts.</p>
+<p>A mobile device is a computing device that has a small form factor such that it can be carried by a single individual; is designed to operate without a physical connection; possesses local, non-removable or removable data storage; and includes a self-contained power source. Purging or wiping the device applies only to mobile devices for which the organization-defined number of unsuccessful logons occurs. The logon is to the mobile device, not to any one account on the device. Successful logons to accounts on mobile devices reset the unsuccessful logon count to zero. Purging or wiping may be unnecessary if the information on the device is protected with sufficiently strong encryption mechanisms.</p>
+<p>Related: <a href="../ac19/">AC-19</a>, <a href="../mp5/">MP-5</a>, <a href="../mp6/">MP-6</a>.</p>
+<h3 id="3">3</h3>
+<h3 id="unsuccessful-logon-attempts-biometric-attempt-limiting">Unsuccessful Logon Attempts | Biometric Attempt Limiting</h3>
+<p>Limit the number of unsuccessful biometric logon attempts to [Assignment: organization-defined number].</p>
+<p>Biometrics are probabilistic in nature. The ability to successfully authenticate can be impacted by many factors, including matching performance and presentation attack detection mechanisms. Organizations select the appropriate number of attempts for users based on organizationally-defined factors.</p>
+<p>Related: <a href="../ia3/">IA-3</a>.</p>
+<h3 id="4">4</h3>
+<h3 id="unsuccessful-logon-attempts-use-of-alternate-authentication-factor">Unsuccessful Logon Attempts | Use of Alternate Authentication Factor</h3>
+<p>(a) Allow the use of [Assignment: organization-defined authentication factors] that are different from the primary authentication factors after the number of organization-defined consecutive invalid logon attempts have been exceeded; and</p>
+<p>(b) Enforce a limit of [Assignment: organization-defined number] consecutive invalid logon attempts through use of the alternative factors by a user during a [Assignment: organization-defined time period].</p>
+<p>The use of alternate authentication factors supports the objective of availability and allows a user who has inadvertently been locked out to use additional authentication factors to bypass the lockout.</p>
+<p>Related: <a href="../ia3/">IA-3</a>.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../ac8/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../ac8/" class="btn btn-xs btn-link">
+        AC-8 System Use Notification
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../ac6/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../ac6/" class="btn btn-xs btn-link">
+        AC-6 Least Privilege
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

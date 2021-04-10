@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>AC-6 Least Privilege - NIST 800-53 For Dummies</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "AC-6 Least Privilege", url: "#_top", children: [
+              {title: "Control", url: "#control" },
+              {title: "Discussion", url: "#discussion" },
+              {title: "Related Controls", url: "#related-controls" },
+              {title: "Enhancements", url: "#enhancements" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../ac7/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../ac7/" class="btn btn-xs btn-link">
+        AC-7 Unsuccessful Logon Attempts
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../ac5/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../ac5/" class="btn btn-xs btn-link">
+        AC-5 Separation of Duties
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="ac-6-least-privilege">AC-6 Least Privilege</h1>
+<h2 id="control">Control</h2>
+<p>Employ the principle of least privilege, allowing only authorized accesses for users (or processes acting on behalf of users) that are necessary to accomplish assigned organizational tasks.</p>
+<h2 id="discussion">Discussion</h2>
+<p>Organizations employ least privilege for specific duties and systems. The principle of least privilege is also applied to system processes, ensuring that the processes have access to systems and operate at privilege levels no higher than necessary to accomplish organizational missions or business functions. Organizations consider the creation of additional processes, roles, and accounts as necessary to achieve least privilege. Organizations apply least privilege to the development, implementation, and operation of organizational systems.</p>
+<h2 id="related-controls">Related Controls</h2>
+<p><a href="../ac2/">AC-2</a>, <a href="../ac3/">AC-3</a>, <a href="../ac5/">AC-5</a>, <a href="../ac16/">AC-16</a>, <a href="../cm5/">CM-5</a>, <a href="../cm11/">CM-11</a>, <a href="../pl2/">PL-2</a>, <a href="../pm12/">PM-12</a>, <a href="../sa8/">SA-8</a>, <a href="../sa15/">SA-15</a>, <a href="../sa17/">SA-17</a>, <a href="../sc38/">SC-38</a>.</p>
+<h2 id="enhancements">Enhancements</h2>
+<h3 id="1">1</h3>
+<h3 id="least-privilege-authorize-access-to-security-functions">Least Privilege | Authorize Access to Security Functions</h3>
+<p>Authorize access for [Assignment: organization-defined individuals or roles] to:</p>
+<p>(a) [Assignment: organization-defined security functions (deployed in hardware, software, and firmware)]; and</p>
+<p>(b) [Assignment: organization-defined security-relevant information].</p>
+<p>Security functions include establishing system accounts, configuring access authorizations (i.e., permissions, privileges), configuring settings for events to be audited, and establishing intrusion detection parameters. Security-relevant information includes filtering rules for routers or firewalls, configuration parameters for security services, cryptographic key management information, and access control lists. Authorized personnel include security administrators, system administrators, system security officers, system programmers, and other privileged users.</p>
+<p>Related: <a href="../ac17/">AC-17</a>, <a href="../ac18/">AC-18</a>, <a href="../ac19/">AC-19</a>, <a href="../au9/">AU-9</a>, <a href="../pe2/">PE-2</a>.</p>
+<h3 id="2">2</h3>
+<h3 id="least-privilege-non-privileged-access-for-nonsecurity-functions">Least Privilege | Non-privileged Access for Nonsecurity Functions</h3>
+<p>Require that users of system accounts (or roles) with access to [Assignment: organization-defined security functions or security-relevant information] use non-privileged accounts or roles, when accessing nonsecurity functions.</p>
+<p>Requiring the use of non-privileged accounts when accessing nonsecurity functions limits exposure when operating from within privileged accounts or roles. The inclusion of roles addresses situations where organizations implement access control policies, such as role-based access control, and where a change of role provides the same degree of assurance in the change of access authorizations for the user and the processes acting on behalf of the user as would be provided by a change between a privileged and non-privileged account.</p>
+<p>Related: <a href="../ac17/">AC-17</a>, <a href="../ac18/">AC-18</a>, <a href="../ac19/">AC-19</a>, <a href="../pl4/">PL-4</a>.</p>
+<h3 id="3">3</h3>
+<h3 id="least-privilege-network-access-to-privileged-commands">Least Privilege | Network Access to Privileged Commands</h3>
+<p>Authorize network access to [Assignment: organization-defined privileged commands] only for [Assignment: organization-defined compelling operational needs] and document the rationale for such access in the security plan for the system.</p>
+<p>Network access is any access across a network connection in lieu of local access (i.e., user being physically present at the device).</p>
+<p>Related: <a href="../ac17/">AC-17</a>, <a href="../ac18/">AC-18</a>, <a href="../ac19/">AC-19</a>.</p>
+<h3 id="4">4</h3>
+<h3 id="least-privilege-separate-processing-domains">Least Privilege | Separate Processing Domains</h3>
+<p>Provide separate processing domains to enable finer-grained allocation of user privileges.</p>
+<p>Providing separate processing domains for finer-grained allocation of user privileges includes using virtualization techniques to permit additional user privileges within a virtual machine while restricting privileges to other virtual machines or to the underlying physical machine, implementing separate physical domains, and employing hardware or software domain separation mechanisms.</p>
+<p>Related: <a href="../ac4/">AC-4</a>, <a href="../sc2/">SC-2</a>, <a href="../sc3/">SC-3</a>, <a href="../sc30/">SC-30</a>, <a href="../sc32/">SC-32</a>, <a href="../sc39/">SC-39</a>.</p>
+<h3 id="5">5</h3>
+<h3 id="least-privilege-privileged-accounts">Least Privilege | Privileged Accounts</h3>
+<p>Restrict privileged accounts on the system to [Assignment: organization-defined personnel or roles].</p>
+<p>Privileged accounts, including super user accounts, are typically described as system administrator for various types of commercial off-the-shelf operating systems. Restricting privileged accounts to specific personnel or roles prevents day-to-day users from accessing privileged information or privileged functions. Organizations may differentiate in the application of restricting privileged accounts between allowed privileges for local accounts and for domain accounts provided that they retain the ability to control system configurations for key parameters and as otherwise necessary to sufficiently mitigate risk.</p>
+<p>Related: <a href="../ia2/">IA-2</a>, <a href="../ma3/">MA-3</a>, <a href="../ma4/">MA-4</a>.</p>
+<h3 id="6">6</h3>
+<h3 id="least-privilege-privileged-access-by-non-organizational-users">Least Privilege | Privileged Access by Non-organizational Users</h3>
+<p>Prohibit privileged access to the system by non-organizational users.</p>
+<p>An organizational user is an employee or an individual considered by the organization to have the equivalent status of an employee. Organizational users include contractors, guest researchers, or individuals detailed from other organizations. A non-organizational user is a user who is not an organizational user. Policies and procedures for granting equivalent status of employees to individuals include a need-to-know, citizenship, and the relationship to the organization.</p>
+<p>Related: <a href="../ac18/">AC-18</a>, <a href="../ac19/">AC-19</a>, <a href="../ia2/">IA-2</a>, <a href="../ia8/">IA-8</a>.</p>
+<h3 id="7">7</h3>
+<h3 id="least-privilege-review-of-user-privileges">Least Privilege | Review of User Privileges</h3>
+<p>(a) Review [Assignment: organization-defined frequency] the privileges assigned to [Assignment: organization-defined roles or classes of users] to validate the need for such privileges; and
+(b) Reassign or remove privileges, if necessary, to correctly reflect organizational mission and business needs.</p>
+<p>The need for certain assigned user privileges may change over time to reflect changes in organizational mission and business functions, environments of operation, technologies, or threats. A periodic review of assigned user privileges is necessary to determine if the rationale for assigning such privileges remains valid. If the need cannot be revalidated, organizations take appropriate corrective actions.</p>
+<p>Related: <a href="../ca7/">CA-7</a>.</p>
+<h3 id="8">8</h3>
+<h3 id="least-privilege-privilege-levels-for-code-execution">Least Privilege | Privilege Levels for Code Execution</h3>
+<p>Prevent the following software from executing at higher privilege levels than users executing the software: [Assignment: organization-defined software].</p>
+<p>In certain situations, software applications or programs need to execute with elevated privileges to perform required functions. However, depending on the software functionality and configuration, if the privileges required for execution are at a higher level than the privileges assigned to organizational users invoking such applications or programs, those users may indirectly be provided with greater privileges than assigned.</p>
+<h3 id="9">9</h3>
+<h3 id="least-privilege-log-use-of-privileged-functions">Least Privilege | Log Use of Privileged Functions</h3>
+<p>Log the execution of privileged functions.</p>
+<p>The misuse of privileged functions, either intentionally or unintentionally by authorized users or by unauthorized external entities that have compromised system accounts, is a serious and ongoing concern and can have significant adverse impacts on organizations. Logging and analyzing the use of privileged functions is one way to detect such misuse and, in doing so, help mitigate the risk from insider threats and the advanced persistent threat.</p>
+<p>Related: <a href="../au2/">AU-2</a>, <a href="../au3/">AU-3</a>, <a href="../au12/">AU-12</a>.</p>
+<h3 id="10">10</h3>
+<h3 id="least-privilege-prohibit-non-privileged-users-from-executing-privileged-functions">Least Privilege | Prohibit Non-privileged Users from Executing Privileged Functions</h3>
+<p>Prevent non-privileged users from executing privileged functions.</p>
+<p>Privileged functions include disabling, circumventing, or altering implemented security or privacy controls, establishing system accounts, performing system integrity checks, and administering cryptographic key management activities. Non-privileged users are individuals who do not possess appropriate authorizations. Privileged functions that require protection from non-privileged users include circumventing intrusion detection and prevention mechanisms or malicious code protection mechanisms. Preventing non-privileged users from executing privileged functions is enforced by AC-3.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../ac7/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../ac7/" class="btn btn-xs btn-link">
+        AC-7 Unsuccessful Logon Attempts
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../ac5/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../ac5/" class="btn btn-xs btn-link">
+        AC-5 Separation of Duties
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

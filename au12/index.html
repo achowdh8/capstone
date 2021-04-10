@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>AU-12 Audit Record Generation - NIST 800-53 For Dummies</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "AU-12 Audit Record Generation", url: "#_top", children: [
+              {title: "Control", url: "#control" },
+              {title: "Discussion", url: "#discussion" },
+              {title: "Related Controls", url: "#related-controls" },
+              {title: "Enhancements", url: "#enhancements" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../au13/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../au13/" class="btn btn-xs btn-link">
+        AU-13 Monitoring for Information Disclosure
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../au11/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../au11/" class="btn btn-xs btn-link">
+        AU-11 Audit Record Retention
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="au-12-audit-record-generation">AU-12 Audit Record Generation</h1>
+<h2 id="control">Control</h2>
+<p>a. Provide audit record generation capability for the event types the system is capable of auditing as defined in <a href="../au2/">AU-2a</a> on [Assignment: organization-defined system components];</p>
+<p>b. Allow [Assignment: organization-defined personnel or roles] to select the event types that are to be logged by specific components of the system; and</p>
+<p>c. Generate audit records for the event types defined in <a href="../au2/">AU-2c</a> that include the audit record content defined in <a href="../au3/">AU-3</a>.</p>
+<h2 id="discussion">Discussion</h2>
+<p>Audit records can be generated from many different system components. The event types specified in <a href="../au2/">AU-2d</a> are the event types for which audit logs are to be generated and are a subset of all event types for which the system can generate audit records.</p>
+<h2 id="related-controls">Related Controls</h2>
+<p><a href="../ac6/">AC-6</a>, <a href="../ac17/">AC-17</a>, <a href="../au2/">AU-2</a>, <a href="../au3/">AU-3</a>, <a href="../au4/">AU-4</a>, <a href="../au5/">AU-5</a>, <a href="../au6/">AU-6</a>, <a href="../au7/">AU-7</a>, <a href="../au14/">AU-14</a>, <a href="../cm5/">CM-5</a>, <a href="../ma4/">MA-4</a>, <a href="../mp4/">MP-4</a>, <a href="../pm12/">PM-12</a>, <a href="../sa8/">SA-8</a>, <a href="../sc18/">SC-18</a>, <a href="../si3/">SI-3</a>, <a href="../si4/">SI-4</a>, <a href="../si7/">SI-7</a>, <a href="../si10/">SI-10</a>.</p>
+<h2 id="enhancements">Enhancements</h2>
+<h3 id="1">1</h3>
+<h3 id="audit-record-generation-system-wide-and-time-correlated-audit-trail">Audit Record Generation | System-wide and Time-correlated Audit Trail</h3>
+<p>Compile audit records from [Assignment: organization-defined system components] into a system-wide (logical or physical) audit trail that is time-correlated to within [Assignment: organization-defined level of tolerance for the relationship between time stamps of individual records in the audit trail].</p>
+<p>Audit trails are time-correlated if the time stamps in the individual audit records can be reliably related to the time stamps in other audit records to achieve a time ordering of the records within organizational tolerances.</p>
+<p>Related: <a href="../au8/">AU-8</a>, <a href="../sc45/">SC-45</a>.</p>
+<h3 id="2">2</h3>
+<h3 id="audit-record-generation-standardized-formats">Audit Record Generation | Standardized Formats</h3>
+<p>Produce a system-wide (logical or physical) audit trail composed of audit records in a standardized format.</p>
+<p>Audit records that follow common standards promote interoperability and information exchange between devices and systems. Promoting interoperability and information exchange facilitates the production of event information that can be readily analyzed and correlated. If logging mechanisms do not conform to standardized formats, systems may convert individual audit records into standardized formats when compiling system-wide audit trails.</p>
+<h3 id="3">3</h3>
+<h3 id="audit-record-generation-changes-by-authorized-individuals">Audit Record Generation | Changes by Authorized Individuals</h3>
+<p>Provide and implement the capability for [Assignment: organization-defined individuals or roles] to change the logging to be performed on [Assignment: organization-defined system components] based on [Assignment: organization-defined selectable event criteria] within [Assignment: organization-defined time thresholds].</p>
+<p>Permitting authorized individuals to make changes to system logging enables organizations to extend or limit logging as necessary to meet organizational requirements. Logging that is limited to conserve system resources may be extended (either temporarily or permanently) to address certain threat situations. In addition, logging may be limited to a specific set of event types to facilitate audit reduction, analysis, and reporting. Organizations can establish time thresholds in which logging actions are changed (e.g., near real-time, within minutes, or within hours).</p>
+<p>Related: <a href="../ac3/">AC-3</a>.</p>
+<h3 id="4">4</h3>
+<h3 id="audit-record-generation-query-parameter-audits-of-personally-identifiable-information">Audit Record Generation | Query Parameter Audits of Personally Identifiable Information</h3>
+<p>Provide and implement the capability for auditing the parameters of user query events for data sets containing personally identifiable information.</p>
+<p>Query parameters are explicit criteria that an individual or automated system submits to a system to retrieve data. Auditing of query parameters for datasets that contain personally identifiable information augments the capability of an organization to track and understand the access, usage, or sharing of personally identifiable information by authorized personnel.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../au13/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../au13/" class="btn btn-xs btn-link">
+        AU-13 Monitoring for Information Disclosure
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../au11/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../au11/" class="btn btn-xs btn-link">
+        AU-11 Audit Record Retention
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

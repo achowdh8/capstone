@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>CM-7 Least Functionality - NIST 800-53 For Dummies</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "CM-7 Least Functionality", url: "#_top", children: [
+              {title: "Control", url: "#control" },
+              {title: "Discussion", url: "#discussion" },
+              {title: "Related Controls", url: "#related-controls" },
+              {title: "Enhancements", url: "#enhancements" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../cm8/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../cm8/" class="btn btn-xs btn-link">
+        CM-8 System Component Inventory
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../cm6/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../cm6/" class="btn btn-xs btn-link">
+        CM-6 Configuration Settings
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="cm-7-least-functionality">CM-7 Least Functionality</h1>
+<h2 id="control">Control</h2>
+<p>a. Configure the system to provide only [Assignment: organization-defined mission essential capabilities]; and</p>
+<p>b. Prohibit or restrict the use of the following functions, ports, protocols, software, and/or services: [Assignment: organization-defined prohibited or restricted functions, system ports, protocols, software, and/or services].</p>
+<h2 id="discussion">Discussion</h2>
+<p>Systems provide a wide variety of functions and services. Some of the functions and services routinely provided by default may not be necessary to support essential organizational missions, functions, or operations. Additionally, it is sometimes convenient to provide multiple services from a single system component, but doing so increases risk over limiting the services provided by that single component. Where feasible, organizations limit component functionality to a single function per component. Organizations consider removing unused or unnecessary software and disabling unused or unnecessary physical and logical ports and protocols to prevent unauthorized connection of components, transfer of information, and tunneling. Organizations employ network scanning tools, intrusion detection and prevention systems, and end-point protection technologies, such as firewalls and host-based intrusion detection systems, to identify and prevent the use of prohibited functions, protocols, ports, and services. Least functionality can also be achieved as part of the fundamental design and development of the system (see SA-8, SC-2, and SC-3).</p>
+<h2 id="related-controls">Related Controls</h2>
+<p><a href="../ac3/">AC-3</a>, <a href="../ac4/">AC-4</a>, <a href="../cm2/">CM-2</a>, <a href="../cm5/">CM-5</a>, <a href="../cm6/">CM-6</a>, <a href="../cm11/">CM-11</a>, <a href="../ra5/">RA-5</a>, <a href="../sa4/">SA-4</a>, <a href="../sa5/">SA-5</a>, <a href="../sa8/">SA-8</a>, <a href="../sa9/">SA-9</a>, <a href="../sa15/">SA-15</a>, <a href="../sc2/">SC-2</a>, <a href="../sc3/">SC-3</a>, <a href="../sc7/">SC-7</a>, <a href="../sc37/">SC-37</a>, <a href="../si4/">SI-4</a>.</p>
+<h2 id="enhancements">Enhancements</h2>
+<h3 id="1">1</h3>
+<h3 id="least-functionality-periodic-review">Least Functionality | Periodic Review</h3>
+<p>(a) Review the system [Assignment: organization-defined frequency] to identify unnecessary and/or nonsecure functions, ports, protocols, software, and services; and</p>
+<p>(b) Disable or remove [Assignment: organization-defined functions, ports, protocols, software, and services within the system deemed to be unnecessary and/or nonsecure].</p>
+<p>Organizations review functions, ports, protocols, and services provided by systems or system components to determine the functions and services that are candidates for elimination. Such reviews are especially important during transition periods from older technologies to newer technologies (e.g., transition from IPv4 to IPv6). These technology transitions may require implementing the older and newer technologies simultaneously during the transition period and returning to minimum essential functions, ports, protocols, and services at the earliest opportunity. Organizations can either decide the relative security of the function, port, protocol, and/or service or base the security decision on the assessment of other entities. Unsecure protocols include Bluetooth, FTP, and peer-to-peer networking.</p>
+<p>Related: <a href="../ac18/">AC-18</a>.</p>
+<h3 id="2">2</h3>
+<h3 id="least-functionality-prevent-program-execution">Least Functionality | Prevent Program Execution</h3>
+<p>Prevent program execution in accordance with [Selection (one or more): [Assignment: organization-defined policies, rules of behavior, and/or access agreements regarding software program usage and restrictions]; rules authorizing the terms and conditions of software program usage].</p>
+<p>Prevention of program execution addresses organizational policies, rules of behavior, and/or access agreements that restrict software usage and the terms and conditions imposed by the developer or manufacturer, including software licensing and copyrights. Restrictions include prohibiting auto-execute features, restricting roles allowed to approve program execution, permitting or prohibiting specific software programs, or restricting the number of program instances executed at the same time.</p>
+<p>Related: <a href="../cm8/">CM-8</a>, <a href="../pl4/">PL-4</a>, <a href="../pl9/">PL-9</a>, <a href="../pm5/">PM-5</a>, <a href="../ps6/">PS-6</a>.</p>
+<h3 id="3">3</h3>
+<h3 id="least-functionality-registration-compliance">Least Functionality | Registration Compliance</h3>
+<p>Ensure compliance with [Assignment: organization-defined registration requirements for functions, ports, protocols, and services].</p>
+<p>Organizations use the registration process to manage, track, and provide oversight for systems and implemented functions, ports, protocols, and services.</p>
+<h3 id="4">4</h3>
+<h3 id="least-functionality-unauthorized-software-deny-by-exception">Least Functionality | Unauthorized Software — Deny-by-exception</h3>
+<p>(a) Identify [Assignment: organization-defined software programs not authorized to execute on the system];</p>
+<p>(b) Employ an allow-all, deny-by-exception policy to prohibit the execution of unauthorized software programs on the system; and</p>
+<p>(c) Review and update the list of unauthorized software programs [Assignment: organization-defined frequency].</p>
+<p>Unauthorized software programs can be limited to specific versions or from a specific source. The concept of prohibiting the execution of unauthorized software may also be applied to user actions, system ports and protocols, IP addresses/ranges, websites, and MAC addresses.</p>
+<p>Related: <a href="../cm6/">CM-6</a>, <a href="../cm8/">CM-8</a>, <a href="../cm10/">CM-10</a>, <a href="../pl9/">PL-9</a>, <a href="../pm5/">PM-5</a>.</p>
+<h3 id="5">5</h3>
+<h3 id="least-functionality-authorized-software-allow-by-exception">Least Functionality | Authorized Software — Allow-by-exception</h3>
+<p>(a) Identify [Assignment: organization-defined software programs authorized to execute on the system];</p>
+<p>(b) Employ a deny-all, permit-by-exception policy to allow the execution of authorized software programs on the system; and</p>
+<p>(c) Review and update the list of authorized software programs [Assignment: organization-defined frequency].</p>
+<p>Authorized software programs can be limited to specific versions or from a specific source. To facilitate a comprehensive authorized software process and increase the strength of protection for attacks that bypass application level authorized software, software programs may be decomposed into and monitored at different levels of detail. These levels include applications, application programming interfaces, application modules, scripts, system processes, system services, kernel functions, registries, drivers, and dynamic link libraries. The concept of permitting the execution of authorized software may also be applied to user actions, system ports and protocols, IP addresses/ranges, websites, and MAC addresses. Organizations consider verifying the integrity of authorized software programs using digital signatures, cryptographic checksums, or hash functions. Verification of authorized software can occur either prior to execution or at system startup. The identification of authorized URLs for websites is addressed in CA-3(5) and SC-7.</p>
+<p>Related: <a href="../cm2/">CM-2</a>, <a href="../cm6/">CM-6</a>, <a href="../cm8/">CM-8</a>, <a href="../cm10/">CM-10</a>, <a href="../pl9/">PL-9</a>, <a href="../pm5/">PM-5</a>, <a href="../sa10/">SA-10</a>, <a href="../sc34/">SC-34</a>, <a href="../si7/">SI-7</a>.</p>
+<h3 id="6">6</h3>
+<h3 id="least-functionality-confined-environments-with-limited-privileges">Least Functionality | Confined Environments with Limited Privileges</h3>
+<p>Require that the following user-installed software execute in a confined physical or virtual machine environment with limited privileges: [Assignment: organization-defined user-installed software].</p>
+<p>Organizations identify software that may be of concern regarding its origin or potential for containing malicious code. For this type of software, user installations occur in confined environments of operation to limit or contain damage from malicious code that may be executed.</p>
+<p>Related: <a href="../cm11/">CM-11</a>, <a href="../sc44/">SC-44</a>.</p>
+<h3 id="7">7</h3>
+<h3 id="least-functionality-code-execution-in-protected-environments">Least Functionality | Code Execution in Protected Environments</h3>
+<p>Allow execution of binary or machine-executable code only in confined physical or virtual machine environments and with the explicit approval of [Assignment: organization-defined personnel or roles] when such code is:</p>
+<p>(a) Obtained from sources with limited or no warranty; and/or</p>
+<p>(b) Without the provision of source code.</p>
+<p>Code execution in protected environments applies to all sources of binary or machine-executable code, including commercial software and firmware and open-source software.</p>
+<p>Related: <a href="../cm10/">CM-10</a>, <a href="../sc44/">SC-44</a>.</p>
+<h3 id="8">8</h3>
+<h3 id="least-functionality-binary-or-machine-executable-code">Least Functionality | Binary or Machine Executable Code</h3>
+<p>(a) Prohibit the use of binary or machine-executable code from sources with limited or no warranty or without the provision of source code; and</p>
+<p>(b) Allow exceptions only for compelling mission or operational requirements and with the approval of the authorizing official.</p>
+<p>Binary or machine executable code applies to all sources of binary or machine-executable code, including commercial software and firmware and open-source software. Organizations assess software products without accompanying source code or from sources with limited or no warranty for potential security impacts. The assessments address the fact that software products without the provision of source code may be difficult to review, repair, or extend. In addition, there may be no owners to make such repairs on behalf of organizations. If open-source software is used, the assessments address the fact that there is no warranty, the open-source software could contain back doors or malware, and there may be no support available</p>
+<p>Related: <a href="../sa5/">SA-5</a>, <a href="../sa22/">SA-22</a>.</p>
+<h3 id="9">9</h3>
+<h3 id="least-functionality-prohibiting-the-use-of-unauthorized-hardware">Least Functionality | Prohibiting The Use of Unauthorized Hardware</h3>
+<p>(a) Identify [Assignment: organization-defined hardware components authorized for system use];</p>
+<p>(b) Prohibit the use or connection of unauthorized hardware components; </p>
+<p>(c) Review and update the list of authorized hardware components [Assignment: organization-defined frequency].</p>
+<p>Hardware components provide the foundation for organizational systems and the platform for the execution of authorized software programs. Managing the inventory of hardware components and controlling which hardware components are permitted to be installed or connected to organizational systems is essential in order to provide adequate security.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../cm8/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../cm8/" class="btn btn-xs btn-link">
+        CM-8 System Component Inventory
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../cm6/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../cm6/" class="btn btn-xs btn-link">
+        CM-6 Configuration Settings
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

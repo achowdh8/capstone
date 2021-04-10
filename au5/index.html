@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>AU-5 Response to Audit Logging Process Failures - NIST 800-53 For Dummies</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "AU-5 Response to Audit Logging Process Failures", url: "#_top", children: [
+              {title: "Control", url: "#control" },
+              {title: "Discussion", url: "#discussion" },
+              {title: "Related Controls", url: "#related-controls" },
+              {title: "Enhancements", url: "#enhancements" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../au6/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../au6/" class="btn btn-xs btn-link">
+        AU-6 Audit Record Review, Analysis, and Reporting
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../au4/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../au4/" class="btn btn-xs btn-link">
+        AU-4 Audit Log Storage Capacity
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="au-5-response-to-audit-logging-process-failures">AU-5 Response to Audit Logging Process Failures</h1>
+<h2 id="control">Control</h2>
+<p>a. Alert [Assignment: organization-defined personnel or roles] within [Assignment: organization-defined time period] in the event of an audit logging process failure; and</p>
+<p>b. Take the following additional actions: [Assignment: organization-defined additional actions].</p>
+<h2 id="discussion">Discussion</h2>
+<p>Audit logging process failures include software and hardware errors, failures in audit log capturing mechanisms, and reaching or exceeding audit log storage capacity. Organization-defined actions include overwriting oldest audit records, shutting down the system, and stopping the generation of audit records. Organizations may choose to define additional actions for audit logging process failures based on the type of failure, the location of the failure, the severity of the failure, or a combination of such factors. When the audit logging process failure is related to storage, the response is carried out for the audit log storage repository (i.e., the distinct system component where the audit logs are stored), the system on which the audit logs reside, the total audit log storage capacity of the organization (i.e., all audit log storage repositories combined), or all three. Organizations may decide to take no additional actions after alerting designated roles or personnel.</p>
+<h2 id="related-controls">Related Controls</h2>
+<p><a href="../au2/">AU-2</a>, <a href="../au4/">AU-4</a>, <a href="../au7/">AU-7</a>, <a href="../au9/">AU-9</a>, <a href="../au11/">AU-11</a>, <a href="../au12/">AU-12</a>, <a href="../au14/">AU-14</a>, <a href="../si4/">SI-4</a>, <a href="../si12/">SI-12</a>.</p>
+<h2 id="enhancements">Enhancements</h2>
+<h3 id="1">1</h3>
+<h3 id="response-to-audit-logging-process-failures-storage-capacity-warning">Response to Audit Logging Process Failures | Storage Capacity Warning</h3>
+<p>Provide a warning to [Assignment: organization-defined personnel, roles, and/or locations] within [Assignment: organization-defined time period] when allocated audit log storage volume reaches [Assignment: organization-defined percentage] of repository maximum audit log storage capacity.</p>
+<p>Organizations may have multiple audit log storage repositories distributed across multiple system components with each repository having different storage volume capacities.</p>
+<h3 id="2">2</h3>
+<h3 id="response-to-audit-logging-process-failures-real-time-alerts">Response to Audit Logging Process Failures | Real-time Alerts</h3>
+<p>Provide an alert within [Assignment: organization-defined real-time period] to [Assignment: organization-defined personnel, roles, and/or locations] when the following audit failure events occur: [Assignment: organization-defined audit logging failure events requiring real-time alerts].</p>
+<p>Alerts provide organizations with urgent messages. Real-time alerts provide these messages at information technology speed (i.e., the time from event detection to alert occurs in seconds or less).</p>
+<h3 id="3">3</h3>
+<h3 id="response-to-audit-logging-process-failures-configurable-traffic-volume-thresholds">Response to Audit Logging Process Failures | Configurable Traffic Volume Thresholds</h3>
+<p>Enforce configurable network communications traffic volume thresholds reflecting limits on audit log storage capacity and [Selection: reject; delay] network traffic above those thresholds.</p>
+<p>Organizations have the capability to reject or delay the processing of network communications traffic if audit logging information about such traffic is determined to exceed the storage capacity of the system audit logging function. The rejection or delay response is triggered by the established organizational traffic volume thresholds that can be adjusted based on changes to audit log storage capacity.</p>
+<h3 id="4">4</h3>
+<h3 id="response-to-audit-logging-process-failures-shutdown-on-failure">Response to Audit Logging Process Failures | Shutdown on Failure</h3>
+<p>Invoke a [Selection: full system shutdown; partial system shutdown; degraded operational mode with limited mission or business functionality available] in the event of [Assignment: organization-defined audit logging failures], unless an alternate audit logging capability exists.</p>
+<p>Organizations determine the types of audit logging failures that can trigger automatic system shutdowns or degraded operations. Because of the importance of ensuring mission and business continuity, organizations may determine that the nature of the audit logging failure is not so severe that it warrants a complete shutdown of the system supporting the core organizational mission and business functions. In those instances, partial system shutdowns or operating in a degraded mode with reduced capability may be viable alternatives.</p>
+<p>Related: <a href="../au15/">AU-15</a>.</p>
+<h3 id="5">5</h3>
+<h3 id="response-to-audit-logging-process-failures-alternate-audit-logging-capability">Response to Audit Logging Process Failures | Alternate Audit Logging Capability</h3>
+<p>Provide an alternate audit logging capability in the event of a failure in primary audit logging capability that implements [Assignment: organization-defined alternate audit logging functionality].</p>
+<p>Since an alternate audit logging capability may be a short-term protection solution employed until the failure in the primary audit logging capability is corrected, organizations may determine that the alternate audit logging capability need only provide a subset of the primary audit logging functionality that is impacted by the failure.</p>
+<p>Related: <a href="../au9/">AU-9</a>.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../au6/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../au6/" class="btn btn-xs btn-link">
+        AU-6 Audit Record Review, Analysis, and Reporting
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../au4/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../au4/" class="btn btn-xs btn-link">
+        AU-4 Audit Log Storage Capacity
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

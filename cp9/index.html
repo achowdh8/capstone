@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>CP-9 System Backup - NIST 800-53 For Dummies</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "CP-9 System Backup", url: "#_top", children: [
+              {title: "Control", url: "#control" },
+              {title: "Discussion", url: "#discussion" },
+              {title: "Related Controls", url: "#related-controls" },
+              {title: "Enhancements", url: "#enhancements" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../cp10/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../cp10/" class="btn btn-xs btn-link">
+        CP-10 System Recovery and Reconstitution
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../cp8/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../cp8/" class="btn btn-xs btn-link">
+        CP-8 Telecommunications Services
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="cp-9-system-backup">CP-9 System Backup</h1>
+<h2 id="control">Control</h2>
+<p>a. Conduct backups of user-level information contained in [Assignment: organization-defined system components] [Assignment: organization-defined frequency consistent with recovery time and recovery point objectives];</p>
+<p>b. Conduct backups of system-level information contained in the system [Assignment: organization-defined frequency consistent with recovery time and recovery point objectives];</p>
+<p>c. Conduct backups of system documentation, including security- and privacy-related documentation [Assignment: organization-defined frequency consistent with recovery time and recovery point objectives]; and  </p>
+<p>d. Protect the confidentiality, integrity, and availability of backup information.</p>
+<h2 id="discussion">Discussion</h2>
+<p>System-level information includes system state information, operating system software, middleware, application software, and licenses. User-level information includes information other than system-level information. Mechanisms employed to protect the integrity of system backups include digital signatures and cryptographic hashes. Protection of system backup information while in transit is addressed by MP-5 and SC-8. System backups reflect the requirements in contingency plans as well as other organizational requirements for backing up information. Organizations may be subject to laws, executive orders, directives, regulations, or policies with requirements regarding specific categories of information (e.g., personal health information). Organizational personnel consult with the senior agency official for privacy and legal counsel regarding such requirements.</p>
+<h2 id="related-controls">Related Controls</h2>
+<p><a href="../cp2/">CP-2</a>, <a href="../cp6/">CP-6</a>, <a href="../cp10/">CP-10</a>, <a href="../mp4/">MP-4</a>, <a href="../mp5/">MP-5</a>, <a href="../sc8/">SC-8</a>, <a href="../sc12/">SC-12</a>, <a href="../sc13/">SC-13</a>, <a href="../si4/">SI-4</a>, <a href="../si13/">SI-13</a>.</p>
+<h2 id="enhancements">Enhancements</h2>
+<h3 id="1">1</h3>
+<h3 id="system-backup-testing-for-reliability-and-integrity">System Backup | Testing for Reliability and Integrity</h3>
+<p>Test backup information [Assignment: organization-defined frequency] to verify media reliability and information integrity.</p>
+<p>Organizations need assurance that backup information can be reliably retrieved. Reliability pertains to the systems and system components where the backup information is stored, the operations used to retrieve the information, and the integrity of the information being retrieved. Independent and specialized tests can be used for each of the aspects of reliability. For example, decrypting and transporting (or transmitting) a random sample of backup files from the alternate storage or backup site and comparing the information to the same information at the primary processing site can provide such assurance.</p>
+<p>Related: <a href="../cp4/">CP-4</a>.</p>
+<h3 id="2">2</h3>
+<h3 id="system-backup-test-restoration-using-sampling">System Backup | Test Restoration Using Sampling</h3>
+<p>Use a sample of backup information in the restoration of selected system functions as part of contingency plan testing.</p>
+<p>Organizations need assurance that system functions can be restored correctly and can support established organizational missions. To ensure that the selected system functions are thoroughly exercised during contingency plan testing, a sample of backup information is retrieved to determine whether the functions are operating as intended. Organizations can determine the sample size for the functions and backup information based on the level of assurance needed.</p>
+<p>Related: <a href="../cp4/">CP-4</a>.</p>
+<h3 id="3">3</h3>
+<h3 id="system-backup-separate-storage-for-critical-information">System Backup | Separate Storage for Critical Information</h3>
+<p>Store backup copies of [Assignment: organization-defined critical system software and other security-related information] in a separate facility or in a fire rated container that is not collocated with the operational system.</p>
+<p>Separate storage for critical information applies to all critical information regardless of the type of backup storage media. Critical system software includes operating systems, middleware, cryptographic key management systems, and intrusion detection systems. Security-related information includes inventories of system hardware, software, and firmware components. Alternate storage sites, including geographically distributed architectures, serve as separate storage facilities for organizations. Organizations may provide separate storage by implementing automated backup processes at alternative storage sites (e.g., data centers). The General Services Administration (GSA) establishes standards and specifications for security and fire rated containers.</p>
+<p>Related: <a href="../cm2/">CM-2</a>, <a href="../cm6/">CM-6</a>, <a href="../cm8/">CM-8</a>.</p>
+<h3 id="4">4</h3>
+<h3 id="system-backup-protection-from-unauthorized-modification">System Backup | Protection from Unauthorized Modification</h3>
+<p>Withdrawn: Incorporated into <a href="./">CP-9</a>.</p>
+<h3 id="5">5</h3>
+<h3 id="system-backup-transfer-to-alternate-storage-site">System Backup | Transfer to Alternate Storage Site</h3>
+<p>Transfer system backup information to the alternate storage site [Assignment: organization-defined time period and transfer rate consistent with the recovery time and recovery point objectives].</p>
+<p>System backup information can be transferred to alternate storage sites either electronically or by the physical shipment of storage media.</p>
+<p><a href="../cp7/">CP-7</a>, <a href="../mp3/">MP-3</a>, <a href="../mp4/">MP-4</a>, <a href="../mp5/">MP-5</a>.</p>
+<h3 id="6">6</h3>
+<h3 id="system-backup-redundant-secondary-system">System Backup | Redundant Secondary System</h3>
+<p>Conduct system backup by maintaining a redundant secondary system that is not collocated with the primary system and that can be activated without loss of information or disruption to operations.</p>
+<p>The effect of system backup can be achieved by maintaining a redundant secondary system that mirrors the primary system, including the replication of information. If this type of redundancy is in place and there is sufficient geographic separation between the two systems, the secondary system can also serve as the alternate processing site.</p>
+<p>Related: <a href="../cp7/">CP-7</a>.</p>
+<h3 id="7">7</h3>
+<h3 id="system-backup-dual-authorization-for-deletion-or-destruction">System Backup | Dual Authorization for Deletion or Destruction</h3>
+<p>Enforce dual authorization for the deletion or destruction of [Assignment: organization-defined backup information].</p>
+<p>Dual authorization ensures that deletion or destruction of backup information cannot occur unless two qualified individuals carry out the task. Individuals deleting or destroying backup information possess the skills or expertise to determine if the proposed deletion or destruction of information reflects organizational policies and procedures. Dual authorization may also be known as two-person control. To reduce the risk of collusion, organizations consider rotating dual authorization duties to other individuals.</p>
+<p>Related: <a href="../ac3/">AC-3</a>, <a href="../ac5/">AC-5</a>, <a href="../mp2/">MP-2</a>.</p>
+<h3 id="8">8</h3>
+<h3 id="system-backup-cryptographic-protection">System Backup | Cryptographic Protection</h3>
+<p>Implement cryptographic mechanisms to prevent unauthorized disclosure and modification of [Assignment: organization-defined backup information].</p>
+<p>The selection of cryptographic mechanisms is based on the need to protect the confidentiality and integrity of backup information. The strength of mechanisms selected is commensurate with the security category or classification of the information. Cryptographic protection applies to system backup information in storage at both primary and alternate locations. Organizations that implement cryptographic mechanisms to protect information at rest also consider cryptographic key management solutions.</p>
+<p>Related: <a href="../sc12/">SC-12</a>, <a href="../sc13/">SC-13</a>, <a href="../sc28/">SC-28</a>.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../cp10/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../cp10/" class="btn btn-xs btn-link">
+        CP-10 System Recovery and Reconstitution
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../cp8/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../cp8/" class="btn btn-xs btn-link">
+        CP-8 Telecommunications Services
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

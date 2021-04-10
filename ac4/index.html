@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>AC-4 Information Flow Enforcement - NIST 800-53 For Dummies</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "AC-4 Information Flow Enforcement", url: "#_top", children: [
+              {title: "Control", url: "#control" },
+              {title: "Discussion", url: "#discussion" },
+              {title: "Related Controls", url: "#related-controls" },
+              {title: "Enhancements", url: "#enhancements" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../ac5/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../ac5/" class="btn btn-xs btn-link">
+        AC-5 Separation of Duties
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../ac3/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../ac3/" class="btn btn-xs btn-link">
+        AC-3 Access Enforcement
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="ac-4-information-flow-enforcement">AC-4 Information Flow Enforcement</h1>
+<h2 id="control">Control</h2>
+<p>Enforce approved authorizations for controlling the flow of information within the system and between connected systems based on [Assignment: organization-defined information flow control policies].</p>
+<h2 id="discussion">Discussion</h2>
+<p>Information flow control regulates where information can travel within a system and between systems (in contrast to who is allowed to access the information) and without regard to subsequent accesses to that information. Flow control restrictions include blocking external traffic that claims to be from within the organization, keeping export-controlled information from being transmitted in the clear to the Internet, restricting web requests that are not from the internal web proxy server, and limiting information transfers between organizations based on data structures and content. Transferring information between organizations may require an agreement specifying how the information flow is enforced (see CA-3). Transferring information between systems in different security or privacy domains with different security or privacy policies introduces the risk that such transfers violate one or more domain security or privacy policies. In such situations, information owners/stewards provide guidance at designated policy enforcement points between connected systems. Organizations consider mandating specific architectural solutions to enforce specific security and privacy policies. Enforcement includes prohibiting information transfers between connected systems (i.e., allowing access only), verifying write permissions before accepting information from another security or privacy domain or connected system, employing hardware mechanisms to enforce one-way information flows, and implementing trustworthy regrading mechanisms to reassign security or privacy attributes and labels.
+Organizations commonly employ information flow control policies and enforcement mechanisms to control the flow of information between designated sources and destinations within systems and between connected systems. Flow control is based on the characteristics of the information and/or the information path. Enforcement occurs, for example, in boundary protection devices that employ rule sets or establish configuration settings that restrict system services, provide a packet-filtering capability based on header information, or provide a message-filtering capability based on message content. Organizations also consider the trustworthiness of filtering and/or inspection mechanisms (i.e., hardware, firmware, and software components) that are critical to information flow enforcement. Control enhancements 3 through 32 primarily address cross-domain solution needs that focus on more advanced filtering techniques, in-depth analysis, and stronger flow enforcement mechanisms implemented in cross-domain products, such as high-assurance guards. Such capabilities are generally not available in commercial off-the-shelf products. Information flow enforcement also applies to control plane traffic (e.g., routing and DNS).</p>
+<h2 id="related-controls">Related Controls</h2>
+<p><a href="../ac3/">AC-3</a>, <a href="../ac6/">AC-6</a>, <a href="../ac16/">AC-16</a>, <a href="../ac17/">AC-17</a>, <a href="../ac19/">AC-19</a>, <a href="../ac21/">AC-21</a>, <a href="../au10/">AU-10</a>, <a href="../ca3/">CA-3</a>, <a href="../ca9/">CA-9</a>, <a href="../cm7/">CM-7</a>, <a href="../pl9/">PL-9</a>, <a href="../pm24/">PM-24</a>, <a href="../sa17/">SA-17</a>, <a href="../sc4/">SC-4</a>, <a href="../sc7/">SC-7</a>, <a href="../sc16/">SC-16</a>, <a href="../sc31/">SC-31</a>.</p>
+<h2 id="enhancements">Enhancements</h2>
+<h3 id="1">1</h3>
+<h3 id="information-flow-enforcement-object-security-and-privacy-attributes">Information Flow Enforcement | Object Security and Privacy Attributes</h3>
+<p>Use [Assignment: organization-defined security and privacy attributes] associated with [Assignment: organization-defined information, source, and destination objects] to enforce [Assignment: organization-defined information flow control policies] as a basis for flow control decisions.</p>
+<p>Information flow enforcement mechanisms compare security and privacy attributes associated with information (i.e., data content and structure) and source and destination objects and respond appropriately when the enforcement mechanisms encounter information flows not explicitly allowed by information flow policies. For example, an information object labeled Secret would be allowed to flow to a destination object labeled Secret, but an information object labeled Top Secret would not be allowed to flow to a destination object labeled Secret. A dataset of personally identifiable information may be tagged with restrictions against combining with other types of datasets and, thus, would not be allowed to flow to the restricted dataset. Security and privacy attributes can also include source and destination addresses employed in traffic filter firewalls. Flow enforcement using explicit security or privacy attributes can be used, for example, to control the release of certain types of information.</p>
+<h3 id="2">2</h3>
+<h3 id="information-flow-enforcement-processing-domains">Information Flow Enforcement | Processing Domains</h3>
+<p>Use protected processing domains to enforce [Assignment: organization-defined information flow control policies] as a basis for flow control decisions.</p>
+<p>Protected processing domains within systems are processing spaces that have controlled interactions with other processing spaces, enabling control of information flows between these spaces and to/from information objects. A protected processing domain can be provided, for example, by implementing domain and type enforcement. In domain and type enforcement, system processes are assigned to domains, information is identified by types, and information flows are controlled based on allowed information accesses (i.e., determined by domain and type), allowed signaling among domains, and allowed process transitions to other domains.</p>
+<p>Related: <a href="../sc39/">SC-39</a>.</p>
+<h3 id="3">3</h3>
+<h3 id="information-flow-enforcement-dynamic-information-flow-control">Information Flow Enforcement | Dynamic Information Flow Control</h3>
+<p>Enforce [Assignment: organization-defined information flow control policies].</p>
+<p>Organizational policies regarding dynamic information flow control include allowing or disallowing information flows based on changing conditions or mission or operational considerations. Changing conditions include changes in risk tolerance due to changes in the immediacy of mission or business needs, changes in the threat environment, and detection of potentially harmful or adverse events.</p>
+<p>Related: <a href="../si4/">SI-4</a>.</p>
+<h3 id="4">4</h3>
+<h3 id="information-flow-enforcement-flow-control-of-encrypted-information">Information Flow Enforcement | Flow Control of Encrypted Information</h3>
+<p>Prevent encrypted information from bypassing [Assignment: organization-defined information flow control mechanisms] by [Selection (one or more): decrypting the information; blocking the flow of the encrypted information; terminating communications sessions attempting to pass encrypted information; [Assignment: organization-defined procedure or method]].</p>
+<p>Flow control mechanisms include content checking, security policy filters, and data type identifiers. The term encryption is extended to cover encoded data not recognized by filtering mechanisms.</p>
+<p>Related: <a href="../si4/">SI-4</a>.</p>
+<h3 id="5">5</h3>
+<h3 id="information-flow-enforcement-embedded-data-types">Information Flow Enforcement | Embedded Data Types</h3>
+<p>Enforce [Assignment: organization-defined limitations] on embedding data types within other data types.</p>
+<p>Embedding data types within other data types may result in reduced flow control effectiveness. Data type embedding includes inserting files as objects within other files and using compressed or archived data types that may include multiple embedded data types. Limitations on data type embedding consider the levels of embedding and prohibit levels of data type embedding that are beyond the capability of the inspection tools.</p>
+<h3 id="6">6</h3>
+<h3 id="information-flow-enforcement-metadata">Information Flow Enforcement | Metadata</h3>
+<p>Enforce information flow control based on [Assignment: organization-defined metadata].</p>
+<p>Metadata is information that describes the characteristics of data. Metadata can include structural metadata describing data structures or descriptive metadata describing data content. Enforcement of allowed information flows based on metadata enables simpler and more effective flow control. Organizations consider the trustworthiness of metadata regarding data accuracy (i.e., knowledge that the metadata values are correct with respect to the data), data integrity (i.e., protecting against unauthorized changes to metadata tags), and the binding of metadata to the data payload (i.e., employing sufficiently strong binding techniques with appropriate assurance).</p>
+<p>Related: <a href="../ac16/">AC-16</a>, <a href="../si7/">SI-7</a>.</p>
+<h3 id="7">7</h3>
+<h3 id="information-flow-enforcement-one-way-flow-mechanisms">Information Flow Enforcement | One-way Flow Mechanisms</h3>
+<p>Enforce one-way information flows through hardware-based flow control mechanisms.</p>
+<p>One-way flow mechanisms may also be referred to as a unidirectional network, unidirectional security gateway, or data diode. One-way flow mechanisms can be used to prevent data from being exported from a higher impact or classified domain or system while permitting data from a lower impact or unclassified domain or system to be imported.</p>
+<h3 id="8">8</h3>
+<h3 id="information-flow-enforcement-security-and-privacy-policy-filters">Information Flow Enforcement | Security and Privacy Policy Filters</h3>
+<p>(a) Enforce information flow control using [Assignment: organization-defined security or privacy policy filters] as a basis for flow control decisions for [Assignment: organization-defined information flows]; and</p>
+<p>(b) [Selection (one or more): Block; Strip; Modify; Quarantine] data after a filter processing failure in accordance with [Assignment: organization-defined security or privacy policy].</p>
+<p>Organization-defined security or privacy policy filters can address data structures and content. For example, security or privacy policy filters for data structures can check for maximum file lengths, maximum field sizes, and data/file types (for structured and unstructured data). Security or privacy policy filters for data content can check for specific words, enumerated values or data value ranges, and hidden content. Structured data permits the interpretation of data content by applications. Unstructured data refers to digital information without a data structure or with a data structure that does not facilitate the development of rule sets to address the impact or classification level of the information conveyed by the data or the flow enforcement decisions. Unstructured data consists of bitmap objects that are inherently non-language-based (i.e., image, video, or audio files) and textual objects that are based on written or printed languages. Organizations can implement more than one security or privacy policy filter to meet information flow control objectives.</p>
+<h3 id="9">9</h3>
+<h3 id="information-flow-enforcement-human-reviews">Information Flow Enforcement | Human Reviews</h3>
+<p>Enforce the use of human reviews for [Assignment: organization-defined information flows] under the following conditions: [Assignment: organization-defined conditions].</p>
+<p>Organizations define security or privacy policy filters for all situations where automated flow control decisions are possible. When a fully automated flow control decision is not possible, then a human review may be employed in lieu of or as a complement to automated security or privacy policy filtering. Human reviews may also be employed as deemed necessary by organizations.</p>
+<h3 id="10">10</h3>
+<h3 id="information-flow-enforcement-enable-and-disable-security-or-privacy-policy-filters">Information Flow Enforcement | Enable and Disable Security or Privacy Policy Filters</h3>
+<p>Provide the capability for privileged administrators to enable and disable [Assignment: organization-defined security or privacy policy filters] under the following conditions: [Assignment: organization-defined conditions].</p>
+<p>For example, as allowed by the system authorization, administrators can enable security or privacy policy filters to accommodate approved data types. Administrators also have the capability to select the filters that are executed on a specific data flow based on the type of data that is being transferred, the source and destination security domains, and other security or privacy relevant features, as needed.</p>
+<h3 id="11">11</h3>
+<h3 id="information-flow-enforcement-configuration-of-security-or-privacy-policy-filters">Information Flow Enforcement | Configuration of Security or Privacy Policy Filters</h3>
+<p>Provide the capability for privileged administrators to configure [Assignment: organization-defined security or privacy policy filters] to support different security or privacy policies.</p>
+<p>Documentation contains detailed information for configuring security or privacy policy filters. For example, administrators can configure security or privacy policy filters to include the list of inappropriate words that security or privacy policy mechanisms check in accordance with the definitions provided by organizations.</p>
+<h3 id="12">12</h3>
+<h3 id="information-flow-enforcement-data-type-identifiers">Information Flow Enforcement | Data Type Identifiers</h3>
+<p>When transferring information between different security domains, use [Assignment: organization-defined data type identifiers] to validate data essential for information flow decisions.</p>
+<p>Data type identifiers include filenames, file types, file signatures or tokens, and multiple internal file signatures or tokens. Systems only allow transfer of data that is compliant with data type format specifications. Identification and validation of data types is based on defined specifications associated with each allowed data format. The filename and number alone are not used for data type identification. Content is validated syntactically and semantically against its specification to ensure that it is the proper data type.</p>
+<h3 id="13">13</h3>
+<h3 id="information-flow-enforcement-decomposition-into-policy-relevant-subcomponents">Information Flow Enforcement | Decomposition into Policy-relevant Subcomponents</h3>
+<p>When transferring information between different security domains, decompose information into [Assignment: organization-defined policy-relevant subcomponents] for submission to policy enforcement mechanisms.</p>
+<p>Decomposing information into policy-relevant subcomponents prior to information transfer facilitates policy decisions on source, destination, certificates, classification, attachments, and other security- or privacy-related component differentiators. Policy enforcement mechanisms apply filtering, inspection, and/or sanitization rules to the policy-relevant subcomponents of information to facilitate flow enforcement prior to transferring such information to different security domains.</p>
+<h3 id="14">14</h3>
+<h3 id="information-flow-enforcement-security-or-privacy-policy-filter-constraints">Information Flow Enforcement | Security or Privacy Policy Filter Constraints</h3>
+<p>When transferring information between different security domains, implement [Assignment: organization-defined security or privacy policy filters] requiring fully enumerated formats that restrict data structure and content.</p>
+<p>Data structure and content restrictions reduce the range of potential malicious or unsanctioned content in cross-domain transactions. Security or privacy policy filters that restrict data structures include restricting file sizes and field lengths. Data content policy filters include encoding formats for character sets, restricting character data fields to only contain alpha-numeric characters, prohibiting special characters, and validating schema structures.</p>
+<h3 id="15">15</h3>
+<h3 id="information-flow-enforcement-detection-of-unsanctioned-information">Information Flow Enforcement | Detection of Unsanctioned Information</h3>
+<p>When transferring information between different security domains, examine the information for the presence of [Assignment: organization-defined unsanctioned information] and prohibit the transfer of such information in accordance with the [Assignment: organization-defined security or privacy policy].</p>
+<p>Unsanctioned information includes malicious code, information that is inappropriate for release from the source network, or executable code that could disrupt or harm the services or systems on the destination network.</p>
+<p>Related: <a href="../si3/">SI-3</a>.</p>
+<h3 id="16">16</h3>
+<h3 id="information-flow-enforcement-information-transfers-on-interconnected-systems">Information Flow Enforcement | Information Transfers on Interconnected Systems</h3>
+<p>Withdrawn: Incorporated into <a href="./">AC-4</a>.</p>
+<h3 id="17">17</h3>
+<h3 id="information-flow-enforcement-domain-authentication">Information Flow Enforcement | Domain Authentication</h3>
+<p>Uniquely identify and authenticate source and destination points by [Selection (one or more): organization; system; application; service; individual] for information transfer.</p>
+<p>Attribution is a critical component of a security and privacy concept of operations. The ability to identify source and destination points for information flowing within systems allows the forensic reconstruction of events and encourages policy compliance by attributing policy violations to specific organizations or individuals. Successful domain authentication requires that system labels distinguish among systems, organizations, and individuals involved in preparing, sending, receiving, or disseminating information. Attribution also allows organizations to better maintain the lineage of personally identifiable information processing as it flows through systems and can facilitate consent tracking, as well as correction, deletion, or access requests from individuals.</p>
+<p>Related: <a href="../ia2/">IA-2</a>, <a href="../ia3/">IA-3</a>, <a href="../ia9/">IA-9</a>.</p>
+<h3 id="18">18</h3>
+<h3 id="information-flow-enforcement-security-attribute-binding">Information Flow Enforcement | Security Attribute Binding</h3>
+<p>Withdrawn: Incorporated into <a href="../ac16/">AC-16</a>.</p>
+<h3 id="19">19</h3>
+<h3 id="information-flow-enforcement-validation-of-metadata">Information Flow Enforcement | Validation of Metadata</h3>
+<p>When transferring information between different security domains, implement [Assignment: organization-defined security or privacy policy filters] on metadata.</p>
+<p>All information (including metadata and the data to which the metadata applies) is subject to filtering and inspection. Some organizations distinguish between metadata and data payloads (i.e., only the data to which the metadata is bound). Other organizations do not make such distinctions and consider metadata and the data to which the metadata applies to be part of the payload.</p>
+<h3 id="20">20</h3>
+<h3 id="information-flow-enforcement-approved-solutions">Information Flow Enforcement | Approved Solutions</h3>
+<p>Employ [Assignment: organization-defined solutions in approved configurations] to control the flow of [Assignment: organization-defined information] across security domains.</p>
+<p>Organizations define approved solutions and configurations in cross-domain policies and guidance in accordance with the types of information flows across classification boundaries. The National Security Agency (NSA) National Cross Domain Strategy and Management Office provides a listing of approved cross-domain solutions. Contact ncdsmo@nsa.gov for more information.</p>
+<h3 id="21">21</h3>
+<h3 id="information-flow-enforcement-physical-or-logical-separation-of-information-flows">Information Flow Enforcement | Physical or Logical Separation of Information Flows</h3>
+<p>Separate information flows logically or physically using [Assignment: organization-defined mechanisms and/or techniques] to accomplish [Assignment: organization-defined required separations by types of information].</p>
+<p>Enforcing the separation of information flows associated with defined types of data can enhance protection by ensuring that information is not commingled while in transit and by enabling flow control by transmission paths that are not otherwise achievable. Types of separable information include inbound and outbound communications traffic, service requests and responses, and information of differing security impact or classification levels.</p>
+<p>Related: <a href="../sc32/">SC-32</a>.</p>
+<h3 id="22">22</h3>
+<h3 id="information-flow-enforcement-access-only">Information Flow Enforcement | Access Only</h3>
+<p>Provide access from a single device to computing platforms, applications, or data residing in multiple different security domains, while preventing information flow between the different security domains.</p>
+<p>The system provides a capability for users to access each connected security domain without providing any mechanisms to allow users to transfer data or information between the different security domains. An example of an access-only solution is a terminal that provides a user access to information with different security classifications while assuredly keeping the information separate.</p>
+<h3 id="23">23</h3>
+<h3 id="information-flow-enforcement-modify-non-releasable-information">Information Flow Enforcement | Modify Non-releasable Information</h3>
+<p>When transferring information between different security domains, modify non-releasable information by implementing [Assignment: organization-defined modification action].</p>
+<p>Modifying non-releasable information can help prevent a data spill or attack when information is transferred across security domains. Modification actions include masking, permutation, alteration, removal, or redaction.</p>
+<h3 id="24">24</h3>
+<h3 id="information-flow-enforcement-internal-normalized-format">Information Flow Enforcement | Internal Normalized Format</h3>
+<p>When transferring information between different security domains, parse incoming data into an internal normalized format and regenerate the data to be consistent with its intended specification.</p>
+<p>Converting data into normalized forms is one of most of effective mechanisms to stop malicious attacks and large classes of data exfiltration.</p>
+<h3 id="25">25</h3>
+<h3 id="information-flow-enforcement-data-sanitization">Information Flow Enforcement | Data Sanitization</h3>
+<p>When transferring information between different security domains, sanitize data to minimize [Selection (one or more): delivery of malicious content, command and control of malicious code, malicious code augmentation, and steganography encoded data; spillage of sensitive information] in accordance with [Assignment: organization-defined policy]].</p>
+<p>Data sanitization is the process of irreversibly removing or destroying data stored on a memory device (e.g., hard drives, flash memory/solid state drives, mobile devices, CDs, and DVDs) or in hard copy form.</p>
+<p>Related: <a href="../mp6/">MP-6</a>.</p>
+<h3 id="26">26</h3>
+<h3 id="information-flow-enforcement-audit-filtering-actions">Information Flow Enforcement | Audit Filtering Actions</h3>
+<p>When transferring information between different security domains, record and audit content filtering actions and results for the information being filtered.</p>
+<p>Content filtering is the process of inspecting information as it traverses a cross-domain solution and determines if the information meets a predefined policy. Content filtering actions and the results of filtering actions are recorded for individual messages to ensure that the correct filter actions were applied. Content filter reports are used to assist in troubleshooting actions by, for example, determining why message content was modified and/or why it failed the filtering process. Audit events are defined in AU-2. Audit records are generated in AU-12.</p>
+<p>Related: <a href="../au2/">AU-2</a>, <a href="../au3/">AU-3</a>, <a href="../au12/">AU-12</a>.</p>
+<h3 id="27">27</h3>
+<h3 id="information-flow-enforcement-redundantindependent-filtering-mechanisms">Information Flow Enforcement | Redundant/independent Filtering Mechanisms</h3>
+<p>When transferring information between different security domains, implement content filtering solutions that provide redundant and independent filtering mechanisms for each data type.</p>
+<p>Content filtering is the process of inspecting information as it traverses a cross-domain solution and determines if the information meets a predefined policy. Redundant and independent content filtering eliminates a single point of failure filtering system. Independence is defined as the implementation of a content filter that uses a different code base and supporting libraries (e.g., two JPEG filters using different vendors’ JPEG libraries) and multiple, independent system processes.</p>
+<h3 id="28">28</h3>
+<h3 id="information-flow-enforcement-linear-filter-pipelines">Information Flow Enforcement | Linear Filter Pipelines</h3>
+<p>When transferring information between different security domains, implement a linear content filter pipeline that is enforced with discretionary and mandatory access controls.</p>
+<p>Content filtering is the process of inspecting information as it traverses a cross-domain solution and determines if the information meets a predefined policy. The use of linear content filter pipelines ensures that filter processes are non-bypassable and always invoked. In general, the use of parallel filtering architectures for content filtering of a single data type introduces bypass and non-invocation issues.</p>
+<h3 id="29">29</h3>
+<h3 id="information-flow-enforcement-filter-orchestration-engines">Information Flow Enforcement | Filter Orchestration Engines</h3>
+<p>When transferring information between different security domains, employ content filter orchestration engines to ensure that:</p>
+<p>(a) Content filtering mechanisms successfully complete execution without errors; and</p>
+<p>(b) Content filtering actions occur in the correct order and comply with [Assignment: organization-defined policy].</p>
+<p>Content filtering is the process of inspecting information as it traverses a cross-domain solution and determines if the information meets a predefined security policy. An orchestration engine coordinates the sequencing of activities (manual and automated) in a content filtering process. Errors are defined as either anomalous actions or unexpected termination of the content filter process. This is not the same as a filter failing content due to non-compliance with policy. Content filter reports are a commonly used mechanism to ensure that expected filtering actions are completed successfully.</p>
+<h3 id="30">30</h3>
+<h3 id="information-flow-enforcement-filter-mechanisms-using-multiple-processes">Information Flow Enforcement | Filter Mechanisms Using Multiple Processes</h3>
+<p>When transferring information between different security domains, implement content filtering mechanisms using multiple processes.</p>
+<p>The use of multiple processes to implement content filtering mechanisms reduces the likelihood of a single point of failure.</p>
+<h3 id="31">31</h3>
+<h3 id="information-flow-enforcement-failed-content-transfer-prevention">Information Flow Enforcement | Failed Content Transfer Prevention</h3>
+<p>When transferring information between different security domains, prevent the transfer of failed content to the receiving domain.</p>
+<p>Content that failed filtering checks can corrupt the system if transferred to the receiving domain.</p>
+<h3 id="32">32</h3>
+<h3 id="information-flow-enforcement-process-requirements-for-information-transfer">Information Flow Enforcement | Process Requirements for Information Transfer</h3>
+<p>When transferring information between different security domains, the process that transfers information between filter pipelines:</p>
+<p>(a) Does not filter message content;</p>
+<p>(b) Validates filtering metadata;</p>
+<p>(c) Ensures the content associated with the filtering metadata has successfully completed filtering; and</p>
+<p>(d) Transfers the content to the destination filter pipeline.</p>
+<p>The processes transferring information between filter pipelines have minimum complexity and functionality to provide assurance that the processes operate correctly.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../ac5/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../ac5/" class="btn btn-xs btn-link">
+        AC-5 Separation of Duties
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../ac3/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../ac3/" class="btn btn-xs btn-link">
+        AC-3 Access Enforcement
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

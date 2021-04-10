@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>CM-8 System Component Inventory - NIST 800-53 For Dummies</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "CM-8 System Component Inventory", url: "#_top", children: [
+              {title: "Control", url: "#control" },
+              {title: "Discussion", url: "#discussion" },
+              {title: "Related Controls", url: "#related-controls" },
+              {title: "Enhancements", url: "#enhancements" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../cm9/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../cm9/" class="btn btn-xs btn-link">
+        CM-9 Configuration Management Plan
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../cm7/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../cm7/" class="btn btn-xs btn-link">
+        CM-7 Least Functionality
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="cm-8-system-component-inventory">CM-8 System Component Inventory</h1>
+<h2 id="control">Control</h2>
+<p>a. Develop and document an inventory of system components that:</p>
+<ol>
+<li>Accurately reflects the system;</li>
+<li>Includes all components within the system;</li>
+<li>Does not include duplicate accounting of components or components assigned to any other system;</li>
+<li>Is at the level of granularity deemed necessary for tracking and reporting; and</li>
+<li>Includes the following information to achieve system component accountability: [Assignment: organization-defined information deemed necessary to achieve effective system component accountability]; and</li>
+</ol>
+<p>b. Review and update the system component inventory [Assignment: organization-defined frequency].</p>
+<h2 id="discussion">Discussion</h2>
+<p>System components are discrete, identifiable information technology assets that include hardware, software, and firmware. Organizations may choose to implement centralized system component inventories that include components from all organizational systems. In such situations, organizations ensure that the inventories include system-specific information required for component accountability. The information necessary for effective accountability of system components includes the system name, software owners, software version numbers, hardware inventory specifications, software license information, and for networked components, the machine names and network addresses across all implemented protocols (e.g., IPv4, IPv6). Inventory specifications include date of receipt, cost, model, serial number, manufacturer, supplier information, component type,  and physical location.
+Preventing duplicate accounting of system components addresses the lack of accountability that occurs when component ownership and system association is not known, especially in large or complex connected systems. Effective prevention of duplicate accounting of system components necessitates use of a unique identifier for each component. For software inventory, centrally managed software that is accessed via other systems is addressed as a component of the system on which it is installed and managed. Software installed on multiple organizational systems and managed at the system level is addressed for each individual system and may appear more than once in a centralized component inventory, necessitating a system association for each software instance in the centralized inventory to avoid duplicate accounting of components. Scanning systems implementing multiple network protocols (e.g., IPv4 and IPv6) can result in duplicate components being identified in different address spaces. The implementation of CM-8(7) can help to eliminate duplicate accounting of components.</p>
+<h2 id="related-controls">Related Controls</h2>
+<p><a href="../cm2/">CM-2</a>, <a href="../cm7/">CM-7</a>, <a href="../cm9/">CM-9</a>, <a href="../cm10/">CM-10</a>, <a href="../cm11/">CM-11</a>, <a href="../cm13/">CM-13</a>, <a href="../cp2/">CP-2</a>, <a href="../cp9/">CP-9</a>, <a href="../ma2/">MA-2</a>, <a href="../ma6/">MA-6</a>, <a href="../pe20/">PE-20</a>, <a href="../pl9/">PL-9</a>, <a href="../pm5/">PM-5</a>, <a href="../sa4/">SA-4</a>, <a href="../sa5/">SA-5</a>, <a href="../si2/">SI-2</a>, <a href="../sr4/">SR-4</a>.</p>
+<h2 id="enhancements">Enhancements</h2>
+<h3 id="1">1</h3>
+<h3 id="system-component-inventory-updates-during-installation-and-removal">System Component Inventory | Updates During Installation and Removal</h3>
+<p>Update the inventory of system components as part of component installations, removals, and system updates.</p>
+<p>Organizations can improve the accuracy, completeness, and consistency of system component inventories if the inventories are updated as part of component installations or removals or during general system updates. If inventories are not updated at these key times, there is a greater likelihood that the information will not be appropriately captured and documented. System updates include hardware, software, and firmware components.</p>
+<p>Related: <a href="../pm16/">PM-16</a>.</p>
+<h3 id="2">2</h3>
+<h3 id="system-component-inventory-automated-maintenance">System Component Inventory | Automated Maintenance</h3>
+<p>Maintain the currency, completeness, accuracy, and availability of the inventory of system components using [Assignment: organization-defined automated mechanisms].</p>
+<p>Organizations maintain system inventories to the extent feasible. For example, virtual machines can be difficult to monitor because such machines are not visible to the network when not in use. In such cases, organizations maintain as up-to-date, complete, and accurate an inventory as is deemed reasonable. Automated maintenance can be achieved by the implementation of CM-2(2) for organizations that combine system component inventory and baseline configuration activities.</p>
+<h3 id="3">3</h3>
+<h3 id="system-component-inventory-automated-unauthorized-component-detection">System Component Inventory | Automated Unauthorized Component Detection</h3>
+<p>(a) Detect the presence of unauthorized hardware, software, and firmware components within the system using [Assignment: organization-defined automated mechanisms] [Assignment: organization-defined frequency]; and</p>
+<p>(b) Take the following actions when unauthorized components are detected: [Selection (one or more): disable network access by such components; isolate the components; notify [Assignment: organization-defined personnel or roles]].</p>
+<p>Automated unauthorized component detection is applied in addition to the monitoring for unauthorized remote connections and mobile devices. Monitoring for unauthorized system components may be accomplished on an ongoing basis or by the periodic scanning of systems for that purpose. Automated mechanisms may also be used to prevent the connection of unauthorized components (see CM-7(9)). Automated mechanisms can be implemented in systems or in separate system components. When acquiring and implementing automated mechanisms, organizations consider whether such mechanisms depend on the ability of the system component to support an agent or supplicant in order to be detected since some types of components do not have or cannot support agents (e.g., IoT devices, sensors). Isolation can be achieved , for example, by placing unauthorized system components in separate domains or subnets or quarantining such components. This type of  component isolation is commonly referred to as sandboxing.</p>
+<p>Related: <a href="../ac19/">AC-19</a>, <a href="../ca7/">CA-7</a>, <a href="../ra5/">RA-5</a>, <a href="../sc3/">SC-3</a>, <a href="../sc39/">SC-39</a>, <a href="../sc44/">SC-44</a>, <a href="../si3/">SI-3</a>, <a href="../si4/">SI-4</a>, <a href="../si7/">SI-7</a>.</p>
+<h3 id="4">4</h3>
+<h3 id="system-component-inventory-accountability-information">System Component Inventory | Accountability Information</h3>
+<p>Include in the system component inventory information, a means for identifying by [Selection (one or more): name; position; role], individuals responsible and accountable for administering those components.</p>
+<p>Identifying individuals who are responsible and accountable for administering system components ensures that the assigned components are properly administered and that organizations can contact those individuals if some action is required (e.g., when the component is determined to be the source of a breach, needs to be recalled or replaced, or needs to be relocated).</p>
+<p>Related: <a href="../ac3/">AC-3</a>.</p>
+<h3 id="5">5</h3>
+<h3 id="system-component-inventory-no-duplicate-accounting-of-components">System Component Inventory | No Duplicate Accounting of Components</h3>
+<p>Withdrawn: Incorporated into <a href="./">CM-8</a>.</p>
+<h3 id="6">6</h3>
+<h3 id="system-component-inventory-assessed-configurations-and-approved-deviations">System Component Inventory | Assessed Configurations and Approved Deviations</h3>
+<p>Include assessed component configurations and any approved deviations to current deployed configurations in the system component inventory.</p>
+<p>Assessed configurations and approved deviations focus on configuration settings established by organizations for system components, the specific components that have been assessed to determine compliance with the required configuration settings, and any approved deviations from established configuration settings.</p>
+<h3 id="7">7</h3>
+<h3 id="system-component-inventory-centralized-repository">System Component Inventory | Centralized Repository</h3>
+<p>Provide a centralized repository for the inventory of system components.</p>
+<p>Organizations may implement centralized system component inventories that include components from all organizational systems. Centralized repositories of component inventories provide opportunities for efficiencies in accounting for organizational hardware, software, and firmware assets. Such repositories may also help organizations rapidly identify the location and responsible individuals of components that have been compromised, breached, or are otherwise in need of mitigation actions. Organizations ensure that the resulting centralized inventories include system-specific information required for proper component accountability.</p>
+<h3 id="8">8</h3>
+<h3 id="system-component-inventory-automated-location-tracking">System Component Inventory | Automated Location Tracking</h3>
+<p>Support the tracking of system components by geographic location using [Assignment: organization-defined automated mechanisms].</p>
+<p>The use of automated mechanisms to track the location of system components can increase the accuracy of component inventories. Such capability may help organizations rapidly identify the location and responsible individuals of system components that have been compromised, breached, or are otherwise in need of mitigation actions. The use of tracking mechanisms can be coordinated with senior agency officials for privacy if there are implications that affect individual privacy.</p>
+<h3 id="9">9</h3>
+<h3 id="system-component-inventory-assignment-of-components-to-systems">System Component Inventory | Assignment of Components to Systems</h3>
+<p>(a) Assign system components to a system; and </p>
+<p>(b) Receive an acknowledgement from [Assignment: organization-defined personnel or roles] of this assignment.</p>
+<p>System components that are not assigned to a system may be unmanaged, lack the required protection, and become an organizational vulnerability.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../cm9/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../cm9/" class="btn btn-xs btn-link">
+        CM-9 Configuration Management Plan
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../cm7/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../cm7/" class="btn btn-xs btn-link">
+        CM-7 Least Functionality
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

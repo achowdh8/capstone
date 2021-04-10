@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>AU-2 Event Logging - NIST 800-53 For Dummies</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "AU-2 Event Logging", url: "#_top", children: [
+              {title: "Control", url: "#control" },
+              {title: "Discussion", url: "#discussion" },
+              {title: "Related Controls", url: "#related-controls" },
+              {title: "Enhancements", url: "#enhancements" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../au3/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../au3/" class="btn btn-xs btn-link">
+        AU-3 Content of Audit Records
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../au1/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../au1/" class="btn btn-xs btn-link">
+        AU-1 Policy and Procedures
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="au-2-event-logging">AU-2 Event Logging</h1>
+<h2 id="control">Control</h2>
+<p>a. Identify the types of events that the system is capable of logging in support of the audit function: [Assignment: organization-defined event types that the system is capable of logging];</p>
+<p>b. Coordinate the event logging function with other organizational entities requiring audit-related information to guide and inform the selection criteria for events to be logged;</p>
+<p>c. Specify the following event types for logging within the system: [Assignment: organization-defined event types (subset of the event types defined in AU-2a.) along with the frequency of (or situation requiring) logging for each identified event type];</p>
+<p>d. Provide a rationale for why the event types selected for logging are deemed to be adequate to support after-the-fact investigations of incidents; and</p>
+<p>e. Review and update the event types selected for logging [Assignment: organization-defined frequency].</p>
+<h2 id="discussion">Discussion</h2>
+<p>An event is an observable occurrence in a system. The types of events that require logging are those events that are significant and relevant to the security of systems and the privacy of individuals. Event logging also supports specific monitoring and auditing needs. Event types include password changes, failed logons or failed accesses related to systems, security or privacy attribute changes, administrative privilege usage, PIV credential usage, data action changes, query parameters, or external credential usage. In determining the set of event types that require logging, organizations consider the monitoring and auditing appropriate for each of the controls to be implemented. For completeness, event logging includes all protocols that are operational and supported by the system.</p>
+<p>To balance monitoring and auditing requirements with other system needs, event logging requires identifying the subset of event types that are logged at a given point in time. For example, organizations may determine that systems need the capability to log every file access successful and unsuccessful, but not activate that capability except for specific circumstances due to the potential burden on system performance. The types of events that organizations desire to be logged may change. Reviewing and updating the set of logged events is necessary to help ensure that the events remain relevant and continue to support the needs of the organization. Organizations consider how the types of logging events can reveal information about individuals that may give rise to privacy risk and how best to mitigate such risks. For example, there is the potential to reveal personally identifiable information in the audit trail, especially if the logging event is based on patterns or time of usage.</p>
+<p>Event logging requirements, including the need to log specific event types, may be referenced in other controls and control enhancements. These include <a href="../ac2/#4">AC-2(4)</a>, <a href="../ac3/#10">AC-3(10)</a>, <a href="../ac6/#9">AC-6(9)</a>, <a href="../ac17/#1">AC-17(1)</a>, <a href="../cm3/">CM-3f</a>, <a href="../cm5/#1">CM-5(1)</a>, <a href="../ia3/#3">IA-3(3)(b)</a>, <a href="../ma4/#1">MA-4(1)</a>, <a href="../mp4/#2">MP-4(2)</a>, <a href="../pe3/">PE-3</a>, <a href="../pm21/">PM-21</a>, <a href="../pt7/">PT-7</a>, <a href="../ra8/">RA-8</a>, <a href="../sc7/#9">SC-7(9)</a>, <a href="../sc7/#15">SC-7(15)</a>, <a href="../si3/#8">SI-3(8)</a>, <a href="../si4/#22">SI-4(22)</a>, <a href="../si7/#8">SI-7(8)</a>, and <a href="../si10/#1">SI-10(1)</a>. Organizations include event types that are required by applicable laws, executive orders, directives, policies, regulations, standards, and guidelines. Audit records can be generated at various levels, including at the packet level as information traverses the network. Selecting the appropriate level of event logging is an important part of a monitoring and auditing capability and can identify the root causes of problems. When defining event types, organizations consider the logging necessary to cover related event types, such as the steps in distributed, transaction-based processes and the actions that occur in service-oriented architectures.</p>
+<h2 id="related-controls">Related Controls</h2>
+<p><a href="../ac2/">AC-2</a>, <a href="../ac3/">AC-3</a>, <a href="../ac6/">AC-6</a>, <a href="../ac7/">AC-7</a>, <a href="../ac8/">AC-8</a>, <a href="../ac16/">AC-16</a>, <a href="../ac17/">AC-17</a>, <a href="../au3/">AU-3</a>, <a href="../au4/">AU-4</a>, <a href="../au5/">AU-5</a>, <a href="../au6/">AU-6</a>, <a href="../au7/">AU-7</a>, <a href="../au11/">AU-11</a>, <a href="../au12/">AU-12</a>, <a href="../cm3/">CM-3</a>, <a href="../cm5/">CM-5</a>, <a href="../cm6/">CM-6</a>, <a href="../cm13/">CM-13</a>, <a href="../ia3/">IA-3</a>, <a href="../ma4/">MA-4</a>, <a href="../mp4/">MP-4</a>, <a href="../pe3/">PE-3</a>, <a href="../pm21/">PM-21</a>, <a href="../pt2/">PT-2</a>, <a href="../pt7/">PT-7</a>, <a href="../ra8/">RA-8</a>, <a href="../sa8/">SA-8</a>, <a href="../sc7/">SC-7</a>, <a href="../sc18/">SC-18</a>, <a href="../si3/">SI-3</a>, <a href="../si4/">SI-4</a>, <a href="../si7/">SI-7</a>, <a href="../si10/">SI-10</a>, <a href="../si11/">SI-11</a>.</p>
+<h2 id="enhancements">Enhancements</h2>
+<h3 id="1">1</h3>
+<h3 id="event-logging-compilation-of-audit-records-from-multiple-sources">Event Logging | Compilation of Audit Records from Multiple Sources</h3>
+<p>Withdrawn: Incorporated into <a href="../au12/">AU-12</a>.</p>
+<h3 id="2">2</h3>
+<h3 id="event-logging-selection-of-audit-events-by-component">Event Logging | Selection of Audit Events by Component</h3>
+<p>Withdrawn: Incorporated into <a href="../au12/">AU-12</a>.</p>
+<h3 id="3">3</h3>
+<h3 id="event-logging-reviews-and-updates">Event Logging | Reviews and Updates</h3>
+<p>Withdrawn: Incorporated into <a href="./">AU-2</a>.</p>
+<h3 id="4">4</h3>
+<h3 id="event-logging-privileged-functions">Event Logging | Privileged Functions</h3>
+<p>Withdrawn: Incorporated into <a href="../ac6/#9">AC-6(9)</a>.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../au3/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../au3/" class="btn btn-xs btn-link">
+        AU-3 Content of Audit Records
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../au1/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../au1/" class="btn btn-xs btn-link">
+        AU-1 Policy and Procedures
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

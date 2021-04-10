@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>AC-3 Access Enforcement - NIST 800-53 For Dummies</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "AC-3 Access Enforcement", url: "#_top", children: [
+              {title: "Control", url: "#control" },
+              {title: "Discussion", url: "#discussion" },
+              {title: "Related Controls", url: "#related-controls" },
+              {title: "Enhancements", url: "#enhancements" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../ac4/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../ac4/" class="btn btn-xs btn-link">
+        AC-4 Information Flow Enforcement
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../ac2/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../ac2/" class="btn btn-xs btn-link">
+        AC-2 Account Management
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="ac-3-access-enforcement">AC-3 Access Enforcement</h1>
+<h2 id="control">Control</h2>
+<p>Enforce approved authorizations for logical access to information and system resources in accordance with applicable access control policies.</p>
+<h2 id="discussion">Discussion</h2>
+<p>Access control policies control access between active entities or subjects (i.e., users or processes acting on behalf of users) and passive entities or objects (i.e., devices, files, records, domains) in organizational systems. In addition to enforcing authorized access at the system level and recognizing that systems can host many applications and services in support of mission and business functions, access enforcement mechanisms can also be employed at the application and service level to provide increased information security and privacy. In contrast to logical access controls that are implemented within the system, physical access controls are addressed by the controls in the Physical and Environmental Protection (PE) family.</p>
+<h2 id="related-controls">Related Controls</h2>
+<p><a href="../ac2/">AC-2</a>, <a href="../ac4/">AC-4</a>, <a href="../ac5/">AC-5</a>, <a href="../ac6/">AC-6</a>, <a href="../ac16/">AC-16</a>, <a href="../ac17/">AC-17</a>, <a href="../ac18/">AC-18</a>, <a href="../ac19/">AC-19</a>, <a href="../ac20/">AC-20</a>, <a href="../ac21/">AC-21</a>, <a href="../ac22/">AC-22</a>, <a href="../ac24/">AC-24</a>, <a href="../ac25/">AC-25</a>, <a href="../at2/">AT-2</a>, <a href="../at3/">AT-3</a>, <a href="../au9/">AU-9</a>, <a href="../ca9/">CA-9</a>, <a href="../cm5/">CM-5</a>, <a href="../cm11/">CM-11</a>, <a href="../ia2/">IA-2</a>, <a href="../ia5/">IA-5</a>, <a href="../ia6/">IA-6</a>, <a href="../ia7/">IA-7</a>, <a href="../ia11/">IA-11</a>, <a href="../ma3/">MA-3</a>, <a href="../ma4/">MA-4</a>, <a href="../ma5/">MA-5</a>, <a href="../mp4/">MP-4</a>, <a href="../pm2/">PM-2</a>, <a href="../ps3/">PS-3</a>, <a href="../pt2/">PT-2</a>, <a href="../pt3/">PT-3</a>, <a href="../sa17/">SA-17</a>, <a href="../sc2/">SC-2</a>, <a href="../sc3/">SC-3</a>, <a href="../sc4/">SC-4</a>, <a href="../sc12/">SC-12</a>, <a href="../sc13/">SC-13</a>, <a href="../sc28/">SC-28</a>, <a href="../sc31/">SC-31</a>, <a href="../sc34/">SC-34</a>, <a href="../si4/">SI-4</a>, <a href="../si8/">SI-8</a>.</p>
+<h2 id="enhancements">Enhancements</h2>
+<h3 id="1">1</h3>
+<h3 id="access-enforcement-restricted-access-to-privileged-functions">Access Enforcement | Restricted Access to Privileged Functions</h3>
+<p>Withdrawn: Incorporated into <a href="../ac6/">AC-6</a>. </p>
+<h3 id="2">2</h3>
+<h3 id="access-enforcement-dual-authorization">Access Enforcement | Dual Authorization</h3>
+<p>Enforce dual authorization for [Assignment: organization-defined privileged commands and/or other organization-defined actions].</p>
+<p>Dual authorization, also known as two-person control, reduces risk related to insider threats. Dual authorization mechanisms require the approval of two authorized individuals to execute. To reduce the risk of collusion, organizations consider rotating dual authorization duties. Organizations consider the risk associated with implementing dual authorization mechanisms when immediate responses are necessary to ensure public and environmental safety.</p>
+<p>Related: <a href="../cp9/">CP-9</a>, <a href="../mp6/">MP-6</a>.</p>
+<h3 id="3">3</h3>
+<h3 id="access-enforcement-mandatory-access-control">Access Enforcement | Mandatory Access Control</h3>
+<p>Enforce [Assignment: organization-defined mandatory access control policy] over the set of covered subjects and objects specified in the policy, and where the policy:</p>
+<p>(a) Is uniformly enforced across the covered subjects and objects within the system; </p>
+<p>(b) Specifies that a subject that has been granted access to information is constrained from doing any of the following;</p>
+<ol>
+<li>Passing the information to unauthorized subjects or objects;</li>
+<li>Granting its privileges to other subjects; </li>
+<li>Changing one or more security attributes (specified by the policy) on subjects, objects, the system, or system components;</li>
+<li>Choosing the security attributes and attribute values (specified by the policy) to be associated with newly created or modified objects; and</li>
+<li>Changing the rules governing access control; and</li>
+</ol>
+<p>(c) Specifies that [Assignment: organization-defined subjects] may explicitly be granted [Assignment: organization-defined privileges] such that they are not limited by any defined subset (or all) of the above constraints.</p>
+<p>Mandatory access control is a type of nondiscretionary access control. Mandatory access control policies constrain what actions subjects can take with information obtained from objects for which they have already been granted access. This prevents the subjects from passing the information to unauthorized subjects and objects. Mandatory access control policies constrain actions that subjects can take with respect to the propagation of access control privileges; that is, a subject with a privilege cannot pass that privilege to other subjects. The policy is uniformly enforced over all subjects and objects to which the system has control. Otherwise, the access control policy can be circumvented. This enforcement is provided by an implementation that meets the reference monitor concept as described in AC-25. The policy is bounded by the system (i.e., once the information is passed outside of the control of the system, additional means may be required to ensure that the constraints on the information remain in effect).
+The trusted subjects described above are granted privileges consistent with the concept of least privilege (see AC-6). Trusted subjects are only given the minimum privileges necessary for satisfying organizational mission/business needs relative to the above policy. The control is most applicable when there is a mandate that establishes a policy regarding access to controlled unclassified information or classified information and some users of the system are not authorized access to all such information resident in the system. Mandatory access control can operate in conjunction with discretionary access control as described in AC-3(4). A subject constrained in its operation by mandatory access control policies can still operate under the less rigorous constraints of AC-3(4), but mandatory access control policies take precedence over the less rigorous constraints of AC-3(4). For example, while a mandatory access control policy imposes a constraint that prevents a subject from passing information to another subject operating at a different impact or classification level, AC-3(4) permits the subject to pass the information to any other subject with the same impact or classification level as the subject. Examples of mandatory access control policies include the Bell-LaPadula policy to protect confidentiality of information and the Biba policy to protect the integrity of information.</p>
+<p>Related: <a href="../sc7/">SC-7</a>.</p>
+<h3 id="4">4</h3>
+<h3 id="access-enforcement-discretionary-access-control">Access Enforcement | Discretionary Access Control</h3>
+<p>Enforce [Assignment: organization-defined discretionary access control policy] over the set of covered subjects and objects specified in the policy, and where the policy specifies that a subject that has been granted access to information can do one or more of the following:</p>
+<p>(a) Pass the information to any other subjects or objects;</p>
+<p>(b) Grant its privileges to other subjects; </p>
+<p>(c) Change security attributes on subjects, objects, the system, or the system’s components;</p>
+<p>(d) Choose the security attributes to be associated with newly created or revised objects; or</p>
+<p>(e) Change the rules governing access control.</p>
+<p>When discretionary access control policies are implemented, subjects are not constrained with regard to what actions they can take with information for which they have already been granted access. Thus, subjects that have been granted access to information are not prevented from passing the information to other subjects or objects (i.e., subjects have the discretion to pass). Discretionary access control can operate in conjunction with mandatory access control as described in AC-3(3) and AC-3(15). A subject that is constrained in its operation by mandatory access control policies can still operate under the less rigorous constraints of discretionary access control. Therefore, while AC-3(3) imposes constraints that prevent a subject from passing information to another subject operating at a different impact or classification level, AC-3(4) permits the subject to pass the information to any subject at the same impact or classification level. The policy is bounded by the system. Once the information is passed outside of system control, additional means may be required to ensure that the constraints remain in effect. While traditional definitions of discretionary access control require identity-based access control, that limitation is not required for this particular use of discretionary access control.</p>
+<h3 id="5">5</h3>
+<h3 id="access-enforcement-security-relevant-information">Access Enforcement | Security-relevant Information</h3>
+<p>Prevent access to [Assignment: organization-defined security-relevant information] except during secure, non-operable system states.</p>
+<p>Security-relevant information is information within systems that can potentially impact the operation of security functions or the provision of security services in a manner that could result in failure to enforce system security and privacy policies or maintain the separation of code and data. Security-relevant information includes access control lists, filtering rules for routers or firewalls, configuration parameters for security services, and cryptographic key management information. Secure, non-operable system states include the times in which systems are not performing mission or business-related processing, such as when the system is offline for maintenance, boot-up, troubleshooting, or shut down.</p>
+<p>Related: <a href="../cm6/">CM-6</a>, <a href="../sc39/">SC-39</a>.</p>
+<h3 id="6">6</h3>
+<h3 id="access-enforcement-protection-of-user-and-system-information">Access Enforcement | Protection of User and System Information</h3>
+<p>Withdrawn: Incorporated into <a href="../mp4/">MP-4</a> and <a href="../sc28/">SC-28</a>.</p>
+<h3 id="7">7</h3>
+<h3 id="access-enforcement-role-based-access-control">Access Enforcement | Role-based Access Control</h3>
+<p>Enforce a role-based access control policy over defined subjects and objects and control access based upon [Assignment: organization-defined roles and users authorized to assume such roles].</p>
+<p>Role-based access control (RBAC) is an access control policy that enforces access to objects and system functions based on the defined role (i.e., job function) of the subject. Organizations can create specific roles based on job functions and the authorizations (i.e., privileges) to perform needed operations on the systems associated with the organization-defined roles. When users are assigned to specific roles, they inherit the authorizations or privileges defined for those roles. RBAC simplifies privilege administration for organizations because privileges are not assigned directly to every user (which can be a large number of individuals) but are instead acquired through role assignments. RBAC can also increase privacy and security risk if individuals assigned to a role are given access to information beyond what they need to support organizational missions or business functions. RBAC can be implemented as a mandatory or discretionary form of access control. For organizations implementing RBAC with mandatory access controls, the requirements in AC-3(3) define the scope of the subjects and objects covered by the policy.</p>
+<h3 id="8">8</h3>
+<h3 id="access-enforcement-revocation-of-access-authorizations">Access Enforcement | Revocation of Access Authorizations</h3>
+<p>Enforce the revocation of access authorizations resulting from changes to the security attributes of subjects and objects based on [Assignment: organization-defined rules governing the timing of revocations of access authorizations].</p>
+<p>Revocation of access rules may differ based on the types of access revoked. For example, if a subject (i.e., user or process acting on behalf of a user) is removed from a group, access may not be revoked until the next time the object is opened or the next time the subject attempts to access the object. Revocation based on changes to security labels may take effect immediately. Organizations provide alternative approaches on how to make revocations immediate if systems cannot provide such capability and immediate revocation is necessary.</p>
+<h3 id="9">9</h3>
+<h3 id="access-enforcement-controlled-release">Access Enforcement | Controlled Release</h3>
+<p>Release information outside of the system only if:</p>
+<p>(a) The receiving [Assignment: organization-defined system or system component] provides [Assignment: organization-defined controls]; and</p>
+<p>(b) [Assignment: organization-defined controls] are used to validate the appropriateness of the information designated for release.</p>
+<p>Organizations can only directly protect information when it resides within the system. Additional controls may be needed to ensure that organizational information is adequately protected once it is transmitted outside of the system. In situations where the system is unable to determine the adequacy of the protections provided by external entities, as a mitigation measure, organizations procedurally determine whether the external systems are providing adequate controls. The means used to determine the adequacy of controls provided by external systems include conducting periodic assessments (inspections/tests), establishing agreements between the organization and its counterpart organizations, or some other process. The means used by external entities to protect the information received need not be the same as those used by the organization, but the means employed are sufficient to provide consistent adjudication of the security and privacy policy to protect the information and individuals’ privacy.
+Controlled release of information requires systems to implement technical or procedural means to validate the information prior to releasing it to external systems. For example, if the system passes information to a system controlled by another organization, technical means are employed to validate that the security and privacy attributes associated with the exported information are appropriate for the receiving system. Alternatively, if the system passes information to a printer in organization-controlled space, procedural means can be employed to ensure that only authorized individuals gain access to the printer.</p>
+<p>Related: <a href="../ca3/">CA-3</a>, <a href="../pt7/">PT-7</a>, <a href="../pt8/">PT-8</a>, <a href="../sa9/">SA-9</a>, <a href="../sc16/">SC-16</a>.</p>
+<h3 id="10">10</h3>
+<h3 id="access-enforcement-audited-override-of-access-control-mechanisms">Access Enforcement | Audited Override of Access Control Mechanisms</h3>
+<p>Employ an audited override of automated access control mechanisms under [Assignment: organization-defined conditions] by [Assignment: organization-defined roles].</p>
+<p>In certain situations, such as when there is a threat to human life or an event that threatens the organization’s ability to carry out critical missions or business functions, an override capability for access control mechanisms may be needed. Override conditions are defined by organizations and used only in those limited circumstances. Audit events are defined in AU-2. Audit records are generated in AU-12.</p>
+<p>Related: <a href="../au2/">AU-2</a>, <a href="../au6/">AU-6</a>, <a href="../au10/">AU-10</a>, <a href="../au12/">AU-12</a>, <a href="../au14/">AU-14</a>.</p>
+<h3 id="11">11</h3>
+<h3 id="access-enforcement-restrict-access-to-specific-information-types">Access Enforcement | Restrict Access to Specific Information Types</h3>
+<p>Restrict access to data repositories containing [Assignment: organization-defined information types].</p>
+<p>Restricting access to specific information is intended to provide flexibility regarding access control of specific information types within a system. For example, role-based access could be employed to allow access to only a specific type of personally identifiable information within a database rather than allowing access to the database in its entirety. Other examples include restricting access to cryptographic keys, authentication information, and selected system information.</p>
+<p>Related: <a href="../cm8/">CM-8</a>, <a href="../cm12/">CM-12</a>, <a href="../cm13/">CM-13</a>, <a href="../pm5/">PM-5</a>.</p>
+<h3 id="12">12</h3>
+<h3 id="access-enforcement-assert-and-enforce-application-access">Access Enforcement | Assert and Enforce Application Access</h3>
+<p>(a) Require applications to assert, as part of the installation process, the access needed to the following system applications and functions: [Assignment: organization-defined system applications and functions];</p>
+<p>(b) Provide an enforcement mechanism to prevent unauthorized access; and</p>
+<p>(c) Approve access changes after initial installation of the application.</p>
+<p>Asserting and enforcing application access is intended to address applications that need to access existing system applications and functions, including user contacts, global positioning systems, cameras, keyboards, microphones, networks, phones, or other files.</p>
+<p>Related: <a href="../cm7/">CM-7</a>.</p>
+<h3 id="13">13</h3>
+<h3 id="access-enforcement-attribute-based-access-control">Access Enforcement | Attribute-based Access Control</h3>
+<p>Enforce attribute-based access control policy over defined subjects and objects and control access based upon [Assignment: organization-defined attributes to assume access permissions].</p>
+<p>Attribute-based access control is an access control policy that restricts system access to authorized users based on specified organizational attributes (e.g., job function, identity), action attributes (e.g., read, write, delete), environmental attributes (e.g., time of day, location), and resource attributes (e.g., classification of a document). Organizations can create rules based on attributes and the authorizations (i.e., privileges) to perform needed operations on the systems associated with organization-defined attributes and rules. When users are assigned to attributes defined in attribute-based access control policies or rules, they can be provisioned to a system with the appropriate privileges or dynamically granted access to a protected resource. Attribute-based access control can be implemented as either a mandatory or discretionary form of access control. When implemented with mandatory access controls, the requirements in AC-3(3) define the scope of the subjects and objects covered by the policy.</p>
+<h3 id="14">14</h3>
+<h3 id="access-enforcement-individual-access">Access Enforcement | Individual Access</h3>
+<p>Provide [Assignment: organization-defined mechanisms] to enable individuals to have access to the following elements of their personally identifiable information: [Assignment: organization-defined elements].</p>
+<p>Individual access affords individuals the ability to review personally identifiable information about them held within organizational records, regardless of format. Access helps individuals to develop an understanding about how their personally identifiable information is being processed. It can also help individuals ensure that their data is accurate. Access mechanisms can include request forms and application interfaces. For federal agencies, PRIVACT processes can be located in systems of record notices and on agency websites. Access to certain types of records may not be appropriate (e.g., for federal agencies, law enforcement records within a system of records may be exempt from disclosure under the PRIVACT) or may require certain levels of authentication assurance. Organizational personnel consult with the senior agency official for privacy and legal counsel to determine appropriate mechanisms and access rights or limitations.</p>
+<p>Related: <a href="../ia8/">IA-8</a>, <a href="../pm22/">PM-22</a>, <a href="../pm20/">PM-20</a>, <a href="../pm21/">PM-21</a>, <a href="../pt6/">PT-6</a>.</p>
+<h3 id="15">15</h3>
+<h3 id="access-enforcement-discretionary-and-mandatory-access-control">Access Enforcement | Discretionary and Mandatory Access Control</h3>
+<p>(a) Enforce [Assignment: organization-defined mandatory access control policy] over the set of covered subjects and objects specified in the policy; and</p>
+<p>(b) Enforce [Assignment: organization-defined discretionary access control policy] over the set of covered subjects and objects specified in the policy.</p>
+<p>Simultaneously implementing a mandatory access control policy and a discretionary access control policy can provide additional protection against the unauthorized execution of code by users or processes acting on behalf of users. This helps prevent a single compromised user or process from compromising the entire system.</p>
+<p>Related: <a href="../sc2/">SC-2</a>, <a href="../sc3/">SC-3</a>, <a href="../ac4/">AC-4</a>.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../ac4/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../ac4/" class="btn btn-xs btn-link">
+        AC-4 Information Flow Enforcement
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../ac2/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../ac2/" class="btn btn-xs btn-link">
+        AC-2 Account Management
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>
