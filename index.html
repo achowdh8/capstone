@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="None">
+    
+    
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>NIST 800-53 For Dummies</title>
+    <link href="./css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="./css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="./css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/bootstrap-3.3.7.min.js"></script>
+    <script src="./js/highlight.pack.js"></script>
+    
+      <script src="./js/elasticlunr.min.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '.';
+      var is_top_frame = (window === window.parent);
+        
+        var pageToc = [
+          {title: "Welcome to NIST 800-53 for Dummies", url: "#_top", children: [
+              {title: "Team Alpha Five", url: "#team-alpha-five" },
+              {title: "Getting Started", url: "#getting-started" },
+          ]},
+        ];
+
+    </script>
+    <script src="./js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+<nav class="navbar wm-page-top-frame">
+  <div class="container-fluid wm-top-container">
+    
+    <div class="wm-top-tool pull-right wm-vcenter">
+      <form class="dropdown wm-vcentered" id="wm-search-form" action="./search.html">
+        
+        <button id="wm-search-show" class="btn btn-sm btn-default" type="submit"
+          ><i class="fa fa-search" aria-hidden="true"></i></button>
+
+        <div class="input-group input-group-sm wm-top-search">
+          <input type="text" name="q" class="form-control" id="mkdocs-search-query" placeholder="Search" autocomplete="off">
+          <span class="input-group-btn" role="search">
+            
+            <button class="btn btn-default dropdown-toggle collapse" data-toggle="dropdown" type="button"><span class="caret"></span></button>
+            <ul id="mkdocs-search-results" class="dropdown-menu dropdown-menu-right"></ul>
+            <button id="wm-search-go" class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+          </span>
+        </div>
+      </form>
+    </div>
+
+    
+    <div class="wm-top-tool wm-vcenter pull-right wm-small-left">
+      <button id="wm-toc-button" type="button" class="btn btn-sm btn-default wm-vcentered"><i class="fa fa-th-list" aria-hidden="true"></i></button>
+    </div>
+
+    
+    
+
+    
+    <a href="" class="wm-top-brand wm-top-link wm-vcenter">
+      
+      <div class="wm-top-title">
+        NIST 800-53 For Dummies<br>
+        
+      </div>
+    </a>
+  </div>
+</nav>
+
+  <div id="main-content" class="wm-page-top-frame">
+    
+<nav class="wm-toc-pane">
+  
+  <ul class="wm-toctree">
+        <li class="wm-toc-li wm-toc-lev1 "><a href="" class="wm-article-link wm-toc-text">Home</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="intro/" class="wm-article-link wm-toc-text">Introduction</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="fund/" class="wm-article-link wm-toc-text">Fundamentals</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Controls</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">3.1 Access Control</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ac1/" class="wm-article-link wm-toc-text">AC-1 Policy and Procedures</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ac2/" class="wm-article-link wm-toc-text">AC-2 Account Management</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ac3/" class="wm-article-link wm-toc-text">AC-3 Access Enforcement</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ac4/" class="wm-article-link wm-toc-text">AC-4 Information Flow Enforcement</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ac5/" class="wm-article-link wm-toc-text">AC-5 Separation of Duties</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ac6/" class="wm-article-link wm-toc-text">AC-6 Least Privilege</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ac7/" class="wm-article-link wm-toc-text">AC-7 Unsuccessful Logon Attempts</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ac8/" class="wm-article-link wm-toc-text">AC-8 System Use Notification</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ac9/" class="wm-article-link wm-toc-text">AC-9 Previous Logon Notification</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ac10/" class="wm-article-link wm-toc-text">AC-10 Concurrent Session Control</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ac11/" class="wm-article-link wm-toc-text">AC-11 Device Lock</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ac12/" class="wm-article-link wm-toc-text">AC-12 Session Termination</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ac13/" class="wm-article-link wm-toc-text">AC-13 Supervision and Review</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ac14/" class="wm-article-link wm-toc-text">AC-14 Permitted Actions Without Identification or Authentication</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ac15/" class="wm-article-link wm-toc-text">AC-15 Automated Marking</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ac16/" class="wm-article-link wm-toc-text">AC-16 Security and Privacy Attributes</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ac17/" class="wm-article-link wm-toc-text">AC-17 Remote Access</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ac18/" class="wm-article-link wm-toc-text">AC-18 Wireless Access</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ac19/" class="wm-article-link wm-toc-text">AC-19 Access Control for Mobile Devices</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ac20/" class="wm-article-link wm-toc-text">AC-20 Use of External Systems</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ac21/" class="wm-article-link wm-toc-text">AC-21 Information Sharing</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ac22/" class="wm-article-link wm-toc-text">AC-22 Publicly Accessible Content</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ac23/" class="wm-article-link wm-toc-text">AC-23 Data Mining Protection</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ac24/" class="wm-article-link wm-toc-text">AC-24 Access Control Decisions</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ac25/" class="wm-article-link wm-toc-text">AC-25 Reference Monitor</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">3.2 Awareness and Training</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="at1/" class="wm-article-link wm-toc-text">AT-1 Policy and Procedures</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="at2/" class="wm-article-link wm-toc-text">AT-2 Literacy Training and Awareness</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="at3/" class="wm-article-link wm-toc-text">AT-3 Role-based Training</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="at4/" class="wm-article-link wm-toc-text">AT-4 Training Records</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="at5/" class="wm-article-link wm-toc-text">AT-5 Contacts with Security Groups and Associations</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="at6/" class="wm-article-link wm-toc-text">AT-6 Training Feedback</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">3.3 Audit and Accountability</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="au1/" class="wm-article-link wm-toc-text">AU-1 Policy and Procedures</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="au2/" class="wm-article-link wm-toc-text">AU-2 Event Logging</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="au3/" class="wm-article-link wm-toc-text">AU-3 Content of Audit Records</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="au4/" class="wm-article-link wm-toc-text">AU-4 Audit Log Storage Capacity</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="au5/" class="wm-article-link wm-toc-text">AU-5 Response to Audit Logging Process Failures</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="au6/" class="wm-article-link wm-toc-text">AU-6 Audit Record Review, Analysis, and Reporting</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="au7/" class="wm-article-link wm-toc-text">AU-7 Audit Record Reduction and Report Generation</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="au8/" class="wm-article-link wm-toc-text">AU-8 Time Stamps</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="au9/" class="wm-article-link wm-toc-text">AU-9 Protection of Audit Information</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="au10/" class="wm-article-link wm-toc-text">AU-10 Non-repudiation</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="au11/" class="wm-article-link wm-toc-text">AU-11 Audit Record Retention</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="au12/" class="wm-article-link wm-toc-text">AU-12 Audit Record Generation</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="au13/" class="wm-article-link wm-toc-text">AU-13 Monitoring for Information Disclosure</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="au14/" class="wm-article-link wm-toc-text">AU-14 Session Audit</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="au15/" class="wm-article-link wm-toc-text">AU-15 Alternate Audit Logging Capability</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="au16/" class="wm-article-link wm-toc-text">AU-16 Cross-organizational Audit Logging</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">3.4 Assessment, Authorization and Monitoring</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ca1/" class="wm-article-link wm-toc-text">CA-1 Policy and Procedures</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ca2/" class="wm-article-link wm-toc-text">CA-2 Control Assessments</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ca3/" class="wm-article-link wm-toc-text">CA-3 Information Exchange</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ca4/" class="wm-article-link wm-toc-text">CA-4 Security Certification</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ca5/" class="wm-article-link wm-toc-text">CA-5 Plan of Action and Milestones</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ca6/" class="wm-article-link wm-toc-text">CA-6 Authorization</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ca7/" class="wm-article-link wm-toc-text">CA-7 Continuous Monitoring</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ca8/" class="wm-article-link wm-toc-text">CA-8 Penetration Testing</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ca9/" class="wm-article-link wm-toc-text">CA-9 Internal System Connections</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">3.5 Configuration Management</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="cm1/" class="wm-article-link wm-toc-text">CM-1 Policy and Procedures</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="cm2/" class="wm-article-link wm-toc-text">CM-2 Baseline Configuration</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="cm3/" class="wm-article-link wm-toc-text">CM-3 Configuration Change Control</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="cm4/" class="wm-article-link wm-toc-text">CM-4 Impact Analyses</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="cm5/" class="wm-article-link wm-toc-text">CM-5 Access Restrictions for Change</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="cm6/" class="wm-article-link wm-toc-text">CM-6 Configuration Settings</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="cm7/" class="wm-article-link wm-toc-text">CM-7 Least Functionality</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="cm8/" class="wm-article-link wm-toc-text">CM-8 System Component Inventory</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="cm9/" class="wm-article-link wm-toc-text">CM-9 Configuration Management Plan</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="cm10/" class="wm-article-link wm-toc-text">CM-10 Software Usage Restrictions</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="cm11/" class="wm-article-link wm-toc-text">CM-11 User-installed Software</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="cm12/" class="wm-article-link wm-toc-text">CM-12 Information Location</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="cm13/" class="wm-article-link wm-toc-text">CM-13 Data Action Mapping</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="cm14/" class="wm-article-link wm-toc-text">CM-14 Signed Components</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">3.6 Contingency Planning</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="cp1/" class="wm-article-link wm-toc-text">CP-1 Policy and Procedures</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="cp2/" class="wm-article-link wm-toc-text">CP-2 Contingency Plan</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="cp3/" class="wm-article-link wm-toc-text">CP-3 Contingency Training</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="cp4/" class="wm-article-link wm-toc-text">CP-4 Contingency Plan Testing</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="cp5/" class="wm-article-link wm-toc-text">CP-5 Contingency Plan Update</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="cp6/" class="wm-article-link wm-toc-text">CP-6 Alternate Storage Site</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="cp7/" class="wm-article-link wm-toc-text">CP-7 Alternate Processing Site</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="cp8/" class="wm-article-link wm-toc-text">CP-8 Telecommunications Services</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="cp9/" class="wm-article-link wm-toc-text">CP-9 System Backup</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="cp10/" class="wm-article-link wm-toc-text">CP-10 System Recovery and Reconstitution</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="cp11/" class="wm-article-link wm-toc-text">CP-11 Alternate Communications Protocols</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="cp12/" class="wm-article-link wm-toc-text">CP-12 Safe Mode</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="cp13/" class="wm-article-link wm-toc-text">CP-13 Alternative Security Mechanisms</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">3.7 Identification and Authentication</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ia1/" class="wm-article-link wm-toc-text">IA-1 Policy and Procedures</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ia2/" class="wm-article-link wm-toc-text">IA-2 Identification and Authentication (organizational Users)</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ia3/" class="wm-article-link wm-toc-text">IA-3 Device Identification and Authentication</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ia4/" class="wm-article-link wm-toc-text">IA-4 Identifier Management</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ia5/" class="wm-article-link wm-toc-text">IA-5 Authenticator Management</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ia6/" class="wm-article-link wm-toc-text">IA-6 Authentication Feedback</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ia7/" class="wm-article-link wm-toc-text">IA-7 Cryptographic Module Authentication</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ia8/" class="wm-article-link wm-toc-text">IA-8 Identification and Authentication (non-organizational Users)</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ia9/" class="wm-article-link wm-toc-text">IA-9 Service Identification and Authentication</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ia10/" class="wm-article-link wm-toc-text">IA-10 Adaptive Authentication</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ia11/" class="wm-article-link wm-toc-text">IA-11 Re-authentication</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ia12/" class="wm-article-link wm-toc-text">IA-12 Identity Proofing</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">3.8 Incident Response</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ir1/" class="wm-article-link wm-toc-text">IR-1 Policy and Procedures</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ir2/" class="wm-article-link wm-toc-text">IR-2 Incident Response Training</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ir3/" class="wm-article-link wm-toc-text">IR-3 Incident Response Testing</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ir4/" class="wm-article-link wm-toc-text">IR-4 Incident Handling</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ir5/" class="wm-article-link wm-toc-text">IR-5 Incident Monitoring</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ir6/" class="wm-article-link wm-toc-text">IR-6 Incident Reporting</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ir7/" class="wm-article-link wm-toc-text">IR-7 Incident Response Assistance</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ir8/" class="wm-article-link wm-toc-text">IR-8 Incident Response Plan</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ir9/" class="wm-article-link wm-toc-text">IR-9 Information Spillage Response</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ir10/" class="wm-article-link wm-toc-text">IR-10 Integrated Information Security Analysis Team</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">3.9 Maintenance</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ma1/" class="wm-article-link wm-toc-text">MA-1 Policy and Procedures</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ma2/" class="wm-article-link wm-toc-text">MA-2 Controlled Maintenance</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ma3/" class="wm-article-link wm-toc-text">MA-3 Maintenance Tools</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ma4/" class="wm-article-link wm-toc-text">MA-4 Nonlocal Maintenance</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ma5/" class="wm-article-link wm-toc-text">MA-5 Maintenance Personnel</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ma6/" class="wm-article-link wm-toc-text">MA-6 Timely Maintenance</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ma7/" class="wm-article-link wm-toc-text">MA-7 Field Maintenance</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">3.10 Media Protection</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="mp1/" class="wm-article-link wm-toc-text">MP-1 Policy and Procedures</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="mp2/" class="wm-article-link wm-toc-text">MP-2 Media Access</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="mp3/" class="wm-article-link wm-toc-text">MP-3 Media Marking</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="mp4/" class="wm-article-link wm-toc-text">MP-4 Media Storage</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="mp5/" class="wm-article-link wm-toc-text">MP-5 Media Transport</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="mp6/" class="wm-article-link wm-toc-text">MP-6 Media Sanitization</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="mp7/" class="wm-article-link wm-toc-text">MP-7 Media Use</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="mp8/" class="wm-article-link wm-toc-text">MP-8 Media Downgrading</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">3.11 Physical and Environmental Protection</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pe1/" class="wm-article-link wm-toc-text">PE-1 Policy and Procedures</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pe2/" class="wm-article-link wm-toc-text">PE-2 Physical Access Authorizations</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pe3/" class="wm-article-link wm-toc-text">PE-3 Physical Access Control</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pe4/" class="wm-article-link wm-toc-text">PE-4 Access Control for Transmission</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pe5/" class="wm-article-link wm-toc-text">PE-5 Access Control for Output Devices</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pe6/" class="wm-article-link wm-toc-text">PE-6 Monitoring Physical Access</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pe7/" class="wm-article-link wm-toc-text">PE-7 Visitor Control</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pe8/" class="wm-article-link wm-toc-text">PE-8 Visitor Access Records</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pe9/" class="wm-article-link wm-toc-text">PE-9 Power Equipment and Cabling</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pe10/" class="wm-article-link wm-toc-text">PE-10 Emergency Shutoff</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pe11/" class="wm-article-link wm-toc-text">PE-11 Emergency Power</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pe12/" class="wm-article-link wm-toc-text">PE-12 Emergency Lighting</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pe13/" class="wm-article-link wm-toc-text">PE-13 Fire Protection</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pe14/" class="wm-article-link wm-toc-text">PE-14 Environmental Controls</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pe15/" class="wm-article-link wm-toc-text">PE-15 Water Damage Protection</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pe16/" class="wm-article-link wm-toc-text">PE-16 Delivery and Removal</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pe17/" class="wm-article-link wm-toc-text">PE-17 Alternate Work Site</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pe18/" class="wm-article-link wm-toc-text">PE-18 Location of System Components</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pe19/" class="wm-article-link wm-toc-text">PE-19 Information Leakage</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pe20/" class="wm-article-link wm-toc-text">PE-20 Asset Monitoring and Tracking</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pe21/" class="wm-article-link wm-toc-text">PE-21 Electromagnetic Pulse Protection</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pe22/" class="wm-article-link wm-toc-text">PE-22 Component Marking</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pe23/" class="wm-article-link wm-toc-text">PE-23 Facility Location</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">3.12 Planning</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pl1/" class="wm-article-link wm-toc-text">PL-1 Policy and Procedures</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pl2/" class="wm-article-link wm-toc-text">PL-2 System Security and Privacy Plans</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pl3/" class="wm-article-link wm-toc-text">PL-3 System Security Plan Update</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pl4/" class="wm-article-link wm-toc-text">PL-4 Rules of Behavior</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pl5/" class="wm-article-link wm-toc-text">PL-5 Privacy Impact Assessment</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pl6/" class="wm-article-link wm-toc-text">PL-6 Security-related Activity Planning</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pl7/" class="wm-article-link wm-toc-text">PL-7 Concept of Operations</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pl8/" class="wm-article-link wm-toc-text">PL-8 Security and Privacy Architectures</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pl9/" class="wm-article-link wm-toc-text">PL-9 Central Management</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pl10/" class="wm-article-link wm-toc-text">PL-10 Baseline Selection</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pl11/" class="wm-article-link wm-toc-text">PL-11 Baseline Tailoring</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">3.13 Program Management</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pm1/" class="wm-article-link wm-toc-text">PM-1 Information Security Program Plan</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pm2/" class="wm-article-link wm-toc-text">PM-2 Information Security Program Leadership Role</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pm3/" class="wm-article-link wm-toc-text">PM-3 Information Security and Privacy Resources</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pm4/" class="wm-article-link wm-toc-text">PM-4 Plan of Action and Milestones Process</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pm5/" class="wm-article-link wm-toc-text">PM-5 System Inventory</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pm6/" class="wm-article-link wm-toc-text">PM-6 Measures of Performance</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pm7/" class="wm-article-link wm-toc-text">PM-7 Enterprise Architecture</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pm8/" class="wm-article-link wm-toc-text">PM-8 Critical Infrastructure Plan</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pm9/" class="wm-article-link wm-toc-text">PM-9 Risk Management Strategy</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pm10/" class="wm-article-link wm-toc-text">PM-10 Authorization Process</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pm11/" class="wm-article-link wm-toc-text">PM-11 Mission and Business Process Definition</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pm12/" class="wm-article-link wm-toc-text">PM-12 Insider Threat Program</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pm13/" class="wm-article-link wm-toc-text">PM-13 Security and Privacy Workforce</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pm14/" class="wm-article-link wm-toc-text">PM-14 Testing, Training, and Monitoring</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pm15/" class="wm-article-link wm-toc-text">PM-15 Security and Privacy Groups and Associations</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pm16/" class="wm-article-link wm-toc-text">PM-16 Threat Awareness Program</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pm17/" class="wm-article-link wm-toc-text">PM-17 Protecting Controlled Unclassified Information on External Systems</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pm18/" class="wm-article-link wm-toc-text">PM-18 Privacy Program Plan</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pm19/" class="wm-article-link wm-toc-text">PM-19 Privacy Program Leadership Role</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pm20/" class="wm-article-link wm-toc-text">PM-20 Dissemination of Privacy Program Information</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pm21/" class="wm-article-link wm-toc-text">PM-21 Accounting of Disclosures</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pm22/" class="wm-article-link wm-toc-text">PM-22 Personally Identifiable Information Quality Management</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pm23/" class="wm-article-link wm-toc-text">PM-23 Data Governance Body</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pm24/" class="wm-article-link wm-toc-text">PM-24 Data Integrity Board</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pm25/" class="wm-article-link wm-toc-text">PM-25 Minimization of Personally Identifiable Information Used in Testing, Training, and Research</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pm26/" class="wm-article-link wm-toc-text">PM-26 Complaint Management</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pm27/" class="wm-article-link wm-toc-text">PM-27 Privacy Reporting</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pm28/" class="wm-article-link wm-toc-text">PM-28 Risk Framing</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pm29/" class="wm-article-link wm-toc-text">PM-29 Risk Management Program Leadership Roles</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pm30/" class="wm-article-link wm-toc-text">PM-30 Supply Chain Risk Management Strategy</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pm31/" class="wm-article-link wm-toc-text">PM-31 Continuous Monitoring Strategy</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pm32/" class="wm-article-link wm-toc-text">PM-32 Purposing</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">3.14 Personnel Security</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ps1/" class="wm-article-link wm-toc-text">PS-1 Policy and Procedures</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ps2/" class="wm-article-link wm-toc-text">PS-2 Position Risk Designation</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ps3/" class="wm-article-link wm-toc-text">PS-3 Personnel Screening</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ps4/" class="wm-article-link wm-toc-text">PS-4 Personnel Termination</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ps5/" class="wm-article-link wm-toc-text">PS-5 Personnel Transfer</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ps6/" class="wm-article-link wm-toc-text">PS-6 Access Agreements</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ps7/" class="wm-article-link wm-toc-text">PS-7 External Personnel Security</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ps8/" class="wm-article-link wm-toc-text">PS-8 Personnel Sanctions</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ps9/" class="wm-article-link wm-toc-text">PS-9 Position Descriptions</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">3.15 Personally Identifiable Information Processing and Transparency</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pt1/" class="wm-article-link wm-toc-text">PT-1 Policy and Procedures</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pt2/" class="wm-article-link wm-toc-text">PT-2 Authority to Process Personally Identifiable Information</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pt3/" class="wm-article-link wm-toc-text">PT-3 Personally Identifiable Information Processing Purposes</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pt4/" class="wm-article-link wm-toc-text">PT-4 Consent</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pt5/" class="wm-article-link wm-toc-text">PT-5 Privacy Notice</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pt6/" class="wm-article-link wm-toc-text">PT-6 System of Records Notice</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pt7/" class="wm-article-link wm-toc-text">PT-7 Specific Categories of Personally Identifiable Information</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pt8/" class="wm-article-link wm-toc-text">PT-8 Computer Matching Requirements</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">3.16 Risk Assessment</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ra1/" class="wm-article-link wm-toc-text">RA-1 Policy and Procedures</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ra2/" class="wm-article-link wm-toc-text">RA-2 Security Categorization</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ra3/" class="wm-article-link wm-toc-text">RA-3 Risk Assessment</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ra4/" class="wm-article-link wm-toc-text">RA-4 Risk Assessment Update</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ra5/" class="wm-article-link wm-toc-text">RA-5 Vulnerability Monitoring and Scanning</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ra6/" class="wm-article-link wm-toc-text">RA-6 Technical Surveillance Countermeasures Survey</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ra7/" class="wm-article-link wm-toc-text">RA-7 Risk Response</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ra8/" class="wm-article-link wm-toc-text">RA-8 Privacy Impact Assessments</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ra9/" class="wm-article-link wm-toc-text">RA-9 Criticality Analysis</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="ra10/" class="wm-article-link wm-toc-text">RA-10 Threat Hunting</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">3.17 System and Services Acquisition</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sa1/" class="wm-article-link wm-toc-text">SA-1 Policy and Procedures</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sa2/" class="wm-article-link wm-toc-text">SA-2 Allocation of Resources</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sa3/" class="wm-article-link wm-toc-text">SA-3 System Development Life Cycle</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sa4/" class="wm-article-link wm-toc-text">SA-4 Acquisition Process</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sa5/" class="wm-article-link wm-toc-text">SA-5 System Documentation</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sa6/" class="wm-article-link wm-toc-text">SA-6 Software Usage Restrictions</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sa7/" class="wm-article-link wm-toc-text">SA-7 Software User-installed Software</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sa8/" class="wm-article-link wm-toc-text">SA-8 Security and Privacy Engineering Principles</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sa9/" class="wm-article-link wm-toc-text">SA-9 External System Services</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sa10/" class="wm-article-link wm-toc-text">SA-10 Developer Configuration Management</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sa11/" class="wm-article-link wm-toc-text">SA-11 Developer Testing and Evaluation</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sa12/" class="wm-article-link wm-toc-text">SA-12 Supply Chain Protection</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sa13/" class="wm-article-link wm-toc-text">SA-13 Trustworthiness</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sa14/" class="wm-article-link wm-toc-text">SA-14 Criticality Analysis</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sa15/" class="wm-article-link wm-toc-text">SA-15 Development Process, Standards, and Tools</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sa16/" class="wm-article-link wm-toc-text">SA-16 Developer-provided Training</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sa17/" class="wm-article-link wm-toc-text">SA-17 Developer Security and Privacy Architecture and Design</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sa18/" class="wm-article-link wm-toc-text">SA-18 Tamper Resistance and Detection</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sa19/" class="wm-article-link wm-toc-text">SA-19 Component Authenticity</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sa20/" class="wm-article-link wm-toc-text">SA-20 Customized Development of Critical Components</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sa21/" class="wm-article-link wm-toc-text">SA-21 Developer Screening</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sa22/" class="wm-article-link wm-toc-text">SA-22 Unsupported System Components</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sa23/" class="wm-article-link wm-toc-text">SA-23 Specialization</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">3.18 System and Communications Protection</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc1/" class="wm-article-link wm-toc-text">SC-1 Policy and Procedures</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc2/" class="wm-article-link wm-toc-text">SC-2 Separation of System and User Functionality</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc3/" class="wm-article-link wm-toc-text">SC-3 Security Function Isolation</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc4/" class="wm-article-link wm-toc-text">SC-4 Information in Shared System Resources</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc5/" class="wm-article-link wm-toc-text">SC-5 Denial-of-service Protection</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc6/" class="wm-article-link wm-toc-text">SC-6 Resource Availability</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc7/" class="wm-article-link wm-toc-text">SC-7 Boundary Protection</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc8/" class="wm-article-link wm-toc-text">SC-8 Transmission Confidentiality and Integrity</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc9/" class="wm-article-link wm-toc-text">SC-9 Transmission Confidentiality</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc10/" class="wm-article-link wm-toc-text">SC-10 Network Disconnect</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc11/" class="wm-article-link wm-toc-text">SC-11 Trusted Path</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc12/" class="wm-article-link wm-toc-text">SC-12 Cryptographic Key Establishment and Management</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc13/" class="wm-article-link wm-toc-text">SC-13 Cryptographic Protection</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc14/" class="wm-article-link wm-toc-text">SC-14 Public Access Protections</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc15/" class="wm-article-link wm-toc-text">SC-15 Collaborative Computing Devices and Applications</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc16/" class="wm-article-link wm-toc-text">SC-16 Transmission of Security and Privacy Attributes</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc17/" class="wm-article-link wm-toc-text">SC-17 Public Key Infrastructure Certificates</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc18/" class="wm-article-link wm-toc-text">SC-18 Mobile Code</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc19/" class="wm-article-link wm-toc-text">SC-19 Voice Over Internet Protocol</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc20/" class="wm-article-link wm-toc-text">SC-20 Secure Name/address Resolution Service (authoritative Source)</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc21/" class="wm-article-link wm-toc-text">SC-21 Secure Name/address Resolution Service (recursive or Caching Resolver)</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc22/" class="wm-article-link wm-toc-text">SC-22 Architecture and Provisioning for Name/address Resolution Service</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc23/" class="wm-article-link wm-toc-text">SC-23 Session Authenticity</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc24/" class="wm-article-link wm-toc-text">SC-24 Fail in Known State</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc25/" class="wm-article-link wm-toc-text">SC-25 Thin Nodes</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc26/" class="wm-article-link wm-toc-text">SC-26 Decoys</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc27/" class="wm-article-link wm-toc-text">SC-27 Platform-independent Applications</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc28/" class="wm-article-link wm-toc-text">SC-28 Protection of Information at Rest</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc29/" class="wm-article-link wm-toc-text">SC-29 Heterogeneity</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc30/" class="wm-article-link wm-toc-text">SC-30 Concealment and Misdirection</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc31/" class="wm-article-link wm-toc-text">SC-31 Covert Channel Analysis</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc32/" class="wm-article-link wm-toc-text">SC-32 System Partitioning</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc33/" class="wm-article-link wm-toc-text">SC-33 Transmission Preparation Integrity</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc34/" class="wm-article-link wm-toc-text">SC-34 Non-modifiable Executable Programs</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc35/" class="wm-article-link wm-toc-text">SC-35 External Malicious Code Identification</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc36/" class="wm-article-link wm-toc-text">SC-36 Distributed Processing and Storage</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc37/" class="wm-article-link wm-toc-text">SC-37 Out-of-band Channels</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc38/" class="wm-article-link wm-toc-text">SC-38 Operations Security</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc39/" class="wm-article-link wm-toc-text">SC-39 Process Isolation</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc40/" class="wm-article-link wm-toc-text">SC-40 Wireless Link Protection</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc41/" class="wm-article-link wm-toc-text">SC-41 Port and I/O Device Access</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc42/" class="wm-article-link wm-toc-text">SC-42 Sensor Capability and Data</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc43/" class="wm-article-link wm-toc-text">SC-43 Usage Restrictions</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc44/" class="wm-article-link wm-toc-text">SC-44 Detonation Chambers</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc45/" class="wm-article-link wm-toc-text">SC-45 System Time Synchronization</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc46/" class="wm-article-link wm-toc-text">SC-46 Cross Domain Policy Enforcement</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc47/" class="wm-article-link wm-toc-text">SC-47 Alternate Communications Paths</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc48/" class="wm-article-link wm-toc-text">SC-48 Sensor Relocation</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc49/" class="wm-article-link wm-toc-text">SC-49 Hardware-enforced Separation and Policy Enforcement</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc50/" class="wm-article-link wm-toc-text">SC-50 Software-enforced Separation and Policy Enforcement</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sc51/" class="wm-article-link wm-toc-text">SC-51 Hardware-based Protection</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">3.19 System and Information Integrity</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="si1/" class="wm-article-link wm-toc-text">SI-1 Policy and Procedures</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="si2/" class="wm-article-link wm-toc-text">SI-2 Flaw Remediation</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="si3/" class="wm-article-link wm-toc-text">SI-3 Malicious Code Protection</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="si4/" class="wm-article-link wm-toc-text">SI-4 System Monitoring</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="si5/" class="wm-article-link wm-toc-text">SI-5 Security Alerts, Advisories, and Directives</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="si6/" class="wm-article-link wm-toc-text">SI-6 Security and Privacy Function Verification</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="si7/" class="wm-article-link wm-toc-text">SI-7 Software, Firmware, and Information Integrity</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="si8/" class="wm-article-link wm-toc-text">SI-8 Spam Protection</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="si9/" class="wm-article-link wm-toc-text">SI-9 Information Input Restrictions</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="si10/" class="wm-article-link wm-toc-text">SI-10 Information Input Validation</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="si11/" class="wm-article-link wm-toc-text">SI-11 Error Handling</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="si12/" class="wm-article-link wm-toc-text">SI-12 Information Management and Retention</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="si13/" class="wm-article-link wm-toc-text">SI-13 Predictable Failure Prevention</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="si14/" class="wm-article-link wm-toc-text">SI-14 Non-persistence</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="si15/" class="wm-article-link wm-toc-text">SI-15 Information Output Filtering</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="si16/" class="wm-article-link wm-toc-text">SI-16 Memory Protection</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="si17/" class="wm-article-link wm-toc-text">SI-17 Fail-safe Procedures</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="si18/" class="wm-article-link wm-toc-text">SI-18 Personally Identifiable Information Quality Operations</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="si19/" class="wm-article-link wm-toc-text">SI-19 De-identification</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="si20/" class="wm-article-link wm-toc-text">SI-20 Tainting</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="si21/" class="wm-article-link wm-toc-text">SI-21 Information Refresh</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="si22/" class="wm-article-link wm-toc-text">SI-22 Information Diversity</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="si23/" class="wm-article-link wm-toc-text">SI-23 Information Fragmentation</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">3.20 Supply Chain Risk Management</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sr1/" class="wm-article-link wm-toc-text">SR-1 Policy and Procedures</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sr2/" class="wm-article-link wm-toc-text">SR-2 Supply Chain Risk Management Plan</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sr3/" class="wm-article-link wm-toc-text">SR-3 Supply Chain Controls and Processes</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sr4/" class="wm-article-link wm-toc-text">SR-4 Provenance</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sr5/" class="wm-article-link wm-toc-text">SR-5 Acquisition Strategies, Tools, and Methods</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sr6/" class="wm-article-link wm-toc-text">SR-6 Supplier Assessments and Reviews</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sr7/" class="wm-article-link wm-toc-text">SR-7 Supply Chain Operations Security</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sr8/" class="wm-article-link wm-toc-text">SR-8 Notification Agreements</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sr9/" class="wm-article-link wm-toc-text">SR-9 Tamper Resistance and Detection</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sr10/" class="wm-article-link wm-toc-text">SR-10 Inspection of Systems or Components</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sr11/" class="wm-article-link wm-toc-text">SR-11 Component Authenticity</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="sr12/" class="wm-article-link wm-toc-text">SR-12 Component Disposal</a>
+</li>
+  </ul>
+</li>
+
+  </ul>
+</li>
+
+  </ul>
+</nav>
+
+    <div class="wm-content-pane">
+      <iframe class="wm-article" name="article"></iframe>
+    </div>
+  </div>
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="intro/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="intro/" class="btn btn-xs btn-link">
+        Introduction
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="welcome-to-nist-800-53-for-dummies">Welcome to NIST 800-53 for Dummies</h1>
+<p>This is a Capstone Project for <a href="http://www.verituslabs.com">VeritusLabs</a>. Designed By Team Alpha Five</p>
+<h2 id="team-alpha-five">Team Alpha Five</h2>
+<ul>
+<li>Arman Chowdhury</li>
+<li>Jennifer Reynoso</li>
+<li>Ricky Tacaraya</li>
+<li>Roman Zelenchuk</li>
+<li>Usama Asif</li>
+</ul>
+<h2 id="getting-started">Getting Started</h2>
+<p>Feel free to browse the standard on the left, or search a particular phrase or keyword using the search feature.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="intro/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="intro/" class="btn btn-xs btn-link">
+        Introduction
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>
+<!--
+MkDocs version : 1.1.2
+Build Date UTC : 2021-04-10 08:11:28.359356+00:00
+-->
