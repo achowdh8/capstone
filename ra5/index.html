@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>RA-5 Vulnerability Monitoring and Scanning - NIST 800-53 For Dummies</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "RA-5 Vulnerability Monitoring and Scanning", url: "#_top", children: [
+              {title: "Control", url: "#control" },
+              {title: "Discussion", url: "#discussion" },
+              {title: "Related Controls", url: "#related-controls" },
+              {title: "Enhancements", url: "#enhancements" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../ra6/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../ra6/" class="btn btn-xs btn-link">
+        RA-6 Technical Surveillance Countermeasures Survey
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../ra4/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../ra4/" class="btn btn-xs btn-link">
+        RA-4 Risk Assessment Update
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="ra-5-vulnerability-monitoring-and-scanning">RA-5 Vulnerability Monitoring and Scanning</h1>
+<h2 id="control">Control</h2>
+<p>a. Monitor and scan for vulnerabilities in the system and hosted applications [Assignment: organization-defined frequency and/or randomly in accordance with organization-defined process] and when new vulnerabilities potentially affecting the system are identified and reported;</p>
+<p>b. Employ vulnerability monitoring tools and techniques that facilitate interoperability among tools and automate parts of the vulnerability management process by using standards for:</p>
+<ol>
+<li>Enumerating platforms, software flaws, and improper configurations;</li>
+<li>Formatting checklists and test procedures; and</li>
+<li>Measuring vulnerability impact; </li>
+</ol>
+<p>c. Analyze vulnerability scan reports and results from vulnerability monitoring;</p>
+<p>d. Remediate legitimate vulnerabilities [Assignment: organization-defined response times] in accordance with an organizational assessment of risk;</p>
+<p>e. Share information obtained from the vulnerability monitoring process and control assessments with [Assignment: organization-defined personnel or roles] to help eliminate similar vulnerabilities in other systems; and</p>
+<p>f. Employ vulnerability monitoring tools that include the capability to readily update the vulnerabilities to be scanned.</p>
+<h2 id="discussion">Discussion</h2>
+<p>Security categorization of information and systems guides the frequency and comprehensiveness of vulnerability monitoring (including scans). Organizations determine the required vulnerability monitoring for system components, ensuring that the potential sources of vulnerabilities—such as infrastructure components (e.g., switches, routers, guards, sensors), networked printers, scanners, and copiers—are not overlooked. The capability to readily update vulnerability monitoring tools as new vulnerabilities are discovered and announced and as new scanning methods are developed helps to ensure that new vulnerabilities are not missed by employed vulnerability monitoring tools. The vulnerability monitoring tool update process helps to ensure that potential vulnerabilities in the system are identified and addressed as quickly as possible. Vulnerability monitoring and analyses for custom software may require additional approaches, such as static analysis, dynamic analysis, binary analysis, or a hybrid of the three approaches. Organizations can use these analysis approaches in source code reviews and in a variety of tools, including web-based application scanners, static analysis tools, and binary analyzers. 
+Vulnerability monitoring includes scanning for patch levels; scanning for functions, ports, protocols, and services that should not be accessible to users or devices; and scanning for flow control mechanisms that are improperly configured or operating incorrectly. Vulnerability monitoring may also include continuous vulnerability monitoring tools that use instrumentation to continuously analyze components. Instrumentation-based tools may improve accuracy and may be run throughout an organization without scanning. Vulnerability monitoring tools that facilitate interoperability include tools that are Security Content Automated Protocol (SCAP)-validated. Thus, organizations consider using scanning tools that express vulnerabilities in the Common Vulnerabilities and Exposures (CVE) naming convention and that employ the Open </p>
+<h2 id="related-controls">Related Controls</h2>
+<p><a href="../ca2/">CA-2</a>, <a href="../ca7/">CA-7</a>, <a href="../ca8/">CA-8</a>, <a href="../cm2/">CM-2</a>, <a href="../cm4/">CM-4</a>, <a href="../cm6/">CM-6</a>, <a href="../cm8/">CM-8</a>, <a href="../ra2/">RA-2</a>, <a href="../ra3/">RA-3</a>, <a href="../sa11/">SA-11</a>, <a href="../sa15/">SA-15</a>, <a href="../sc38/">SC-38</a>, <a href="../si2/">SI-2</a>, <a href="../si3/">SI-3</a>, <a href="../si4/">SI-4</a>, <a href="../si7/">SI-7</a>, <a href="../sr11/">SR-11</a>.</p>
+<h2 id="enhancements">Enhancements</h2>
+<h3 id="1">1</h3>
+<h3 id="vulnerability-monitoring-and-scanning-update-tool-capability">Vulnerability Monitoring and Scanning | Update Tool Capability</h3>
+<p>Withdrawn: Incorporated into <a href="./">RA-5</a>.</p>
+<h3 id="2">2</h3>
+<h3 id="vulnerability-monitoring-and-scanning-update-vulnerabilities-to-be-scanned">Vulnerability Monitoring and Scanning | Update Vulnerabilities to Be Scanned</h3>
+<p>Update the system vulnerabilities to be scanned [Selection (one or more): [Assignment: organization-defined frequency]; prior to a new scan; when new vulnerabilities are identified and reported].</p>
+<p>Due to the complexity of modern software, systems, and other factors, new vulnerabilities are discovered on a regular basis. It is important that newly discovered vulnerabilities are added to the list of vulnerabilities to be scanned to ensure that the organization can take steps to mitigate those vulnerabilities in a timely manner.</p>
+<p>Related: <a href="../si5/">SI-5</a>.</p>
+<h3 id="3">3</h3>
+<h3 id="vulnerability-monitoring-and-scanning-breadth-and-depth-of-coverage">Vulnerability Monitoring and Scanning | Breadth and Depth of Coverage</h3>
+<p>Define the breadth and depth of vulnerability scanning coverage.</p>
+<p>The breadth of vulnerability scanning coverage can be expressed as a percentage of components within the system, by the particular types of systems, by the criticality of systems, or by the number of vulnerabilities to be checked. Conversely, the depth of vulnerability scanning coverage can be expressed as the level of the system design that the organization intends to monitor (e.g., component, module, subsystem, element). Organizations can determine the sufficiency of vulnerability scanning coverage with regard to its risk tolerance and other factors. Scanning tools and how the tools are configured may affect the depth and coverage. Multiple scanning tools may be needed to achieve the desired depth and coverage. SP 800-53A provides additional information on the breadth and depth of coverage.</p>
+<h3 id="4">4</h3>
+<h3 id="vulnerability-monitoring-and-scanning-discoverable-information">Vulnerability Monitoring and Scanning | Discoverable Information</h3>
+<p>Determine information about the system that is discoverable and take [Assignment: organization-defined corrective actions].</p>
+<p>Discoverable information includes information that adversaries could obtain without compromising or breaching the system, such as by collecting information that the system is exposing or by conducting extensive web searches. Corrective actions include notifying appropriate organizational personnel, removing designated information, or changing the system to make the designated information less relevant or attractive to adversaries. This enhancement excludes intentionally discoverable information that may be part of a decoy capability (e.g., honeypots, honeynets, or deception nets) deployed by the organization.</p>
+<p>Related: <a href="../au13/">AU-13</a>, <a href="../sc26/">SC-26</a>.</p>
+<h3 id="5">5</h3>
+<h3 id="vulnerability-monitoring-and-scanning-privileged-access">Vulnerability Monitoring and Scanning | Privileged Access</h3>
+<p>Implement privileged access authorization to [Assignment: organization-defined system components] for [Assignment: organization-defined vulnerability scanning activities].</p>
+<p>In certain situations, the nature of the vulnerability scanning may be more intrusive, or the system component that is the subject of the scanning may contain classified or controlled unclassified information, such as personally identifiable information. Privileged access authorization to selected system components facilitates more thorough vulnerability scanning and protects the sensitive nature of such scanning.</p>
+<h3 id="6">6</h3>
+<h3 id="vulnerability-monitoring-and-scanning-automated-trend-analyses">Vulnerability Monitoring and Scanning | Automated Trend Analyses</h3>
+<p>Compare the results of multiple vulnerability scans using [Assignment: organization-defined automated mechanisms].</p>
+<p>Using automated mechanisms to analyze multiple vulnerability scans over time can help determine trends in system vulnerabilities and identify patterns of attack.</p>
+<h3 id="7">7</h3>
+<h3 id="vulnerability-monitoring-and-scanning-automated-detection-and-notification-of-unauthorized-components">Vulnerability Monitoring and Scanning | Automated Detection and Notification of Unauthorized Components</h3>
+<p>Withdrawn: Incorporated into <a href="../cm8/">CM-8</a>.</p>
+<h3 id="8">8</h3>
+<h3 id="vulnerability-monitoring-and-scanning-review-historic-audit-logs">Vulnerability Monitoring and Scanning | Review Historic Audit Logs</h3>
+<p>Review historic audit logs to determine if a vulnerability identified in a [Assignment: organization-defined system] has been previously exploited within an [Assignment: organization-defined time period].</p>
+<p>Reviewing historic audit logs to determine if a recently detected vulnerability in a system has been previously exploited by an adversary can provide important information for forensic analyses. Such analyses can help identify, for example, the extent of a previous intrusion, the trade craft employed during the attack, organizational information exfiltrated or modified, mission or business capabilities affected, and the duration of the attack.</p>
+<p>Related: <a href="../au6/">AU-6</a>, <a href="../au11/">AU-11</a>.</p>
+<h3 id="9">9</h3>
+<h3 id="vulnerability-monitoring-and-scanning-penetration-testing-and-analyses">Vulnerability Monitoring and Scanning | Penetration Testing and Analyses</h3>
+<p>Withdrawn: Incorporated into <a href="../ca8/">CA-8</a>.</p>
+<h3 id="10">10</h3>
+<h3 id="vulnerability-monitoring-and-scanning-correlate-scanning-information">Vulnerability Monitoring and Scanning | Correlate Scanning Information</h3>
+<p>Correlate the output from vulnerability scanning tools to determine the presence of multi-vulnerability and multi-hop attack vectors.</p>
+<p>An attack vector is a path or means by which an adversary can gain access to a system in order to deliver malicious code or exfiltrate information. Organizations can use attack trees to show how hostile activities by adversaries interact and combine to produce adverse impacts or negative consequences to systems and organizations. Such information, together with correlated data from vulnerability scanning tools, can provide greater clarity regarding multi-vulnerability and multi-hop attack vectors. The correlation of vulnerability scanning information is especially important when organizations are transitioning from older technologies to newer technologies (e.g., transitioning from IPv4 to IPv6 network protocols). During such transitions, some system components may inadvertently be unmanaged and create opportunities for adversary exploitation.</p>
+<h3 id="11">11</h3>
+<h3 id="vulnerability-monitoring-and-scanning-public-disclosure-program">Vulnerability Monitoring and Scanning | Public Disclosure Program</h3>
+<p>Establish a public reporting channel for receiving reports of vulnerabilities in organizational systems and system components.</p>
+<p>The reporting channel is publicly discoverable and contains clear language authorizing good-faith research and the disclosure of vulnerabilities to the organization. The organization does not condition its authorization on an expectation of indefinite non-disclosure to the public by the reporting entity but may request a specific time period to properly remediate the vulnerability.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../ra6/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../ra6/" class="btn btn-xs btn-link">
+        RA-6 Technical Surveillance Countermeasures Survey
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../ra4/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../ra4/" class="btn btn-xs btn-link">
+        RA-4 Risk Assessment Update
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

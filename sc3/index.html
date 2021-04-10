@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>SC-3 Security Function Isolation - NIST 800-53 For Dummies</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "SC-3 Security Function Isolation", url: "#_top", children: [
+              {title: "Control", url: "#control" },
+              {title: "Discussion", url: "#discussion" },
+              {title: "Related Controls", url: "#related-controls" },
+              {title: "Enhancements", url: "#enhancements" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../sc4/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../sc4/" class="btn btn-xs btn-link">
+        SC-4 Information in Shared System Resources
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../sc2/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../sc2/" class="btn btn-xs btn-link">
+        SC-2 Separation of System and User Functionality
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="sc-3-security-function-isolation">SC-3 Security Function Isolation</h1>
+<h2 id="control">Control</h2>
+<p>Isolate security functions from nonsecurity functions.</p>
+<h2 id="discussion">Discussion</h2>
+<p>Security functions are isolated from nonsecurity functions by means of an isolation boundary implemented within a system via partitions and domains. The isolation boundary controls access to and protects the integrity of the hardware, software, and firmware that perform system security functions. Systems implement code separation in many ways, such as through the provision of security kernels via processor rings or processor modes. For non-kernel code, security function isolation is often achieved through file system protections that protect the code on disk and address space protections that protect executing code. Systems can restrict access to security functions using access control mechanisms and by implementing least privilege capabilities. While the ideal is for all code within the defined security function isolation boundary to only contain security-relevant code, it is sometimes necessary to include nonsecurity functions as an exception. The isolation of security functions from nonsecurity functions can be achieved by applying the systems security engineering design principles in SA-8, including SA-8(1), SA-8(3), SA-8(4), SA-8(10), SA-8(12), SA-8(13), SA-8(14), and SA-8(18).</p>
+<h2 id="related-controls">Related Controls</h2>
+<p><a href="../ac3/">AC-3</a>, <a href="../ac6/">AC-6</a>, <a href="../ac25/">AC-25</a>, <a href="../cm2/">CM-2</a>, <a href="../cm4/">CM-4</a>, <a href="../sa4/">SA-4</a>, <a href="../sa5/">SA-5</a>, <a href="../sa8/">SA-8</a>, <a href="../sa15/">SA-15</a>, <a href="../sa17/">SA-17</a>, <a href="../sc2/">SC-2</a>, <a href="../sc7/">SC-7</a>, <a href="../sc32/">SC-32</a>, <a href="../sc39/">SC-39</a>, <a href="../si16/">SI-16</a>.</p>
+<h2 id="enhancements">Enhancements</h2>
+<h3 id="1">1</h3>
+<h3 id="security-function-isolation-hardware-separation">Security Function Isolation | Hardware Separation</h3>
+<p>Employ hardware separation mechanisms to implement security function isolation.</p>
+<p>Hardware separation mechanisms include hardware ring architectures that are implemented within microprocessors and hardware-enforced address segmentation used to support logically distinct storage objects with separate attributes (i.e., readable, writeable).</p>
+<h3 id="2">2</h3>
+<h3 id="security-function-isolation-access-and-flow-control-functions">Security Function Isolation | Access and Flow Control Functions</h3>
+<p>Isolate security functions enforcing access and information flow control from nonsecurity functions and from other security functions.</p>
+<p>Security function isolation occurs because of implementation. The functions can still be scanned and monitored. Security functions that are potentially isolated from access and flow control enforcement functions include auditing, intrusion detection, and malicious code protection functions.</p>
+<h3 id="3">3</h3>
+<h3 id="security-function-isolation-minimize-nonsecurity-functionality">Security Function Isolation | Minimize Nonsecurity Functionality</h3>
+<p>Minimize the number of nonsecurity functions included within the isolation boundary containing security functions.</p>
+<p>Where it is not feasible to achieve strict isolation of nonsecurity functions from security functions, it is necessary to take actions to minimize nonsecurity-relevant functions within the security function boundary. Nonsecurity functions contained within the isolation boundary are considered security-relevant because errors or malicious code in the software can directly impact the security functions of systems. The fundamental design objective is that the specific portions of systems that provide information security are of minimal size and complexity. Minimizing the number of nonsecurity functions in the security-relevant system components allows designers and implementers to focus only on those functions which are necessary to provide the desired security capability (typically access enforcement). By minimizing the nonsecurity functions within the isolation boundaries, the amount of code that is trusted to enforce security policies is significantly reduced, thus contributing to understandability.</p>
+<h3 id="4">4</h3>
+<h3 id="security-function-isolation-module-coupling-and-cohesiveness">Security Function Isolation | Module Coupling and Cohesiveness</h3>
+<p>Implement security functions as largely independent modules that maximize internal cohesiveness within modules and minimize coupling between modules.</p>
+<p>The reduction of inter-module interactions helps to constrain security functions and manage complexity. The concepts of coupling and cohesion are important with respect to modularity in software design. Coupling refers to the dependencies that one module has on other modules. Cohesion refers to the relationship between functions within a module. Best practices in software engineering and systems security engineering rely on layering, minimization, and modular decomposition to reduce and manage complexity. This produces software modules that are highly cohesive and loosely coupled.</p>
+<h3 id="5">5</h3>
+<h3 id="security-function-isolation-layered-structures">Security Function Isolation | Layered Structures</h3>
+<p>Implement security functions as a layered structure minimizing interactions between layers of the design and avoiding any dependence by lower layers on the functionality or correctness of higher layers.</p>
+<p>The implementation of layered structures with minimized interactions among security functions and non-looping layers (i.e., lower-layer functions do not depend on higher-layer functions) enables the isolation of security functions and the management of complexity.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../sc4/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../sc4/" class="btn btn-xs btn-link">
+        SC-4 Information in Shared System Resources
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../sc2/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../sc2/" class="btn btn-xs btn-link">
+        SC-2 Separation of System and User Functionality
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

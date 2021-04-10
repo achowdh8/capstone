@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>SC-23 Session Authenticity - NIST 800-53 For Dummies</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "SC-23 Session Authenticity", url: "#_top", children: [
+              {title: "Control", url: "#control" },
+              {title: "Discussion", url: "#discussion" },
+              {title: "Related Controls", url: "#related-controls" },
+              {title: "Enhancements", url: "#enhancements" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../sc24/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../sc24/" class="btn btn-xs btn-link">
+        SC-24 Fail in Known State
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../sc22/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../sc22/" class="btn btn-xs btn-link">
+        SC-22 Architecture and Provisioning for Name/address Resolution Service
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="sc-23-session-authenticity">SC-23 Session Authenticity</h1>
+<h2 id="control">Control</h2>
+<p>Protect the authenticity of communications sessions.</p>
+<h2 id="discussion">Discussion</h2>
+<p>Protecting session authenticity addresses communications protection at the session level, not at the packet level. Such protection establishes grounds for confidence at both ends of communications sessions in the ongoing identities of other parties and the validity of transmitted information. Authenticity protection includes protecting against man-in-the-middle attacks, session hijacking, and the insertion of false information into sessions.</p>
+<h2 id="related-controls">Related Controls</h2>
+<p><a href="../au10/">AU-10</a>, <a href="../sc8/">SC-8</a>, <a href="../sc10/">SC-10</a>, <a href="../sc11/">SC-11</a>.</p>
+<h2 id="enhancements">Enhancements</h2>
+<h3 id="1">1</h3>
+<h3 id="session-authenticity-invalidate-session-identifiers-at-logout">Session Authenticity | Invalidate Session Identifiers at Logout</h3>
+<p>Invalidate session identifiers upon user logout or other session termination.</p>
+<p>Invalidating session identifiers at logout curtails the ability of adversaries to capture and continue to employ previously valid session IDs.</p>
+<h3 id="2">2</h3>
+<h3 id="session-authenticity-user-initiated-logouts-and-message-displays">Session Authenticity | User-initiated Logouts and Message Displays</h3>
+<p>Withdrawn: Incorporated into <a href="../ac12/#1">AC-12(1)</a>.</p>
+<h3 id="3">3</h3>
+<h3 id="session-authenticity-unique-system-generated-session-identifiers">Session Authenticity | Unique System-generated Session Identifiers</h3>
+<p>Generate a unique session identifier for each session with [Assignment: organization-defined randomness requirements] and recognize only session identifiers that are system-generated.</p>
+<p>Generating unique session identifiers curtails the ability of adversaries to reuse previously valid session IDs. Employing the concept of randomness in the generation of unique session identifiers protects against brute-force attacks to determine future session identifiers.</p>
+<p>Related: <a href="../ac10/">AC-10</a>, <a href="../sc12/">SC-12</a>, <a href="../sc13/">SC-13</a>.</p>
+<h3 id="4">4</h3>
+<h3 id="session-authenticity-unique-session-identifiers-with-randomization">Session Authenticity | Unique Session Identifiers with Randomization</h3>
+<p>Withdrawn: Incorporated into <a href="./#3">SC-23(3)</a>.</p>
+<h3 id="5">5</h3>
+<h3 id="session-authenticity-allowed-certificate-authorities">Session Authenticity | Allowed Certificate Authorities</h3>
+<p>Only allow the use of [Assignment: organization-defined certificate authorities] for verification of the establishment of protected sessions.</p>
+<p>Reliance on certificate authorities for the establishment of secure sessions includes the use of Transport Layer Security (TLS) certificates. These certificates, after verification by their respective certificate authorities, facilitate the establishment of protected sessions between web clients and web servers.</p>
+<p>Related: <a href="../sc12/">SC-12</a>, <a href="../sc13/">SC-13</a>.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../sc24/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../sc24/" class="btn btn-xs btn-link">
+        SC-24 Fail in Known State
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../sc22/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../sc22/" class="btn btn-xs btn-link">
+        SC-22 Architecture and Provisioning for Name/address Resolution Service
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

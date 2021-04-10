@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>SC-12 Cryptographic Key Establishment and Management - NIST 800-53 For Dummies</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "SC-12 Cryptographic Key Establishment and Management", url: "#_top", children: [
+              {title: "Control", url: "#control" },
+              {title: "Discussion", url: "#discussion" },
+              {title: "Related Controls", url: "#related-controls" },
+              {title: "Enhancements", url: "#enhancements" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../sc13/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../sc13/" class="btn btn-xs btn-link">
+        SC-13 Cryptographic Protection
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../sc11/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../sc11/" class="btn btn-xs btn-link">
+        SC-11 Trusted Path
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="sc-12-cryptographic-key-establishment-and-management">SC-12 Cryptographic Key Establishment and Management</h1>
+<h2 id="control">Control</h2>
+<p>Establish and manage cryptographic keys when cryptography is employed within the system in accordance with the following key management requirements: [Assignment: organization-defined requirements for key generation, distribution, storage, access, and destruction].</p>
+<h2 id="discussion">Discussion</h2>
+<p>Cryptographic key management and establishment can be performed using manual procedures or automated mechanisms with supporting manual procedures. Organizations define key management requirements in accordance with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines and specify appropriate options, parameters, and levels. Organizations manage trust stores to ensure that only approved trust anchors are part of such trust stores. This includes certificates with visibility external to organizational systems and certificates related to the internal operations of systems. NIST CMVP and NIST CAVP provide additional information on validated cryptographic modules and algorithms that can be used in cryptographic key management and establishment.</p>
+<h2 id="related-controls">Related Controls</h2>
+<p><a href="../ac17/">AC-17</a>, <a href="../au9/">AU-9</a>, <a href="../au10/">AU-10</a>, <a href="../cm3/">CM-3</a>, <a href="../ia3/">IA-3</a>, <a href="../ia7/">IA-7</a>, <a href="../sa4/">SA-4</a>, <a href="../sa8/">SA-8</a>, <a href="../sa9/">SA-9</a>, <a href="../sc8/">SC-8</a>, <a href="../sc11/">SC-11</a>, <a href="./">SC-12</a>, <a href="../sc13/">SC-13</a>, <a href="../sc17/">SC-17</a>, <a href="../sc20/">SC-20</a>, <a href="../sc37/">SC-37</a>, <a href="../sc40/">SC-40</a>, <a href="../si3/">SI-3</a>, <a href="../si7/">SI-7</a>.</p>
+<h2 id="enhancements">Enhancements</h2>
+<h3 id="1">1</h3>
+<h3 id="cryptographic-key-establishment-and-management-availability">Cryptographic Key Establishment and Management | Availability</h3>
+<p>Maintain availability of information in the event of the loss of cryptographic keys by users.</p>
+<p>Escrowing of encryption keys is a common practice for ensuring availability in the event of key loss. A forgotten passphrase is an example of losing a cryptographic key.</p>
+<h3 id="2">2</h3>
+<h3 id="cryptographic-key-establishment-and-management-symmetric-keys">Cryptographic Key Establishment and Management | Symmetric Keys</h3>
+<p>Produce, control, and distribute symmetric cryptographic keys using [Selection: NIST FIPS-validated; NSA-approved] key management technology and processes.</p>
+<p>SP 800-56A, SP 800-56B, and SP 800-56C provide guidance on cryptographic key establishment schemes and key derivation methods. SP 800-57-1, SP 800-57-2, and SP 800-57-3 provide guidance on cryptographic key management.</p>
+<h3 id="3">3</h3>
+<h3 id="cryptographic-key-establishment-and-management-asymmetric-keys">Cryptographic Key Establishment and Management | Asymmetric Keys</h3>
+<p>Produce, control, and distribute asymmetric cryptographic keys using [Selection: NSA-approved key management technology and processes; prepositioned keying material; DoD-approved or DoD-issued Medium Assurance PKI certificates; DoD-approved or DoD-issued Medium Hardware Assurance PKI certificates and hardware security tokens that protect the user’s private key; certificates issued in accordance with organization-defined requirements].</p>
+<p>SP 800-56A, SP 800-56B, and SP 800-56C provide guidance on cryptographic key establishment schemes and key derivation methods. SP 800-57-1, SP 800-57-2, and SP 800-57-3 provide guidance on cryptographic key management.</p>
+<h3 id="4">4</h3>
+<h3 id="cryptographic-key-establishment-and-management-pki-certificates">Cryptographic Key Establishment and Management | PKI Certificates</h3>
+<p>Withdrawn: Incorporated into <a href="./#3">SC-12(3)</a>.</p>
+<h3 id="5">5</h3>
+<h3 id="cryptographic-key-establishment-and-management-pki-certificates-hardware-tokens">Cryptographic Key Establishment and Management | PKI Certificates / Hardware Tokens</h3>
+<p>Withdrawn: Incorporated into <a href="./#3">SC-12(3)</a>.</p>
+<h3 id="6">6</h3>
+<h3 id="cryptographic-key-establishment-and-management-physical-control-of-keys">Cryptographic Key Establishment and Management | Physical Control of Keys</h3>
+<p>Maintain physical control of cryptographic keys when stored information is encrypted by external service providers.</p>
+<p>For organizations that use external service providers (e.g., cloud service or data center providers), physical control of cryptographic keys provides additional assurance that information stored by such external providers is not subject to unauthorized disclosure or modification.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../sc13/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../sc13/" class="btn btn-xs btn-link">
+        SC-13 Cryptographic Protection
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../sc11/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../sc11/" class="btn btn-xs btn-link">
+        SC-11 Trusted Path
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>SA-9 External System Services - NIST 800-53 For Dummies</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "SA-9 External System Services", url: "#_top", children: [
+              {title: "Control", url: "#control" },
+              {title: "Discussion", url: "#discussion" },
+              {title: "Related Controls", url: "#related-controls" },
+              {title: "Enhancements", url: "#enhancements" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../sa10/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../sa10/" class="btn btn-xs btn-link">
+        SA-10 Developer Configuration Management
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../sa8/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../sa8/" class="btn btn-xs btn-link">
+        SA-8 Security and Privacy Engineering Principles
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="sa-9-external-system-services">SA-9 External System Services</h1>
+<h2 id="control">Control</h2>
+<p>a. Require that providers of external system services comply with organizational security and privacy requirements and employ the following controls: [Assignment: organization-defined controls];</p>
+<p>b. Define and document organizational oversight and user roles and responsibilities with regard to external system services; and</p>
+<p>c. Employ the following processes, methods, and techniques to monitor control compliance by external service providers on an ongoing basis: [Assignment: organization-defined processes, methods, and techniques].</p>
+<h2 id="discussion">Discussion</h2>
+<p>External system services are provided by an external provider, and the organization has no direct control over the implementation of the required controls or the assessment of control effectiveness. Organizations establish relationships with external service providers in a variety of ways, including through business partnerships, contracts, interagency agreements, lines of business arrangements, licensing agreements, joint ventures, and supply chain exchanges. The responsibility for managing risks from the use of external system services remains with authorizing officials. For services external to organizations, a chain of trust requires that organizations establish and retain a certain level of confidence that each provider in the consumer-provider relationship provides adequate protection for the services rendered. The extent and nature of this chain of trust vary based on relationships between organizations and the external providers. Organizations document the basis for the trust relationships so that the relationships can be monitored. External system services documentation includes government, service providers, end user security roles and responsibilities, and service-level agreements. Service-level agreements define the expectations of performance for implemented controls, describe measurable outcomes, and identify remedies and response requirements for identified instances of noncompliance.</p>
+<h2 id="related-controls">Related Controls</h2>
+<p><a href="../ac20/">AC-20</a>, <a href="../ca3/">CA-3</a>, <a href="../cp2/">CP-2</a>, <a href="../ir4/">IR-4</a>, <a href="../ir7/">IR-7</a>, <a href="../pl10/">PL-10</a>, <a href="../pl11/">PL-11</a>, <a href="../ps7/">PS-7</a>, <a href="../sa2/">SA-2</a>, <a href="../sa4/">SA-4</a>, <a href="../sr3/">SR-3</a>, <a href="../sr5/">SR-5</a>.</p>
+<h2 id="enhancements">Enhancements</h2>
+<h3 id="1">1</h3>
+<h3 id="external-system-services-risk-assessments-and-organizational-approvals">External System Services | Risk Assessments and Organizational Approvals</h3>
+<p>(a) Conduct an organizational assessment of risk prior to the acquisition or outsourcing of information security services; and</p>
+<p>(b) Verify that the acquisition or outsourcing of dedicated information security services is approved by [Assignment: organization-defined personnel or roles].</p>
+<p>Information security services include the operation of security devices, such as firewalls or key management services as well as incident monitoring, analysis, and response. Risks assessed can include system, mission or business, security, privacy, or supply chain risks.</p>
+<p>Related: <a href="../ca6/">CA-6</a>, <a href="../ra3/">RA-3</a>, <a href="../ra8/">RA-8</a>.</p>
+<h3 id="2">2</h3>
+<h3 id="external-system-services-identification-of-functions-ports-protocols-and-services">External System Services | Identification of Functions, Ports, Protocols, and Services</h3>
+<p>Require providers of the following external system services to identify the functions, ports, protocols, and other services required for the use of such services: [Assignment: organization-defined external system services].</p>
+<p>Information from external service providers regarding the specific functions, ports, protocols, and services used in the provision of such services can be useful when the need arises to understand the trade-offs involved in restricting certain functions and services or blocking certain ports and protocols.</p>
+<p>Related: <a href="../cm6/">CM-6</a>, <a href="../cm7/">CM-7</a>.</p>
+<h3 id="3">3</h3>
+<h3 id="external-system-services-establish-and-maintain-trust-relationship-with-providers">External System Services | Establish and Maintain Trust Relationship with Providers</h3>
+<p>Establish, document, and maintain trust relationships with external service providers based on the following requirements, properties, factors, or conditions: [Assignment: organization-defined security and privacy requirements, properties, factors, or conditions defining acceptable trust relationships].</p>
+<p>Trust relationships between organizations and external service providers reflect the degree of confidence that the risk from using external services is at an acceptable level. Trust relationships can help organizations gain increased levels of confidence that service providers are providing adequate protection for the services rendered and can also be useful when conducting incident response or when planning for upgrades or obsolescence. Trust relationships can be complicated due to the potentially large number of entities participating in the consumer-provider interactions, subordinate relationships and levels of trust, and types of interactions between the parties. In some cases, the degree of trust is based on the level of control that organizations can exert on external service providers regarding the controls necessary for the protection of the service, information, or individual privacy and the evidence brought forth as to the effectiveness of the implemented controls. The level of control is established by the terms and conditions of the contracts or service-level agreements.</p>
+<p>Related: <a href="../sr2/">SR-2</a>.</p>
+<h3 id="4">4</h3>
+<h3 id="external-system-services-consistent-interests-of-consumers-and-providers">External System Services | Consistent Interests of Consumers and Providers</h3>
+<p>Take the following actions to verify that the interests of [Assignment: organization-defined external service providers] are consistent with and reflect organizational interests: [Assignment: organization-defined actions].</p>
+<p>As organizations increasingly use external service providers, it is possible that the interests of the service providers may diverge from organizational interests. In such situations, simply having the required technical, management, or operational controls in place may not be sufficient if the providers that implement and manage those controls are not operating in a manner consistent with the interests of the consuming organizations. Actions that organizations take to address such concerns include requiring background checks for selected service provider personnel; examining ownership records; employing only trustworthy service providers, such as providers with which organizations have had successful trust relationships; and conducting routine, periodic, unscheduled visits to service provider facilities.</p>
+<h3 id="5">5</h3>
+<h3 id="external-system-services-processing-storage-and-service-location">External System Services | Processing, Storage, and Service Location</h3>
+<p>Restrict the location of [Selection (one or more): information processing; information or data; system services] to [Assignment: organization-defined locations] based on [Assignment: organization-defined requirements or conditions].</p>
+<p>The location of information processing, information and data storage, or system services can have a direct impact on the ability of organizations to successfully execute their mission and business functions. The impact occurs when external providers control the location of processing, storage, or services. The criteria that external providers use for the selection of processing, storage, or service locations may be different from the criteria that organizations use. For example, organizations may desire that data or information storage locations be restricted to certain locations to help facilitate incident response activities in case of information security incidents or breaches. Incident response activities, including forensic analyses and after-the-fact investigations, may be adversely affected by the governing laws, policies, or protocols in the locations where processing and storage occur and/or the locations from which system services emanate.</p>
+<p>Related: <a href="../sa5/">SA-5</a>, <a href="../sr4/">SR-4</a>.</p>
+<h3 id="6">6</h3>
+<h3 id="external-system-services-organization-controlled-cryptographic-keys">External System Services | Organization-controlled Cryptographic Keys</h3>
+<p>Maintain exclusive control of cryptographic keys for encrypted material stored or transmitted through an external system.</p>
+<p>Maintaining exclusive control of cryptographic keys in an external system prevents decryption of organizational data by external system staff. Organizational control of cryptographic keys can be implemented by encrypting and decrypting data inside the organization as data is sent to and received from the external system or by employing a component that permits encryption and decryption functions to be local to the external system but allows exclusive organizational access to the encryption keys.</p>
+<p>Related: <a href="../sc12/">SC-12</a>, <a href="../sc13/">SC-13</a>, <a href="../si4/">SI-4</a>.</p>
+<h3 id="7">7</h3>
+<h3 id="external-system-services-organization-controlled-integrity-checking">External System Services | Organization-controlled Integrity Checking</h3>
+<p>Provide the capability to check the integrity of information while it resides in the external system.</p>
+<p>Storage of organizational information in an external system could limit visibility into the security status of its data. The ability of the organization to verify and validate the integrity of its stored data without transferring it out of the external system provides such visibility.</p>
+<p>Related: <a href="../si7/">SI-7</a>.</p>
+<h3 id="8">8</h3>
+<h3 id="external-system-services-processing-and-storage-location-us-jurisdiction">External System Services | Processing and Storage Location — U.S. Jurisdiction</h3>
+<p>Restrict the geographic location of information processing and data storage to facilities located within in the legal jurisdictional boundary of the United States.</p>
+<p>The geographic location of information processing and data storage can have a direct impact on the ability of organizations to successfully execute their mission and business functions. A compromise or breach of high impact information and systems can have severe or catastrophic adverse impacts on organizational assets and operations, individuals, other organizations, and the Nation. Restricting the processing and storage of high-impact information to facilities within the legal jurisdictional boundary of the United States provides greater control over such processing and storage.</p>
+<p>Related: <a href="../sa5/">SA-5</a>, <a href="../sr4/">SR-4</a>.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../sa10/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../sa10/" class="btn btn-xs btn-link">
+        SA-10 Developer Configuration Management
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../sa8/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../sa8/" class="btn btn-xs btn-link">
+        SA-8 Security and Privacy Engineering Principles
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

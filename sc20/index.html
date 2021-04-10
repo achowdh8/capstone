@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>SC-20 Secure Name/address Resolution Service (authoritative Source) - NIST 800-53 For Dummies</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "SC-20 Secure Name/address Resolution Service (authoritative Source)", url: "#_top", children: [
+              {title: "Control", url: "#control" },
+              {title: "Discussion", url: "#discussion" },
+              {title: "Related Controls", url: "#related-controls" },
+              {title: "Enhancements", url: "#enhancements" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../sc21/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../sc21/" class="btn btn-xs btn-link">
+        SC-21 Secure Name/address Resolution Service (recursive or Caching Resolver)
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../sc19/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../sc19/" class="btn btn-xs btn-link">
+        SC-19 Voice Over Internet Protocol
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="sc-20-secure-nameaddress-resolution-service-authoritative-source">SC-20 Secure Name/address Resolution Service (authoritative Source)</h1>
+<h2 id="control">Control</h2>
+<p>a. Provide additional data origin authentication and integrity verification artifacts along with the authoritative name resolution data the system returns in response to external name/address resolution queries; and</p>
+<p>b. Provide the means to indicate the security status of child zones and (if the child supports secure resolution services) to enable verification of a chain of trust among parent and child domains, when operating as part of a distributed, hierarchical namespace.</p>
+<h2 id="discussion">Discussion</h2>
+<p>Providing authoritative source information enables external clients, including remote Internet clients, to obtain origin authentication and integrity verification assurances for the host/service name to network address resolution information obtained through the service. Systems that provide name and address resolution services include domain name system (DNS) servers. Additional artifacts include DNS Security Extensions (DNSSEC) digital signatures and cryptographic keys. Authoritative data includes DNS resource records. The means for indicating the security status of child zones include the use of delegation signer resource records in the DNS. Systems that use technologies other than the DNS to map between host and service names and network addresses provide other means to assure the authenticity and integrity of response data.</p>
+<h2 id="related-controls">Related Controls</h2>
+<p><a href="../au10/">AU-10</a>, <a href="../sc8/">SC-8</a>, <a href="../sc12/">SC-12</a>, <a href="../sc13/">SC-13</a>, <a href="../sc21/">SC-21</a>, <a href="../sc22/">SC-22</a>.</p>
+<h2 id="enhancements">Enhancements</h2>
+<h3 id="1">1</h3>
+<h3 id="secure-nameaddress-resolution-service-authoritative-source-child-subspaces">Secure Name/address Resolution Service (authoritative Source) | Child Subspaces</h3>
+<p>Withdrawn: Incorporated into <a href="./">SC-20</a>.</p>
+<h3 id="2">2</h3>
+<h3 id="secure-nameaddress-resolution-service-authoritative-source-data-origin-and-integrity">Secure Name/address Resolution Service (authoritative Source) | Data Origin and Integrity</h3>
+<p>Provide data origin and integrity protection artifacts for internal name/address resolution queries.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../sc21/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../sc21/" class="btn btn-xs btn-link">
+        SC-21 Secure Name/address Resolution Service (recursive or Caching Resolver)
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../sc19/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../sc19/" class="btn btn-xs btn-link">
+        SC-19 Voice Over Internet Protocol
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

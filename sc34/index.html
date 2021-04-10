@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>SC-34 Non-modifiable Executable Programs - NIST 800-53 For Dummies</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "SC-34 Non-modifiable Executable Programs", url: "#_top", children: [
+              {title: "Control", url: "#control" },
+              {title: "Discussion", url: "#discussion" },
+              {title: "Related Controls", url: "#related-controls" },
+              {title: "Enhancements", url: "#enhancements" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../sc35/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../sc35/" class="btn btn-xs btn-link">
+        SC-35 External Malicious Code Identification
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../sc33/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../sc33/" class="btn btn-xs btn-link">
+        SC-33 Transmission Preparation Integrity
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="sc-34-non-modifiable-executable-programs">SC-34 Non-modifiable Executable Programs</h1>
+<h2 id="control">Control</h2>
+<p>For [Assignment: organization-defined system components], load and execute:</p>
+<p>a. The operating environment from hardware-enforced, read-only media; and</p>
+<p>b. The following applications from hardware-enforced, read-only media: [Assignment: organization-defined applications].</p>
+<h2 id="discussion">Discussion</h2>
+<p>The operating environment for a system contains the code that hosts applications, including operating systems, executives, or virtual machine monitors (i.e., hypervisors). It can also include certain applications that run directly on hardware platforms. Hardware-enforced, read-only media include Compact Disc-Recordable (CD-R) and Digital Versatile Disc-Recordable (DVD-R) disk drives as well as one-time, programmable, read-only memory. The use of non-modifiable storage ensures the integrity of software from the point of creation of the read-only image. The use of reprogrammable, read-only memory can be accepted as read-only media provided that integrity can be adequately protected from the point of initial writing to the insertion of the memory into the system, and there are reliable hardware protections against reprogramming the memory while installed in organizational systems.</p>
+<h2 id="related-controls">Related Controls</h2>
+<p><a href="../ac3/">AC-3</a>, <a href="../si7/">SI-7</a>, <a href="../si14/">SI-14</a>.</p>
+<h2 id="enhancements">Enhancements</h2>
+<h3 id="1">1</h3>
+<h3 id="non-modifiable-executable-programs-no-writable-storage">Non-modifiable Executable Programs | No Writable Storage</h3>
+<p>Employ [Assignment: organization-defined system components] with no writeable storage that is persistent across component restart or power on/off.</p>
+<p>Disallowing writeable storage eliminates the possibility of malicious code insertion via persistent, writeable storage within the designated system components. The restriction applies to fixed and removable storage, with the latter being addressed either directly or as specific restrictions imposed through access controls for mobile devices.</p>
+<p>Related: <a href="../ac19/">AC-19</a>, <a href="../mp7/">MP-7</a>.</p>
+<h3 id="2">2</h3>
+<h3 id="non-modifiable-executable-programs-integrity-protection-on-read-only-media">Non-modifiable Executable Programs | Integrity Protection on Read-only Media</h3>
+<p>Protect the integrity of information prior to storage on read-only media and control the media after such information has been recorded onto the media.</p>
+<p>Controls prevent the substitution of media into systems or the reprogramming of programmable read-only media prior to installation into the systems. Integrity protection controls include a combination of prevention, detection, and response.</p>
+<p>Related: <a href="../cm3/">CM-3</a>, <a href="../cm5/">CM-5</a>, <a href="../cm9/">CM-9</a>, <a href="../mp2/">MP-2</a>, <a href="../mp4/">MP-4</a>, <a href="../mp5/">MP-5</a>, <a href="../sc28/">SC-28</a>, <a href="../si3/">SI-3</a>.</p>
+<h3 id="3">3</h3>
+<h3 id="non-modifiable-executable-programs-hardware-based-protection">Non-modifiable Executable Programs | Hardware-based Protection</h3>
+<p>Withdrawn: Moved to <a href="../sc51/">SC-51</a>.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../sc35/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../sc35/" class="btn btn-xs btn-link">
+        SC-35 External Malicious Code Identification
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../sc33/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../sc33/" class="btn btn-xs btn-link">
+        SC-33 Transmission Preparation Integrity
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

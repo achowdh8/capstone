@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>SA-4 Acquisition Process - NIST 800-53 For Dummies</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "SA-4 Acquisition Process", url: "#_top", children: [
+              {title: "Control", url: "#control" },
+              {title: "Discussion", url: "#discussion" },
+              {title: "Related Controls", url: "#related-controls" },
+              {title: "Enhancements", url: "#enhancements" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../sa5/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../sa5/" class="btn btn-xs btn-link">
+        SA-5 System Documentation
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../sa3/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../sa3/" class="btn btn-xs btn-link">
+        SA-3 System Development Life Cycle
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="sa-4-acquisition-process">SA-4 Acquisition Process</h1>
+<h2 id="control">Control</h2>
+<p>Include the following requirements, descriptions, and criteria, explicitly or by reference, using [Selection (one or more): standardized contract language; [Assignment: organization-defined contract language]] in the acquisition contract for the system, system component, or system service:</p>
+<p>a. Security and privacy functional requirements;</p>
+<p>b. Strength of mechanism requirements;</p>
+<p>c. Security and privacy assurance requirements;</p>
+<p>d. Controls needed to satisfy the security and privacy requirements.</p>
+<p>e. Security and privacy documentation requirements;</p>
+<p>f. Requirements for protecting security and privacy documentation;</p>
+<p>g. Description of the system development environment and environment in which the system is intended to operate;</p>
+<p>h. Allocation of responsibility or identification of parties responsible for information security, privacy, and supply chain risk management; and</p>
+<p>i. Acceptance criteria.</p>
+<h2 id="discussion">Discussion</h2>
+<p>Security and privacy functional requirements are typically derived from the high-level security and privacy requirements described in SA-2. The derived requirements include security and privacy capabilities, functions, and mechanisms. Strength requirements associated with such capabilities, functions, and mechanisms include degree of correctness, completeness, resistance to tampering or bypass, and resistance to direct attack. Assurance requirements include development processes, procedures, and methodologies as well as the evidence from development and assessment activities that provide grounds for confidence that the required functionality is implemented and possesses the required strength of mechanism. SP 800-160-1 describes the process of requirements engineering as part of the system development life cycle.</p>
+<p>Controls can be viewed as descriptions of the safeguards and protection capabilities appropriate for achieving the particular security and privacy objectives of the organization and for reflecting the security and privacy requirements of stakeholders. Controls are selected and implemented in order to satisfy system requirements and include developer and organizational responsibilities. Controls can include technical, administrative, and physical aspects. In some cases, the selection and implementation of a control may necessitate additional specification by the organization in the form of derived requirements or instantiated control parameter values. The derived requirements and control parameter values may be necessary to provide the appropriate level of implementation detail for controls within the system development life cycle.</p>
+<p>Security and privacy documentation requirements address all stages of the system development life cycle. Documentation provides user and administrator guidance for the implementation and operation of controls. The level of detail required in such documentation is based on the security categorization or classification level of the system and the degree to which organizations depend on the capabilities, functions, or mechanisms to meet risk response expectations. Requirements can include mandated configuration settings that specify allowed functions, ports, protocols, and services. Acceptance criteria for systems, system components, and system services are defined in the same manner as the criteria for any organizational acquisition or procurement.</p>
+<h2 id="related-controls">Related Controls</h2>
+<p><a href="../cm6/">CM-6</a>, <a href="../cm8/">CM-8</a>, <a href="../ps7/">PS-7</a>, <a href="../sa3/">SA-3</a>, <a href="../sa5/">SA-5</a>, <a href="../sa8/">SA-8</a>, <a href="../sa11/">SA-11</a>, <a href="../sa15/">SA-15</a>, <a href="../sa16/">SA-16</a>, <a href="../sa17/">SA-17</a>, <a href="../sa21/">SA-21</a>, <a href="../sr3/">SR-3</a>, <a href="../sr5/">SR-5</a>.</p>
+<h2 id="enhancements">Enhancements</h2>
+<h3 id="1">1</h3>
+<h3 id="acquisition-process-functional-properties-of-controls">Acquisition Process | Functional Properties of Controls</h3>
+<p>Require the developer of the system, system component, or system service to provide a description of the functional properties of the controls to be implemented.</p>
+<p>Functional properties of security and privacy controls describe the functionality (i.e., security or privacy capability, functions, or mechanisms) visible at the interfaces of the controls and specifically exclude functionality and data structures internal to the operation of the controls.</p>
+<h3 id="2">2</h3>
+<h3 id="acquisition-process-design-and-implementation-information-for-controls">Acquisition Process | Design and Implementation Information for Controls</h3>
+<p>Require the developer of the system, system component, or system service to provide design and implementation information for the controls that includes: [Selection (one or more): security-relevant external system interfaces; high-level design; low-level design; source code or hardware schematics; [Assignment: organization-defined design and implementation information]] at [Assignment: organization-defined level of detail].</p>
+<p>Organizations may require different levels of detail in the documentation for the design and implementation of controls in organizational systems, system components, or system services based on mission and business requirements, requirements for resiliency and trustworthiness, and requirements for analysis and testing. Systems can be partitioned into multiple subsystems. Each subsystem within the system can contain one or more modules. The high-level design for the system is expressed in terms of subsystems and the interfaces between subsystems providing security-relevant functionality. The low-level design for the system is expressed in terms of modules and the interfaces between modules providing security-relevant functionality. Design and implementation documentation can include manufacturer, version, serial number, verification hash signature, software libraries used, date of purchase or download, and the vendor or download source. Source code and hardware schematics are referred to as the implementation representation of the system.</p>
+<h3 id="3">3</h3>
+<h3 id="acquisition-process-development-methods-techniques-and-practices">Acquisition Process | Development Methods, Techniques, and Practices</h3>
+<p>Require the developer of the system, system component, or system service to demonstrate the use of a system development life cycle process that includes:</p>
+<p>(a) [Assignment: organization-defined systems engineering methods];</p>
+<p>(b) <assign:#>organization-defined [Selection (one or more): systems security; privacy&lt;#:assign&gt; engineering methods]; and</p>
+<p>(c) [Assignment: organization-defined software development methods; testing, evaluation, assessment, verification, and validation methods; and quality control processes].</p>
+<p>Following a system development life cycle that includes state-of-the-practice software development methods, systems engineering methods, systems security and privacy engineering methods, and quality control processes helps to reduce the number and severity of latent errors within systems, system components, and system services. Reducing the number and severity of such errors reduces the number of vulnerabilities in those systems, components, and services. Transparency in the methods and techniques that developers select and implement for systems engineering, systems security and privacy engineering, software development, component and system assessments, and quality control processes provides an increased level of assurance in the trustworthiness of the system, system component, or system service being acquired.</p>
+<h3 id="4">4</h3>
+<h3 id="acquisition-process-assignment-of-components-to-systems">Acquisition Process | Assignment of Components to Systems</h3>
+<p>Withdrawn: Incorporated into <a href="../cm8/#9">CM-8(9)</a>.</p>
+<h3 id="5">5</h3>
+<h3 id="acquisition-process-system-component-and-service-configurations">Acquisition Process | System, Component, and Service Configurations</h3>
+<p>Require the developer of the system, system component, or system service to:</p>
+<p>(a) Deliver the system, component, or service with [Assignment: organization-defined security configurations] implemented; and</p>
+<p>(b) Use the configurations as the default for any subsequent system, component, or service reinstallation or upgrade.</p>
+<p>Examples of security configurations include the U.S. Government Configuration Baseline (USGCB), Security Technical Implementation Guides (STIGs), and any limitations on functions, ports, protocols, and services. Security characteristics can include requiring that default passwords have been changed.</p>
+<h3 id="6">6</h3>
+<h3 id="acquisition-process-use-of-information-assurance-products">Acquisition Process | Use of Information Assurance Products</h3>
+<p>(a) Employ only government off-the-shelf or commercial off-the-shelf information assurance and information assurance-enabled information technology products that compose an NSA-approved solution to protect classified information when the networks used to transmit the information are at a lower classification level than the information being transmitted; and</p>
+<p>(b) Ensure that these products have been evaluated and/or validated by NSA or in accordance with NSA-approved procedures.</p>
+<p>Commercial off-the-shelf IA or IA-enabled information technology products used to protect classified information by cryptographic means may be required to use NSA-approved key management. See NSA CSFC.</p>
+<p>Related: <a href="../sc8/">SC-8</a>, <a href="../sc12/">SC-12</a>, <a href="../sc13/">SC-13</a>.</p>
+<h3 id="7">7</h3>
+<h3 id="acquisition-process-niap-approved-protection-profiles">Acquisition Process | NIAP-approved Protection Profiles</h3>
+<p>(a) Limit the use of commercially provided information assurance and information assurance-enabled information technology products to those products that have been successfully evaluated against a National Information Assurance partnership (NIAP)-approved Protection Profile for a specific technology type, if such a profile exists; and</p>
+<p>(b) Require, if no NIAP-approved Protection Profile exists for a specific technology type but a commercially provided information technology product relies on cryptographic functionality to enforce its security policy, that the cryptographic module is FIPS-validated or NSA-approved.</p>
+<p>See NIAP CCEVS for additional information on NIAP. See NIST CMVP for additional information on FIPS-validated cryptographic modules.</p>
+<p>Related: <a href="../ia7/">IA-7</a>, <a href="../sc12/">SC-12</a>, <a href="../sc13/">SC-13</a>.</p>
+<h3 id="8">8</h3>
+<h3 id="acquisition-process-continuous-monitoring-plan-for-controls">Acquisition Process | Continuous Monitoring Plan for Controls</h3>
+<p>Require the developer of the system, system component, or system service to produce a plan for continuous monitoring of control effectiveness that is consistent with the continuous monitoring program of the organization.</p>
+<p>The objective of continuous monitoring plans is to determine if the planned, required, and deployed controls within the system, system component, or system service continue to be effective over time based on the inevitable changes that occur. Developer continuous monitoring plans include a sufficient level of detail such that the information can be incorporated into continuous monitoring programs implemented by organizations. Continuous monitoring plans can include the types of control assessment and monitoring activities planned, frequency of control monitoring, and actions to be taken when controls fail or become ineffective.</p>
+<p>Related: <a href="../ca7/">CA-7</a>.</p>
+<h3 id="9">9</h3>
+<h3 id="acquisition-process-functions-ports-protocols-and-services-in-use">Acquisition Process | Functions, Ports, Protocols, and Services in Use</h3>
+<p>Require the developer of the system, system component, or system service to identify the functions, ports, protocols, and services intended for organizational use.</p>
+<p>The identification of functions, ports, protocols, and services early in the system development life cycle (e.g., during the initial requirements definition and design stages) allows organizations to influence the design of the system, system component, or system service. This early involvement in the system development life cycle helps organizations avoid or minimize the use of functions, ports, protocols, or services that pose unnecessarily high risks and understand the trade-offs involved in blocking specific ports, protocols, or services or requiring system service providers to do so. Early identification of functions, ports, protocols, and services avoids costly retrofitting of controls after the system, component, or system service has been implemented. SA-9 describes the requirements for external system services. Organizations identify which functions, ports, protocols, and services are provided from external sources.</p>
+<p>Related: <a href="../cm7/">CM-7</a>, <a href="../sa9/">SA-9</a>.</p>
+<h3 id="10">10</h3>
+<h3 id="acquisition-process-use-of-approved-piv-products">Acquisition Process | Use of Approved PIV Products</h3>
+<p>Employ only information technology products on the FIPS 201-approved products list for Personal Identity Verification (PIV) capability implemented within organizational systems.</p>
+<p>Products on the FIPS 201-approved products list meet NIST requirements for Personal Identity Verification (PIV) of Federal Employees and Contractors. PIV cards are used for multi-factor authentication in systems and organizations.</p>
+<p>Related: <a href="../ia2/">IA-2</a>, <a href="../ia8/">IA-8</a>, <a href="../pm9/">PM-9</a>.</p>
+<h3 id="11">11</h3>
+<h3 id="acquisition-process-system-of-records">Acquisition Process | System of Records</h3>
+<p>Include [Assignment: organization-defined Privacy Act requirements] in the acquisition contract for the operation of a system of records on behalf of an organization to accomplish an organizational mission or function.</p>
+<p>When, by contract, an organization provides for the operation of a system of records to accomplish an organizational mission or function, the organization, consistent with its authority, causes the requirements of the PRIVACT to be applied to the system of records.</p>
+<p>Related: <a href="../pt6/">PT-6</a>.</p>
+<h3 id="12">12</h3>
+<h3 id="acquisition-process-data-ownership">Acquisition Process | Data Ownership</h3>
+<p>(a) Include organizational data ownership requirements in the acquisition contract; and</p>
+<p>(b) Require all data to be removed from the contractor’s system and returned to the organization within [Assignment: organization-defined time frame].</p>
+<p>Contractors who operate a system that contains data owned by an organization initiating the contract have policies and procedures in place to remove the data from their systems and/or return the data in a time frame defined by the contract.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../sa5/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../sa5/" class="btn btn-xs btn-link">
+        SA-5 System Documentation
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../sa3/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../sa3/" class="btn btn-xs btn-link">
+        SA-3 System Development Life Cycle
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

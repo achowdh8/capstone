@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>SC-18 Mobile Code - NIST 800-53 For Dummies</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "SC-18 Mobile Code", url: "#_top", children: [
+              {title: "Control", url: "#control" },
+              {title: "Discussion", url: "#discussion" },
+              {title: "Related Controls", url: "#related-controls" },
+              {title: "Enhancements", url: "#enhancements" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../sc19/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../sc19/" class="btn btn-xs btn-link">
+        SC-19 Voice Over Internet Protocol
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../sc17/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../sc17/" class="btn btn-xs btn-link">
+        SC-17 Public Key Infrastructure Certificates
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="sc-18-mobile-code">SC-18 Mobile Code</h1>
+<h2 id="control">Control</h2>
+<p>a. Define acceptable and unacceptable mobile code and mobile code technologies; and</p>
+<p>b. Authorize, monitor, and control the use of mobile code within the system.</p>
+<h2 id="discussion">Discussion</h2>
+<p>Mobile code includes any program, application, or content that can be transmitted across a network (e.g., embedded in an email, document, or website) and executed on a remote system. Decisions regarding the use of mobile code within organizational systems are based on the potential for the code to cause damage to the systems if used maliciously. Mobile code technologies include Java applets, JavaScript, HTML5, WebGL, and VBScript. Usage restrictions and implementation guidelines apply to both the selection and use of mobile code installed on servers and mobile code downloaded and executed on individual workstations and devices, including notebook computers and smart phones. Mobile code policy and procedures address specific actions taken to prevent the development, acquisition, and introduction of unacceptable mobile code within organizational systems, including requiring mobile code to be digitally signed by a trusted source.</p>
+<h2 id="related-controls">Related Controls</h2>
+<p><a href="../au2/">AU-2</a>, <a href="../au12/">AU-12</a>, <a href="../cm2/">CM-2</a>, <a href="../cm6/">CM-6</a>, <a href="../si3/">SI-3</a>.</p>
+<h2 id="enhancements">Enhancements</h2>
+<h3 id="1">1</h3>
+<h3 id="mobile-code-identify-unacceptable-code-and-take-corrective-actions">Mobile Code | Identify Unacceptable Code and Take Corrective Actions</h3>
+<p>Identify [Assignment: organization-defined unacceptable mobile code] and take [Assignment: organization-defined corrective actions].</p>
+<p>Corrective actions when unacceptable mobile code is detected include blocking, quarantine, or alerting administrators. Blocking includes preventing the transmission of word processing files with embedded macros when such macros have been determined to be unacceptable mobile code.</p>
+<h3 id="2">2</h3>
+<h3 id="mobile-code-acquisition-development-and-use">Mobile Code | Acquisition, Development, and Use</h3>
+<p>Verify that the acquisition, development, and use of mobile code to be deployed in the system meets [Assignment: organization-defined mobile code requirements].</p>
+<h3 id="3">3</h3>
+<h3 id="mobile-code-prevent-downloading-and-execution">Mobile Code | Prevent Downloading and Execution</h3>
+<p>Prevent the download and execution of [Assignment: organization-defined unacceptable mobile code].</p>
+<h3 id="4">4</h3>
+<h3 id="mobile-code-prevent-automatic-execution">Mobile Code | Prevent Automatic Execution</h3>
+<p>Prevent the automatic execution of mobile code in [Assignment: organization-defined software applications] and enforce [Assignment: organization-defined actions] prior to executing the code.</p>
+<p>Actions enforced before executing mobile code include prompting users prior to opening email attachments or clicking on web links. Preventing the automatic execution of mobile code includes disabling auto-execute features on system components that employ portable storage devices, such as compact discs, digital versatile discs, and universal serial bus devices.</p>
+<h3 id="5">5</h3>
+<h3 id="mobile-code-allow-execution-only-in-confined-environments">Mobile Code | Allow Execution Only in Confined Environments</h3>
+<p>Allow execution of permitted mobile code only in confined virtual machine environments.</p>
+<p>Permitting the execution of mobile code only in confined virtual machine environments helps prevent the introduction of malicious code into other systems and system components.</p>
+<p>Related: <a href="../sc44/">SC-44</a>, <a href="../si7/">SI-7</a>.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../sc19/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../sc19/" class="btn btn-xs btn-link">
+        SC-19 Voice Over Internet Protocol
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../sc17/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../sc17/" class="btn btn-xs btn-link">
+        SC-17 Public Key Infrastructure Certificates
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

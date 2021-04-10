@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>SC-8 Transmission Confidentiality and Integrity - NIST 800-53 For Dummies</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "SC-8 Transmission Confidentiality and Integrity", url: "#_top", children: [
+              {title: "Control", url: "#control" },
+              {title: "Discussion", url: "#discussion" },
+              {title: "Related Controls", url: "#related-controls" },
+              {title: "Enhancements", url: "#enhancements" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../sc9/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../sc9/" class="btn btn-xs btn-link">
+        SC-9 Transmission Confidentiality
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../sc7/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../sc7/" class="btn btn-xs btn-link">
+        SC-7 Boundary Protection
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="sc-8-transmission-confidentiality-and-integrity">SC-8 Transmission Confidentiality and Integrity</h1>
+<h2 id="control">Control</h2>
+<p>Protect the [Selection (one or more): confidentiality; integrity] of transmitted information.</p>
+<h2 id="discussion">Discussion</h2>
+<p>Protecting the confidentiality and integrity of transmitted information applies to internal and external networks as well as any system components that can transmit information, including servers, notebook computers, desktop computers, mobile devices, printers, copiers, scanners, facsimile machines, and radios. Unprotected communication paths are exposed to the possibility of interception and modification. Protecting the confidentiality and integrity of information can be accomplished by physical or logical means. Physical protection can be achieved by using protected distribution systems. A protected distribution system is a wireline or fiber-optics telecommunications system that includes terminals and adequate electromagnetic, acoustical, electrical, and physical controls to permit its use for the unencrypted transmission of classified information. Logical protection can be achieved by employing encryption techniques.</p>
+<p>Organizations that rely on commercial providers who offer transmission services as commodity services rather than as fully dedicated services may find it difficult to obtain the necessary assurances regarding the implementation of needed controls for transmission confidentiality and integrity. In such situations, organizations determine what types of confidentiality or integrity services are available in standard, commercial telecommunications service packages. If it is not feasible to obtain the necessary controls and assurances of control effectiveness through appropriate contracting vehicles, organizations can implement appropriate compensating controls.</p>
+<h2 id="related-controls">Related Controls</h2>
+<p><a href="../ac17/">AC-17</a>, <a href="../ac18/">AC-18</a>, <a href="../au10/">AU-10</a>, <a href="../ia3/">IA-3</a>, <a href="../ia8/">IA-8</a>, <a href="../ia9/">IA-9</a>, <a href="../ma4/">MA-4</a>, <a href="../pe4/">PE-4</a>, <a href="../sa4/">SA-4</a>, <a href="../sa8/">SA-8</a>, <a href="../sc7/">SC-7</a>, <a href="../sc16/">SC-16</a>, <a href="../sc20/">SC-20</a>, <a href="../sc23/">SC-23</a>, <a href="../sc28/">SC-28</a>.</p>
+<h2 id="enhancements">Enhancements</h2>
+<h3 id="1">1</h3>
+<h3 id="transmission-confidentiality-and-integrity-cryptographic-protection">Transmission Confidentiality and Integrity | Cryptographic Protection</h3>
+<p>Implement cryptographic mechanisms to [Selection (one or more): prevent unauthorized disclosure of information; detect changes to information] during transmission.</p>
+<p>Encryption protects information from unauthorized disclosure and modification during transmission. Cryptographic mechanisms that protect the confidentiality and integrity of information during transmission include TLS and IPSec. Cryptographic mechanisms used to protect information integrity include cryptographic hash functions that have applications in digital signatures, checksums, and message authentication codes.</p>
+<p>Related: <a href="../sc12/">SC-12</a>, <a href="../sc13/">SC-13</a>.</p>
+<h3 id="2">2</h3>
+<h3 id="transmission-confidentiality-and-integrity-pre-and-post-transmission-handling">Transmission Confidentiality and Integrity | Pre- and Post-transmission Handling</h3>
+<p>Maintain the [Selection (one or more): confidentiality; integrity] of information during preparation for transmission and during reception.</p>
+<p>Information can be unintentionally or maliciously disclosed or modified during preparation for transmission or during reception, including during aggregation, at protocol transformation points, and during packing and unpacking. Such unauthorized disclosures or modifications compromise the confidentiality or integrity of the information.</p>
+<h3 id="3">3</h3>
+<h3 id="transmission-confidentiality-and-integrity-cryptographic-protection-for-message-externals">Transmission Confidentiality and Integrity | Cryptographic Protection for Message Externals</h3>
+<p>Implement cryptographic mechanisms to protect message externals unless otherwise protected by [Assignment: organization-defined alternative physical controls].</p>
+<p>Cryptographic protection for message externals addresses protection from the unauthorized disclosure of information. Message externals include message headers and routing information. Cryptographic protection prevents the exploitation of message externals and applies to internal and external networks or links that may be visible to individuals who are not authorized users. Header and routing information is sometimes transmitted in clear text (i.e., unencrypted) because the information is not identified by organizations as having significant value or because encrypting the information can result in lower network performance or higher costs. Alternative physical controls include protected distribution systems.</p>
+<p>Related: <a href="../sc12/">SC-12</a>, <a href="../sc13/">SC-13</a>.</p>
+<h3 id="4">4</h3>
+<h3 id="transmission-confidentiality-and-integrity-conceal-or-randomize-communications">Transmission Confidentiality and Integrity | Conceal or Randomize Communications</h3>
+<p>Implement cryptographic mechanisms to conceal or randomize communication patterns unless otherwise protected by [Assignment: organization-defined alternative physical controls].</p>
+<p>Concealing or randomizing communication patterns addresses protection from unauthorized disclosure of information. Communication patterns include frequency, periods, predictability, and amount. Changes to communications patterns can reveal information with intelligence value, especially when combined with other available information related to the mission and business functions of the organization. Concealing or randomizing communications prevents the derivation of intelligence based on communications patterns and applies to both internal and external networks or links that may be visible to individuals who are not authorized users. Encrypting the links and transmitting in continuous, fixed, or random patterns prevents the derivation of intelligence from the system communications patterns. Alternative physical controls include protected distribution systems.</p>
+<p>Related: <a href="../sc12/">SC-12</a>, <a href="../sc13/">SC-13</a>.</p>
+<h3 id="5">5</h3>
+<h3 id="transmission-confidentiality-and-integrity-protected-distribution-system">Transmission Confidentiality and Integrity | Protected Distribution System</h3>
+<p>Implement [Assignment: organization-defined protected distribution system] to [Selection (one or more): prevent unauthorized disclosure of information; detect changes to information] during transmission.</p>
+<p>The purpose of a protected distribution system is to deter, detect, and/or make difficult physical access to the communication lines that carry national security information.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../sc9/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../sc9/" class="btn btn-xs btn-link">
+        SC-9 Transmission Confidentiality
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../sc7/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../sc7/" class="btn btn-xs btn-link">
+        SC-7 Boundary Protection
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

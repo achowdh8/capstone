@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>SA-11 Developer Testing and Evaluation - NIST 800-53 For Dummies</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "SA-11 Developer Testing and Evaluation", url: "#_top", children: [
+              {title: "Control", url: "#control" },
+              {title: "Discussion", url: "#discussion" },
+              {title: "Related Controls", url: "#related-controls" },
+              {title: "Enhancements", url: "#enhancements" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../sa12/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../sa12/" class="btn btn-xs btn-link">
+        SA-12 Supply Chain Protection
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../sa10/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../sa10/" class="btn btn-xs btn-link">
+        SA-10 Developer Configuration Management
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="sa-11-developer-testing-and-evaluation">SA-11 Developer Testing and Evaluation</h1>
+<h2 id="control">Control</h2>
+<p>Require the developer of the system, system component, or system service, at all post-design stages of the system development life cycle, to:</p>
+<p>a. Develop and implement a plan for ongoing security and privacy control assessments;</p>
+<p>b. Perform [Selection (one or more): unit; integration; system; regression] testing/evaluation [Assignment: organization-defined frequency] at [Assignment: organization-defined depth and coverage];</p>
+<p>c. Produce evidence of the execution of the assessment plan and the results of the testing and evaluation;</p>
+<p>d. Implement a verifiable flaw remediation process; and</p>
+<p>e. Correct flaws identified during testing and evaluation.</p>
+<h2 id="discussion">Discussion</h2>
+<p>Developmental testing and evaluation confirms that the required controls are implemented correctly, operating as intended, enforcing the desired security and privacy policies, and meeting established security and privacy requirements. Security properties of systems and the privacy of individuals may be affected by the interconnection of system components or changes to those components. The interconnections or changes—including upgrading or replacing applications, operating systems, and firmware—may adversely affect previously implemented controls. Ongoing assessment during development allows for additional types of testing and evaluation that developers can conduct to reduce or eliminate potential flaws. Testing custom software applications may require approaches such as manual code review, security architecture review, and penetration testing, as well as and static analysis, dynamic analysis, binary analysis, or a hybrid of the three analysis approaches.</p>
+<p>Developers can use the analysis approaches, along with security instrumentation and fuzzing, in a variety of tools and in source code reviews. The security and privacy assessment plans include the specific activities that developers plan to carry out, including the types of analyses, testing, evaluation, and reviews of software and firmware components; the degree of rigor to be applied; the frequency of the ongoing testing and evaluation; and the types of artifacts produced during those processes. The depth of testing and evaluation refers to the rigor and level of detail associated with the assessment process. The coverage of testing and evaluation refers to the scope (i.e., number and type) of the artifacts included in the assessment process. Contracts specify the acceptance criteria for security and privacy assessment plans, flaw remediation processes, and the evidence that the plans and processes have been diligently applied. Methods for reviewing and protecting assessment plans, evidence, and documentation are commensurate with the security category or classification level of the system. Contracts may specify protection requirements for documentation.</p>
+<h2 id="related-controls">Related Controls</h2>
+<p><a href="../ca2/">CA-2</a>, <a href="../ca7/">CA-7</a>, <a href="../cm4/">CM-4</a>, <a href="../sa3/">SA-3</a>, <a href="../sa4/">SA-4</a>, <a href="../sa5/">SA-5</a>, <a href="../sa8/">SA-8</a>, <a href="../sa15/">SA-15</a>, <a href="../sa17/">SA-17</a>, <a href="../si2/">SI-2</a>, <a href="../sr5/">SR-5</a>, <a href="../sr6/">SR-6</a>, <a href="../sr7/">SR-7</a>.</p>
+<h2 id="enhancements">Enhancements</h2>
+<h3 id="1">1</h3>
+<h3 id="developer-testing-and-evaluation-static-code-analysis">Developer Testing and Evaluation | Static Code Analysis</h3>
+<p>Require the developer of the system, system component, or system service to employ static code analysis tools to identify common flaws and document the results of the analysis.</p>
+<p>Static code analysis provides a technology and methodology for security reviews and includes checking for weaknesses in the code as well as for the incorporation of libraries or other included code with known vulnerabilities or that are out-of-date and not supported. Static code analysis can be used to identify vulnerabilities and enforce secure coding practices. It is most effective when used early in the development process, when each code change can automatically be scanned for potential weaknesses. Static code analysis can provide clear remediation guidance and identify defects for developers to fix. Evidence of the correct implementation of static analysis can include aggregate defect density for critical defect types, evidence that defects were inspected by developers or security professionals, and evidence that defects were remediated. A high density of ignored findings, commonly referred to as false positives, indicates a potential problem with the analysis process or the analysis tool. In such cases, organizations weigh the validity of the evidence against evidence from other sources.</p>
+<h3 id="2">2</h3>
+<h3 id="developer-testing-and-evaluation-threat-modeling-and-vulnerability-analyses">Developer Testing and Evaluation | Threat Modeling and Vulnerability Analyses</h3>
+<p>Require the developer of the system, system component, or system service to perform threat modeling and vulnerability analyses during development and the subsequent testing and evaluation of the system, component, or service that: </p>
+<p>(a) Uses the following contextual information: [Assignment: organization-defined information concerning impact, environment of operations, known or assumed threats, and acceptable risk levels];</p>
+<p>(b) Employs the following tools and methods: [Assignment: organization-defined tools and methods];</p>
+<p>(c) Conducts the modeling and analyses at the following level of rigor: [Assignment: organization-defined breadth and depth of modeling and analyses]; and</p>
+<p>(d) Produces evidence that meets the following acceptance criteria: [Assignment: organization-defined acceptance criteria].</p>
+<p>Systems, system components, and system services may deviate significantly from the functional and design specifications created during the requirements and design stages of the system development life cycle. Therefore, updates to threat modeling and vulnerability analyses of those systems, system components, and system services during development and prior to delivery are critical to the effective operation of those systems, components, and services. Threat modeling and vulnerability analyses at this stage of the system development life cycle ensure that design and implementation changes have been accounted for and that vulnerabilities created because of those changes have been reviewed and mitigated.</p>
+<p>Related: <a href="../pm15/">PM-15</a>, <a href="../ra3/">RA-3</a>, <a href="../ra5/">RA-5</a>.</p>
+<h3 id="3">3</h3>
+<h3 id="developer-testing-and-evaluation-independent-verification-of-assessment-plans-and-evidence">Developer Testing and Evaluation | Independent Verification of Assessment Plans and Evidence</h3>
+<p>(a) Require an independent agent satisfying [Assignment: organization-defined independence criteria] to verify the correct implementation of the developer security and privacy assessment plans and the evidence produced during testing and evaluation; and</p>
+<p>(b) Verify that the independent agent is provided with sufficient information to complete the verification process or granted the authority to obtain such information.</p>
+<p>Independent agents have the qualifications—including the expertise, skills, training, certifications, and experience—to verify the correct implementation of developer security and privacy assessment plans.</p>
+<p>Related: <a href="../at3/">AT-3</a>, <a href="../ra5/">RA-5</a>.</p>
+<h3 id="4">4</h3>
+<h3 id="developer-testing-and-evaluation-manual-code-reviews">Developer Testing and Evaluation | Manual Code Reviews</h3>
+<p>Require the developer of the system, system component, or system service to perform a manual code review of [Assignment: organization-defined specific code] using the following processes, procedures, and/or techniques: [Assignment: organization-defined processes, procedures, and/or techniques].</p>
+<p>Manual code reviews are usually reserved for the critical software and firmware components of systems. Manual code reviews are effective at identifying weaknesses that require knowledge of the application’s requirements or context that, in most cases, is unavailable to automated analytic tools and techniques, such as static and dynamic analysis. The benefits of manual code review include the ability to verify access control matrices against application controls and review detailed aspects of cryptographic implementations and controls.</p>
+<h3 id="5">5</h3>
+<h3 id="developer-testing-and-evaluation-penetration-testing">Developer Testing and Evaluation | Penetration Testing</h3>
+<p>Require the developer of the system, system component, or system service to perform penetration testing:</p>
+<p>(a) At the following level of rigor: [Assignment: organization-defined breadth and depth of testing]; and</p>
+<p>(b) Under the following constraints: [Assignment: organization-defined constraints].</p>
+<p>Penetration testing is an assessment methodology in which assessors, using all available information technology product or system documentation and working under specific constraints, attempt to circumvent the implemented security and privacy features of information technology products and systems. Useful information for assessors who conduct penetration testing includes product and system design specifications, source code, and administrator and operator manuals. Penetration testing can include white-box, gray-box, or black-box testing with analyses performed by skilled professionals who simulate adversary actions. The objective of penetration testing is to discover vulnerabilities in systems, system components, and services that result from implementation errors, configuration faults, or other operational weaknesses or deficiencies. Penetration tests can be performed in conjunction with automated and manual code reviews to provide a greater level of analysis than would ordinarily be possible. When user session information and other personally identifiable information is captured or recorded during penetration testing, such information is handled appropriately to protect privacy.</p>
+<p>Related: <a href="../ca8/">CA-8</a>, <a href="../pm14/">PM-14</a>, <a href="../pm25/">PM-25</a>, <a href="../pt2/">PT-2</a>, <a href="../sa3/">SA-3</a>, <a href="../si2/">SI-2</a>, <a href="../si6/">SI-6</a>.</p>
+<h3 id="6">6</h3>
+<h3 id="developer-testing-and-evaluation-attack-surface-reviews">Developer Testing and Evaluation | Attack Surface Reviews</h3>
+<p>Require the developer of the system, system component, or system service to perform attack surface reviews.</p>
+<p>Attack surfaces of systems and system components are exposed areas that make those systems more vulnerable to attacks. Attack surfaces include any accessible areas where weaknesses or deficiencies in the hardware, software, and firmware components provide opportunities for adversaries to exploit vulnerabilities. Attack surface reviews ensure that developers analyze the design and implementation changes to systems and mitigate attack vectors generated as a result of the changes. The correction of identified flaws includes deprecation of unsafe functions.</p>
+<p>Related: <a href="../sa15/">SA-15</a>.</p>
+<h3 id="7">7</h3>
+<h3 id="developer-testing-and-evaluation-verify-scope-of-testing-and-evaluation">Developer Testing and Evaluation | Verify Scope of Testing and Evaluation</h3>
+<p>Require the developer of the system, system component, or system service to verify that the scope of testing and evaluation provides complete coverage of the required controls at the following level of rigor: [Assignment: organization-defined breadth and depth of testing and evaluation].</p>
+<p>Verifying that testing and evaluation provides complete coverage of required controls can be accomplished by a variety of analytic techniques ranging from informal to formal. Each of these techniques provides an increasing level of assurance that corresponds to the degree of formality of the analysis. Rigorously demonstrating control coverage at the highest levels of assurance can be achieved using formal modeling and analysis techniques, including correlation between control implementation and corresponding test cases.</p>
+<p>Related: <a href="../sa15/">SA-15</a>.</p>
+<h3 id="8">8</h3>
+<h3 id="developer-testing-and-evaluation-dynamic-code-analysis">Developer Testing and Evaluation | Dynamic Code Analysis</h3>
+<p>Require the developer of the system, system component, or system service to employ dynamic code analysis tools to identify common flaws and document the results of the analysis.</p>
+<p>Dynamic code analysis provides runtime verification of software programs using tools capable of monitoring programs for memory corruption, user privilege issues, and other potential security problems. Dynamic code analysis employs runtime tools to ensure that security functionality performs in the way it was designed. A type of dynamic analysis, known as fuzz testing, induces program failures by deliberately introducing malformed or random data into software programs. Fuzz testing strategies are derived from the intended use of applications and the functional and design specifications for the applications. To understand the scope of dynamic code analysis and the assurance provided, organizations may also consider conducting code coverage analysis (i.e., checking the degree to which the code has been tested using metrics such as percent of subroutines tested or percent of program statements called during execution of the test suite) and/or concordance analysis (i.e., checking for words that are out of place in software code, such as non-English language words or derogatory terms).</p>
+<h3 id="9">9</h3>
+<h3 id="developer-testing-and-evaluation-interactive-application-security-testing">Developer Testing and Evaluation | Interactive Application Security Testing</h3>
+<p>Require the developer of the system, system component, or system service to employ interactive application security testing tools to identify flaws and document the results.</p>
+<p>Interactive (also known as instrumentation-based) application security testing is a method of detecting vulnerabilities by observing applications as they run during testing. The use of instrumentation relies on direct measurements of the actual running applications and uses access to the code, user interaction, libraries, frameworks, backend connections, and configurations to directly measure control effectiveness. When combined with analysis techniques, interactive application security testing can identify a broad range of potential vulnerabilities and confirm control effectiveness. Instrumentation-based testing works in real time and can be used continuously throughout the system development life cycle.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../sa12/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../sa12/" class="btn btn-xs btn-link">
+        SA-12 Supply Chain Protection
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../sa10/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../sa10/" class="btn btn-xs btn-link">
+        SA-10 Developer Configuration Management
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>
